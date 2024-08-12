@@ -10,7 +10,7 @@ What You Get:
 <br>
 <br>
 At time of writing I am using Debian 12 which is the current stable release. I am using SpiralLinux which formats as BTRFS and has snapper rollback in GRUB - many many many thanks to the OpenSUSE geckolinux dev for coming up with SpiralLinux.<br>
-https://sourceforge.net/projects/spirallinux/files/12.231120/SpiralLinux_Cinnamon_12.231120_x86-64.iso/download
+https://spirallinux.github.io/#download
 <br><br>
 
 
