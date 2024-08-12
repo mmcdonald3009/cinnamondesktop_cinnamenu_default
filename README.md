@@ -95,8 +95,6 @@ sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settin
 <br>
 <br>
 ------------This grep stuff deals with locating text in files and finding the line number and putting into variable so sed can remove that line by number------------<br>
-#ln1=$(grep -n "Looking Glass" /usr/share/cinnamon/js/ui/panel.js | cut -d : -f 1) <br>
-#sed -i "${ln1}d" /usr/share/cinnamon/js/ui/panel.js <br>
 if grep -q "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js;then <br>
 ln7=$(grep -n "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js | cut -d : -f 1) <br>
 ln8=$((ln7 - 1)) <br>
