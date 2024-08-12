@@ -55,7 +55,7 @@ At every login we run jsonlint to check the integrity of 9999.json. If the file 
 
 
 
-Proecure To Remove Add Panel And Remove Panel From Cinnamon
+Procedure To Remove Add Panel And Remove Panel From Cinnamon
 (First I would take a backup of /usr/share/cinnamon/js/panel.js, main.js and applet.js just in case you need to restore them....)
 
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null
