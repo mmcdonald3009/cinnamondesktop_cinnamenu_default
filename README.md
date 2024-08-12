@@ -5,7 +5,7 @@ Cinnamon is the maturity KDE wishes it could have. They have retained very early
 It's also a finger up at the rather obnoxious Linux Mint admin who talked to me like I am an idiot for suggesting my way to disable hidden files for regular users.
 <br>
 <br>
-
+<br>
 What You Get:
 <br>
 1. A self healing Cinnamon implementation using Cinnamenu as default that is stable enough for commercial deployment ( some panel functions like add and remove can get taken out see procedure below ) but MOVE is stil there.
@@ -14,8 +14,7 @@ What You Get:
 4. At anytime you can stop 2 and 3 by typing killall dbus-monitor into a terminal.
 <br>
 <br>
-
-
+<br>
 The Extra's You Have to Get First...
 <br>
 1. Download Cinnamenu was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322
@@ -25,7 +24,7 @@ The Extra's You Have to Get First...
 5. So do this: apt install xautomation jsonlint libgtk-3-bin
 <br>
 <br>
-
+<br>
 How It All Works:
 <br>
 1. Copy 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas. Then as su/sudo run this from a terminal: glib-compile-schemas /usr/share/glib-2.0/schemas/
@@ -33,7 +32,7 @@ How It All Works:
 3. mkdir /usr/share/customscripts and copy the files z_login.sh and 9999.json into it. Then chmod +x z_login.sh.
 <br>
 <br>
-
+<br>
 What Happens At Login Of The Very First User? (/etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh). It does the following:
 <br>
 The first user that was created during setup/install and then when logging out and back in for the very first time, a check is made for a file named: ~/.config/firstlogincomplete_DONOTDelete.
@@ -43,14 +42,16 @@ The file ~/.config/firstlogincomplete_DONOTDelete will be created so the logout 
 Now your first ever user that was created during first setup/install when logging in again gets Cinnamenu and won't ever get logged out again unless ~/.config/firstlogincomplete_DONOTDelete is removed.
 <br>
 <br>
-
+<br>
 What Happens At Login Of Subsequently Created Users?
+<br>
 <br>
 Subsequent users will get Cinnamenu as default as they were created after we copied 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas and ran: glib-compile-schemas /usr/share/glib-2.0/schemas/
 <br>
 <br>
-
+<br>
 What Happens At Every Other Login?
+<br>
 <br>
 At every login we run jsonlint to check the integrity of 9999.json. If the file fails, it will be copied in from and overwritten by /usr/share/customscripts/9999.json
 <br>
