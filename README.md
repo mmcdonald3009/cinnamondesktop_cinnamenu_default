@@ -53,10 +53,10 @@ What Happens At Every Other Login?
 At every login we run jsonlint to check the integrity of 9999.json. If the file fails, it will be copied in from and overwritten by /usr/share/customscripts/9999.json
 
 
+--- BEGIN OF BE VERY CAREFUL --- :)
 
-
-Procedures To Remove Add Panel And Remove Panel From Cinnamon --- AT YOUR OWN RISK :) <br>
-(First I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, etc just in case you need to restore them....)<br>
+PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" FUNCTIONS FROM CINNAMON <br>
+I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc just in case you need to restore them.... <br>
 
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null <br>
 sed -i 's|menu.addMenuItem(menu.addPanelItem);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null <br>
@@ -68,6 +68,25 @@ sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "prefe
 sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null <br>
 sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null <br>  
 sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_configure) == 100|g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null <br>  
+
+sed -i "s|this.context_menu_item_remove.connect('activate', (actor, event) => this.confirmRemoveApplet(event));||g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null 
+sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py 2>/dev/null
+#ln1=$(grep -n "Looking Glass" /usr/share/cinnamon/js/ui/panel.js | cut -d : -f 1)
+#sed -i "${ln1}d" /usr/share/cinnamon/js/ui/panel.js
+
+if grep -q "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js;then
+ln7=$(grep -n "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js | cut -d : -f 1)
+ln8=$((ln7 - 1))
+ln9=$((ln8 + 1))
+sed -i "${ln9}d" /usr/share/cinnamon/js/ui/applet.js
+sed -i "${ln8}d" /usr/share/cinnamon/js/ui/applet.js
+sed -i "${ln7}d" /usr/share/cinnamon/js/ui/applet.js
+fi
+
+sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null 
+sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_configure) == 100|g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null
+
+--- END OF BE VERY CAREFUL ---
 
 Finally, please note: I'm not a professional GIT contributor and there may be better ways to present this. Don't criticise me but I am certainly open to good suggestions in polite language, and willing to help with any realistic questions...
 
