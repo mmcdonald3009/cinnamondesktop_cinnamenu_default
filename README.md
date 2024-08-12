@@ -1,11 +1,4 @@
-At time of writing I am using Debian 12 which is the current stable release. I am using SpiralLinux which formats as BTRFS and has snapper rollback in GRUB - many many thanks to the OpenSUSE gecko dev for coming up with SpiralLinux.
 
-First - why am I doing this - because as a very experienced admin who has been fiddling with Linux for years when I saw Cinnamon Desktop with Cinnamenu I knew we finally had a solid windoze killer.<br><br>
-Cinnamon is the maturity KDE wishes it could have. They have retained very early gnome functions which turns out to be the smartest way forward IMHO.<br><br>
-It's also a finger up at the rather obnoxious Linux Mint admin who talked to me like I am an idiot for suggesting my way to disable hidden files for regular users.<br>
-<br>
-<br>
-<br>
 What You Get:
 <br>
 <br>
@@ -13,6 +6,14 @@ What You Get:
 2. When a user toggles hidden files in Nemo, Nemo simply closes and restarts. Not a perfect solution but should keep your office workers from accidentally deleting hidden files.<br>
 3. You can set a limit to the number of workspaces a user may create ( change this value in z_login.sh: dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "2" )<br>
 4. At anytime you can stop 2 and 3 by typing killall dbus-monitor into a terminal.<br>
+<br>
+<br>
+<br>
+At time of writing I am using Debian 12 which is the current stable release. I am using SpiralLinux which formats as BTRFS and has snapper rollback in GRUB - many many thanks to the OpenSUSE gecko dev for coming up with SpiralLinux.
+
+First - why am I doing this - because as a very experienced admin who has been fiddling with Linux for years when I saw Cinnamon Desktop with Cinnamenu I knew we finally had a solid windoze killer.<br><br>
+Cinnamon is the maturity KDE wishes it could have. They have retained very early gnome functions which turns out to be the smartest way forward IMHO.<br><br>
+It's also a finger up at the rather obnoxious Linux Mint admin who talked to me like I am an idiot for suggesting my way to disable hidden files for regular users.<br>
 <br>
 <br>
 <br>
