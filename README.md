@@ -28,7 +28,7 @@ How It All Works:
 
 1. Copy 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas. Then as su/sudo run this from a terminal: glib-compile-schemas /usr/share/glib-2.0/schemas/
 2. Copy /etc/xdg/autostart/z_login.desktop into /etc/xdg/autostart/z_login.desktop. This calls a script that runs per user $EUID at login. Very useful and good time to personalise and mount user specifics like named home remote mounts/drives.
-3. mkdir /usr/share/customscripts and copy the file z_login.sh into it. chmod +x that file.
+3. mkdir /usr/share/customscripts and copy the files z_login.sh and 9999.json into it. chmod +x z_login.sh.
 
 
 
