@@ -78,7 +78,7 @@ Also, if for some strange reason the file is missing it ( 9999.json ) will get c
 PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" and "Other Stuff"  FUNCTIONS FROM CINNAMON <br>
 I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc just in case you need to restore them.... <br>
 DO THESE ONE BY ONE TO SEE THE CHANGES THINGS LIKE Add Applet To Panel, Remove From Panel, Applet Configure<br>
-WILL BE REMOVED AND RESTORE FROM YOUR BACKED UP FILE COPY IF REQUIRED
+ALSO WILL BE REMOVED AND THEN RESTORE FROM YOUR BACKED UP FILE COPIES IF REQUIRED
 <br>
 ------------The sed stuff deals with find and replace------------<br>
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js <br>
@@ -106,6 +106,21 @@ fi <br>
 <br>
 sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js <br>
 sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_configure) == 100|g" /usr/share/cinnamon/js/ui/applet.js <br>
+<br>
+<br>
+<br>
+THINK ABOUT LOCKING DOWN TO A GOOD KNOWN SET OF APPLETS, DESKLETS AND EXTENSIONS BY REMOVING USER ABILITY TO SET THEM.
+THE DEFAULTS SHIPPED ARE PROBABLY ENOUGH FOR MOST PEOPLE TO ENGAGE IN MEANINGFUL WORKFLOW
+rm /usr/share/applications/cinnamon-settings-applets.desktop 2>/dev/null
+rm /usr/share/applications/cinnamon-settings-desklets.desktop 2>/dev/null
+rm /usr/share/applications/cinnamon-settings-extensions.desktop 2>/dev/null
+rm /usr/share/applications/cinnamon-settings-workspaces.desktop 2>/dev/null
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py 2>/dev/null
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py 2>/dev/null
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_extensions.py 2>/dev/null
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_workspaces.py 2>/dev/null
+
+<br>
 <br>
 <br>
 --- END OF BE VERY CAREFUL ---<br><br>
