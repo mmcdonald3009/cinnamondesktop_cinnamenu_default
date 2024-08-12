@@ -4,12 +4,16 @@ First - why am I doing this - because as a very experienced senior systems admin
 Cinnamon is the maturity KDE wishes it could have. They have retained very early gnome functions which turns out to be the smartest way forward IMHO.
 It's also a finger up at the rather obnoxious Linux Mint admin who talked to me like I an an idiot for suggesting my way to disable hidden files for regular users.
 
-What you get:
+What You Get:
 
 1. A self healing Cinnamon implementation using Cinnamenu as default that is stable enough for commercial deployment ( some panel functions like add and remove can get taken out) but MOVE is stil there.
 2. When a user toggles hidden files in Nemo, Nemo simply closes and restarts. Not a perfect solution but should keep your office workers from accidentally deleting hidden files.
 3. You can set a limit to the number of workspaces a user may create.
 4. At anytime you can stop 2 and 3 by typing killall dbus-monitor into a terminal.
+
+The Extra You Have to Install Firs
+== This allows for ESC key emulation when if using EXPO applet to create workspaces ( ctrl + up ) when the count goes above 4, a dconf write to number of workspaces 4 is made, and ESC key triggered to close page.
+So so this: apt install xautomation
 
 How It All Works:
 
