@@ -113,19 +113,19 @@ sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_confi
 <br>
 THINK ABOUT LOCKING DOWN TO A GOOD KNOWN SET OF APPLETS, DESKLETS AND EXTENSIONS BY REMOVING USER ABILITY TO SET THEM.
 THE DEFAULTS SHIPPED ARE PROBABLY ENOUGH FOR MOST PEOPLE TO ENGAGE IN MEANINGFUL WORKFLOW
-rm /usr/share/applications/cinnamon-settings-applets.desktop 2>/dev/null
-rm /usr/share/applications/cinnamon-settings-desklets.desktop 2>/dev/null
-rm /usr/share/applications/cinnamon-settings-extensions.desktop 2>/dev/null
-rm /usr/share/applications/cinnamon-settings-workspaces.desktop 2>/dev/null
-rm /usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py 2>/dev/null
-rm /usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py 2>/dev/null
-rm /usr/share/cinnamon/cinnamon-settings/modules/cs_extensions.py 2>/dev/null
-rm /usr/share/cinnamon/cinnamon-settings/modules/cs_workspaces.py 2>/dev/null
+rm /usr/share/applications/cinnamon-settings-applets.desktop <br>
+rm /usr/share/applications/cinnamon-settings-desklets.desktop <br>
+rm /usr/share/applications/cinnamon-settings-extensions.desktop <br>
+rm /usr/share/applications/cinnamon-settings-workspaces.desktop <br>
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py <br>
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py <br>
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_extensions.py <br>
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_workspaces.py <br>
 
 <br>
 <br>
 <br>
---- END OF BE VERY CAREFUL ---<br><br>
+--- END OF BE VERY CAREFUL SECTION ---<br><br>
 You will note other non-relevant stuff in z_login.sh I have left there for educational purposes.<br><br>
 <br><br>
 
