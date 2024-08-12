@@ -44,7 +44,7 @@ All That Needs To Be Done To Make It Work...
 <br>
 <br>
 <br>
-What Happens At Login Of The Very First User? <br>
+What Happens At Login Of The Very First Ever Created User ( the one entered duringsetup/install) ? <br>
 <br>
 (/etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh).
 <br>It does the following:
