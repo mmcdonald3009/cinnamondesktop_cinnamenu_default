@@ -50,7 +50,7 @@ Subsequent users will get Cinnamenu as default as they were created after we cop
 
 What Happens At Every Other Login?
 
-At every login we run jsonlint to check the integrity of 9999.json. If the file fails, it will be copied in from and overwritten by /usr/share/customscripts/999.json
+At every login we run jsonlint to check the integrity of 9999.json. If the file fails, it will be copied in from and overwritten by /usr/share/customscripts/9999.json
 
 
 
