@@ -71,13 +71,13 @@ fi
 rm ~/.bash_history
  
 dconf write /org/nemo/preferences/show-hidden-files "false"
-
-
-
 fi
+
+
+
+
 killall nemo
 killall dbus-monitor
-
 
 function function_preventnemohiddenfiles_limitworkspaces {
 if [ "$EUID" -gt 999 ];then
