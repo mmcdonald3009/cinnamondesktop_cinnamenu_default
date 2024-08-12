@@ -1,19 +1,7 @@
 #!/bin/bash
 
-mkdir ~/Templates
-cp /usr/share/customscripts/doctemplates/* ~/Templates/
-rm ~/.hidden
-> ~/.hidden
-echo "Templates" >> ~/.hidden
-
- 
 chmod 700 ~/
 
-display=$(echo $XDG_SESSION_TYPE);
-
-if [ $display == "wayland" ];then
-wayland session stop;
-fi
 
 if [ "$EUID" -gt 999 ]
 then
@@ -53,35 +41,6 @@ dconf write /org/cinnamon/desktop/background/picture-uri "'file:///usr/share/wal
 dconf write /org/cinnamon/panels-resizable "['1:true']"
 dconf write /org/cinnamon/panels-height "['1:40']"
 
-dconf write /org/gnome/evolution/mail/browser-close-on-reply-policy "'never'"
-dconf write /org/gnome/evolution/mail/caret-mode "true"
-dconf write /org/gnome/evolution/mail/composer-inherit-theme-colors "true"
-dconf write /org/gnome/evolution/mail/bcomposer-magic-smileys "true"
-dconf write /org/gnome/evolution/mail/composer-mode "'html'"
-dconf write /org/gnome/evolution/mail/composer-send-html "true"
-dconf write /org/gnome/evolution/mail/composer-show-reply-to "true"
-dconf write /org/gnome/evolution/mail/composer-top-signature "true"
-dconf write /org/gnome/evolution/mail/composer-unicode-smileys "true"
-dconf write /org/gnome/evolution/mail/composer-visually-wrap-long-lines "true"
-dconf write /org/gnome/evolution/mail/forward-style "1"
-dconf write /org/gnome/evolution/mail/forward-style-name "'inline'"
-dconf write /org/gnome/evolution/mail/image-loading-policy "'always'"
-dconf write /org/gnome/evolution/mail/junk-check-custom-header "true"
-dconf write /org/gnome/evolution/mail/junk-check-incoming "true"
-dconf write /org/gnome/evolution/mail/junk-empty-on-exit-days "0"
-dconf write /org/gnome/evolution/mail/junk-lookup-addressbook "false"
-dconf write /org/gnome/evolution/mail/layout "1"
-dconf write /org/gnome/evolution/mail/load-http-images "2"
-dconf write /org/gnome/evolution/mail/prompt-on-composer-mode-switch "false"
-dconf write /org/gnome/evolution/mail/prompt-on-mark-all-read "'never'"
-dconf write /org/gnome/evolution/mail/prompt-on-reply-close-browser "'never'"
-dconf write /org/gnome/evolution/mail/reply-style "3"
-dconf write /org/gnome/evolution/mail/reply-style-name "'outlook'"
-dconf write /org/gnome/evolution/mail/show-to-do-bar "false"
-dconf write /org/gnome/evolution/shell/menubar-visible "true"
-dconf write /org/gnome/evolution/shell/toolbar-visible "true"
-dconf write /org/gnome/evolution/shell/toolbar-icon-size "'small'"
-
 dconf write /org/nemo/compact-view/default-zoom-level "'large'"
 
 dconf write /org/nemo/icon-view/captions " ['none', 'none', 'none'] "
@@ -98,9 +57,6 @@ dconf write /org/nemo/preferences/show-image-thumbnails "'always'"
 dconf write /org/nemo/preferences/show-location-entry "false"
 dconf write /org/nemo/preferences/default-folder-viewer "'icon-view'"
 
-rm -rf ~/.config/GIMP/
-mkdir ~/.config/GIMP/
-
 dconf write /org/cinnamon/theme/name "'Light'"
 dconf write /org/cinnamon/desktop/interface/gtk-theme "'Light'"
 > ~/.config/firstlogincomplete_DONOTDelete
@@ -111,13 +67,6 @@ dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "2"
 cinnamon-session-quit --logout --force 
 
 fi 
-
-
-rm $HOME/.var/app/com.google.EarthPro/.googleearth/instance-running-lock
-
-if [ -d ~/bin ];then
-mv ~/bin/ ~/.bin/ 
-fi
 
 rm ~/.bash_history
  
