@@ -74,7 +74,7 @@ What Happens At Login Of Subsequently Created Users?
 -----------------------------------------------------
 <br>
 <br>
-Subsequently created users will get Cinnamenu as default.
+Subsequently created users will get Cinnamenu as default.<br>
 They will also be automatically logged out once, only, and never again because the file ~/.config/firstlogincomplete_DONOTDelete will be created.
 <br>
 <br>
@@ -85,7 +85,7 @@ What Happens At Every Other Login?
 ----------------------------------
 <br>
 <br>
-At every login we run jsonlint to check the integrity of 9999.json. If the file fails, it will be copied in from and overwritten by /usr/share/customscripts/9999.json<br>
+At every login we run jsonlint to check the integrity of 9999.json.<br>If the file fails, it will be copied in from and overwritten by /usr/share/customscripts/9999.json<br>
 Also, if for some strange reason the file is missing it ( 9999.json ) will get copied in again.
 <br>
 <br>
