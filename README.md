@@ -14,7 +14,7 @@ At time of writing I am using Debian 12 which is the current stable release. I a
 
 First - why am I doing this - because as a very experienced admin who has been fiddling with Linux for years when I saw Cinnamon Desktop with Cinnamenu I knew we finally had a solid windoze killer.<br><br>
 Cinnamon is the maturity KDE wishes it could have. They have retained very early gnome functions which turns out to be the smartest way forward IMHO.<br><br>
-It's also a finger up at the rather obnoxious Linux Mint admin who talked to me like I am an idiot for suggesting my way to disable hidden files for regular users.<br>
+It's also a snout at the rather obnoxious Linux Mint admin who talked to me like I am an idiot for suggesting my way to disable hidden files for regular users.<br>
 <br>
 <br>
 <br>
