@@ -104,7 +104,8 @@ fi <br>
 <br>
 sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js <br>
 sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_configure) == 100|g" /usr/share/cinnamon/js/ui/applet.js <br>
-
+<br>
+<br>
 --- END OF BE VERY CAREFUL ---<br><br>
 You will note other non-relevant stuff in z_login.sh I have left there for educational purposes.<br><br>
 Finally, please note: I'm not a professional GIT author and there may be better ways to present this.<br><br>
