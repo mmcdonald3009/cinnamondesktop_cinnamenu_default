@@ -55,8 +55,8 @@ Now your first ever user that was created during first setup/install when loggin
 What Happens At Login Of Subsequently Created Users?
 <br>
 <br>
-Subsequent users will get Cinnamenu as default as they were created after we copied 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas and ran: glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
-They will also be logged out once, only, and never again after ~/.config/firstlogincomplete_DONOTDelete is created.
+Subsequently created users will get Cinnamenu as default.
+They will also be autmoatically logged out once, only, and never again after ~/.config/firstlogincomplete_DONOTDelete is created.
 <br>
 <br>
 <br>
