@@ -96,7 +96,8 @@ sed -i "s|this.context_menu_item_remove.connect('activate', (actor, event) => th
 sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py <br>
 <br>
 <br>
-------------This grep stuff deals with locating text in files and finding the line number and putting into variable so sed can remove that line by number------------<br>
+------------This grep function deals with locating text in files and finding the line number and putting into variable so sed can remove that line by number------------<br>
+NOTE: It is a function between "if and fi" so all lines must be pasted into the terminal together.
 if grep -q "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js;then <br>
 ln7=$(grep -n "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js | cut -d : -f 1) <br>
 ln8=$((ln7 - 1)) <br>
