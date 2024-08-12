@@ -37,8 +37,8 @@ What Happens At Login Of The Very First User? (/etc/xdg/autostart/z_login.deskto
 1. The first user that was created during setup/install and then when logging out and back in for the very first time, a check is made for a file named: ~/.config/firstlogincomplete_DONOTDelete.
 This file ~/.config/firstlogincomplete_DONOTDelete won't be there yet, so the Cinnamenu schema file 9999.json wil be copied into ~/.config/cinnamon/spices/Cinnamenu@json, and a dconf write enables the default applets including Cinnamenu.
 Now that file ~/.config/firstlogincomplete_DONOTDelete will be created so the check passes over it next time.
-You will be logged out in this part of z_login.sh: cinnamon-session-quit --logout --force
-Now your first ever user when logging in again gets Cinnamenu.
+You will be logged out just once in this part of z_login.sh: cinnamon-session-quit --logout --force
+Now your first ever user when logging in again gets Cinnamenu and won; get logged out again unless ~/.config/firstlogincomplete_DONOTDelete is removed.
 
 
 
