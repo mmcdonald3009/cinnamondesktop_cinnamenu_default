@@ -6,7 +6,7 @@ It's also a finger up at the rather obnoxious Linux Mint admin who talked to me 
 
 What you get:
 
-1. A self healing Cinnamon implementation using Cinnamenu as default that is stable enough for commercial deployment ( some panel functions like add and remove get taken out) but MOVE is stil there ).
+1. A self healing Cinnamon implementation using Cinnamenu as default that is stable enough for commercial deployment ( some panel functions like add and remove can get taken out) but MOVE is stil there.
 2. When a user toggles hidden files in Nemo, Nemo simply closes and restarts. Not a perfect solution but should keep your office workers from accidentally deleting hidden files.
 3. You can set a limit to the number of workspaces a user may create.
 4. At anytime you can stop 2 and 3 by typing killall dbus-monitor into a terminal.
