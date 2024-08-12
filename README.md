@@ -34,7 +34,7 @@ How It All Works:
 
 What Happens At Login Of The Very First User? (/etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh). It does the following:
 
-1. The first user that was created during setup/install and then when logging out and back in for the very first time, a check is made for a file named: ~/.config/firstlogincomplete_DONOTDelete.
+The first user that was created during setup/install and then when logging out and back in for the very first time, a check is made for a file named: ~/.config/firstlogincomplete_DONOTDelete.
 This file ~/.config/firstlogincomplete_DONOTDelete won't be there yet, so the Cinnamenu schema file 9999.json wil be copied into ~/.config/cinnamon/spices/Cinnamenu@json, and a dconf write enables the default applets including Cinnamenu.
 Now that file ~/.config/firstlogincomplete_DONOTDelete will be created so the check passes over it next time.
 You will be logged out just once in this part of z_login.sh: cinnamon-session-quit --logout --force
@@ -55,7 +55,8 @@ At every login we run jsonlint to check the integrity of 9999.json. If the file 
 
 
 
-If you are interested in taking out the Add Panel and Remove Panel function and leaving the Move Panel function from Cinnamon Desktop, then as su/sudo run these commands:
+Proecure To Remove Add Panel And Remove Panel From Cinnamon
+(First I would take a backup of /usr/share/cinnamon/js/panel.js, main.js and applet.js just in case you need to restore them....)
 
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null
 sed -i 's|menu.addMenuItem(menu.addPanelItem);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null
@@ -64,9 +65,11 @@ sed -i 's|Restart Cinnamon|Restart Display|g' /usr/share/cinnamon/js/ui/panel.js
 sed -i 's|menu.addMenuItem(panelEditMode);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null
 sed -i 's|Restarting Cinnamon|Restarting Display|g' /usr/share/cinnamon/js/ui/main.js 2>/dev/null
 sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "preferences-desktop"));||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null
-sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null 
+sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null
+sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null 
+sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_configure) == 100|g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null 
 
-Finally, please note: I;m not a professional GIT contributor and there nay be better ways to present this. Don't criticise but I am open to good suggestions in polite language.
+Finally, please note: I'm not a professional GIT contributor and there may be better ways to present this. Don't criticise me but I am certainly open to good suggestions in polite language, and willing to help with any realistic questions...
 
 
 END OF README---
