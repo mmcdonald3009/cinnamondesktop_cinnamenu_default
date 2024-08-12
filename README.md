@@ -33,7 +33,7 @@ The Extra's You Have to Get First...
 <br>
 <br>
 <br>
-To Make It Work:
+To Make It Work...
 <br>
 <br>
 1. Copy 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas. Then as su/sudo run this from a terminal: glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
