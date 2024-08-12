@@ -33,7 +33,7 @@ How It All Works:
 <br>
 <br>
 <br>
-What Happens At Login Of The Very First User? (/etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh). It does the following:
+What Happens At Login Of The Very First User? (/etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh).<br>It does the following:
 <br>
 The first user that was created during setup/install and then when logging out and back in for the very first time, a check is made for a file named: ~/.config/firstlogincomplete_DONOTDelete.<br>
 This file ~/.config/firstlogincomplete_DONOTDelete won't be there yet, so the Cinnamenu schema file 9999.json wil be copied into ~/.config/cinnamon/spices/Cinnamenu@json, and a dconf write enables the default applets including Cinnamenu.<br>
