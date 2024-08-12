@@ -77,6 +77,8 @@ Also, if for some strange reason the file is missing it ( 9999.json ) will get c
 <br>
 PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" and "Other Stuff"  FUNCTIONS FROM CINNAMON <br>
 I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc just in case you need to restore them.... <br>
+DO THESE ONE BY ONE TO SEE THE CHANGES THINGS LIKE Add Applet To Panel, Remove From Panel, Applet Configure<br>
+WILL BE REMOVED AND RESTORE FROM YOUR BACKED UP FILE COPY IF REQUIRED
 <br>
 ------------The sed stuff deals with find and replace------------<br>
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js <br>
