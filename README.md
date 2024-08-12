@@ -53,7 +53,7 @@ What Happens At Login Of The Very First User? <br>
 2. This file ~/.config/firstlogincomplete_DONOTDelete won't be there yet, so the Cinnamenu schema file 9999.json wil be copied into ~/.config/cinnamon/spices/Cinnamenu@json, and a dconf write enables the default applets including Cinnamenu.<br>
 3. Auto forced logging out will happen this once by: cinnamon-session-quit --logout --force <br>
 4. The file ~/.config/firstlogincomplete_DONOTDelete will be created so going forward that file is found and so during future logins it's triggers/functions/forced logout are skipped.<br>
-5. Now your first ever user that was created during first setup/install when logging in againnext gets Cinnamenu.
+5. Now your first ever user that was created during first setup/install when logging in again next time and going forward gets Cinnamenu.
 <br>
 <br>
 <br>
