@@ -62,6 +62,7 @@ Also, if for some strange reason the file is missing it ( 9999.json ) will get c
 PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" FUNCTIONS FROM CINNAMON <br>
 I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc just in case you need to restore them.... <br>
 <br>
+--The sed stuff deals with find and replace--
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null <br>
 sed -i 's|menu.addMenuItem(menu.addPanelItem);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null <br>
 sed -i 's|this.addMenuItem(applet_settings_item);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null <br>
@@ -78,6 +79,8 @@ sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settin
 #ln1=$(grep -n "Looking Glass" /usr/share/cinnamon/js/ui/panel.js | cut -d : -f 1) <br>
 #sed -i "${ln1}d" /usr/share/cinnamon/js/ui/panel.js
 <br>
+
+--- This grep stuff deals with locating text in files and finding the line number and putting into variable so sed can remove that line by number ---
 if grep -q "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js;then <br>
 ln7=$(grep -n "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js | cut -d : -f 1) <br>
 ln8=$((ln7 - 1)) <br>
