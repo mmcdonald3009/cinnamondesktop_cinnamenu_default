@@ -1,5 +1,6 @@
-
+----------------------------------
 What You Get:
+----------------------------------
 <br>
 <br>
 1. A "self healing" Cinnamon Desktop implementation using Cinnamenu as the default Menu applet that is stable enough for commercial deployment ( some panel functions like add and remove can get taken out - procedures are below at bottom of page - BE CAREFUL ).<br>
@@ -21,7 +22,9 @@ If you've ever been a sysadmin you'll know that something is better than nothing
 <br>
 <br>
 <br>
+------------------------------------
 The Extra's You Have to Get First...
+------------------------------------
 <br>
 <br>
 1. Download Cinnamenu was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322<br>
@@ -33,7 +36,9 @@ The Extra's You Have to Get First...
 <br>
 <br>
 <br>
+----------------------------------------------
 All That Needs To Be Done To Make It Work...
+----------------------------------------------
 <br>
 <br>
 1. Copy 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas. Then as su/sudo run this from a terminal: glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
@@ -57,7 +62,9 @@ What Happens At Login Of The Very First Ever Created User ( the user account cre
 <br>
 <br>
 <br>
+-----------------------------------------------------
 What Happens At Login Of Subsequently Created Users?
+-----------------------------------------------------
 <br>
 <br>
 Subsequently created users will get Cinnamenu as default.
@@ -80,7 +87,10 @@ Also, if for some strange reason the file is missing it ( 9999.json ) will get c
 PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" and "Other Stuff"  FUNCTIONS FROM CINNAMON <br>
 I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc just in case you need to restore them.<br>
 DO THESE ONE BY ONE TO SEE THE CHANGES THINGS LIKE Add Applet To Panel, Remove From Panel, Applet Configure<br>
-WILL ALSO WILL BE REMOVED AND THEN YOU CAN RESTORE FROM YOUR BACKED UP FILE COPIES IF REQUIRED
+WILL ALSO WILL BE REMOVED AND THEN YOU CAN RESTORE FROM YOUR BACKED UP FILE COPIES IF REQUIRED.
+----------------------------------------------
+EVEN WITH A BROKEN MENU OR PANEL YOU CAN PROBABLY RIGHT-CLICK AND RUN TERMINAL AND LAUNCH NEMO AND USE PLUMA TO REPAIR.
+----------------------------------------------
 <br>
 <br>
 ------------The sed stuff deals with find and replace------------<br>
