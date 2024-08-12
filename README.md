@@ -109,7 +109,7 @@ WILL ALSO WILL BE REMOVED AND THEN YOU CAN RESTORE FROM YOUR BACKED UP FILE COPI
 EVEN WITH A BROKEN PANEL YOU CAN PROBABLY RIGHT-CLICK AND RUN TERMINAL, AND LAUNCH NEMO AND USE PLUMA TO REPAIR.
 <br>
 <br>
-------------The sed stuff deals with find and replace------------<br>
+------------This sed does find and replace in files ------------<br>
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js <br>
 sed -i 's|menu.addMenuItem(menu.addPanelItem);||g' /usr/share/cinnamon/js/ui/panel.js  <br>
 sed -i 's|this.addMenuItem(applet_settings_item);||g' /usr/share/cinnamon/js/ui/panel.js  <br>
@@ -122,7 +122,7 @@ sed -i "s|this.context_menu_item_remove.connect('activate', (actor, event) => th
 sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py <br>
 <br>
 <br>
-------------This grep function deals with locating text in files and finding the line number and putting into variable so sed can remove that line by number------------<br>
+------------This grep locates text in files to get a line number into variable so sed can remove that line number------------<br>
 NOTE: This is a function between "if and fi" so those and all lines between must be pasted into the terminal together.<br>
 if grep -q "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js;then <br>
 ln7=$(grep -n "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js | cut -d : -f 1) <br>
