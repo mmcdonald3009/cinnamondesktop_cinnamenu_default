@@ -155,6 +155,7 @@ rm /usr/share/cinnamon/cinnamon-settings/modules/cs_workspaces.py <br>
 <br>
 <br>
 --- END OF BE VERY CAREFUL SECTION ---<br><br>
+Have a good day and try and be nice to others :)
 You will note other non-relevant stuff in z_login.sh I have left there for educational purposes.<br><br>
 <br><br>
 
