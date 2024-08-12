@@ -75,7 +75,7 @@ What Happens At Login Of Subsequently Created Users?
 <br>
 <br>
 Subsequently created users will get Cinnamenu as default.
-They will also be automatically logged out once, only, and never again after ~/.config/firstlogincomplete_DONOTDelete is created.
+They will also be automatically logged out once, only, and never again because the file ~/.config/firstlogincomplete_DONOTDelete will be created.
 <br>
 <br>
 <br>
