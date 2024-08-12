@@ -11,9 +11,12 @@ What You Get:
 3. You can set a limit to the number of workspaces a user may create.
 4. At anytime you can stop 2 and 3 by typing killall dbus-monitor into a terminal.
 
-The Extra You Have to Install Firs
-== This allows for ESC key emulation when if using EXPO applet to create workspaces ( ctrl + up ) when the count goes above 4, a dconf write to number of workspaces 4 is made, and ESC key triggered to close page.
-So so this: apt install xautomation
+The Extra's You Have to Install First...
+
+xautomation allows for ESC key emulation when if using EXPO applet to create workspaces ( ctrl + up ) when the count goes above 4, a dconf write to number of workspaces 4 is made, and ESC key triggered to close page.
+jsonlint checks the integrity of xml files.
+So do this: apt install xautomation jsonlint
+
 
 How It All Works:
 
@@ -32,5 +35,16 @@ sed -i 's|menu.addMenuItem(panelEditMode);||g' /usr/share/cinnamon/js/ui/panel.j
 sed -i 's|Restarting Cinnamon|Restarting Display|g' /usr/share/cinnamon/js/ui/main.js 2>/dev/null
 sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "preferences-desktop"));||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null
 sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null 
+
+What Happens At Login? (/etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh). It does the following:
+1. The first user created when logging out and back in for the very first time, a check is made for a file named: ~/.config/firstlogincomplete_DONOTDelete.
+~/.config/firstlogincomplete_DONOTDelete won't be there so the Cinnamenu schema file 9999.json wil be copied into ~/.config/cinnamon/spices/Cinnamenu@json, and a dconf write enables the default applets including Cinnamenu.
+There's other stuff in z_login.sh that is not relevant but I've left there in case it is of educational value to someone.
+Now that file will be created so the check passes over it next time.
+You will be logged out in this part of z_login.sh: cinnamon-session-quit --logout --force
+Now your first ever user when logging in again gets Cinnamenu.
+
+You will also note a function_resetcinnamenu
+
 
 END OF README---
