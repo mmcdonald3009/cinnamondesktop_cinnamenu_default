@@ -8,6 +8,7 @@ It's also a finger up at the rather obnoxious Linux Mint admin who talked to me 
 <br>
 What You Get:
 <br>
+<br>
 1. A self healing Cinnamon implementation using Cinnamenu as default that is stable enough for commercial deployment ( some panel functions like add and remove can get taken out see procedure below ) but MOVE is stil there.<br>
 2. When a user toggles hidden files in Nemo, Nemo simply closes and restarts. Not a perfect solution but should keep your office workers from accidentally deleting hidden files.<br>
 3. You can set a limit to the number of workspaces a user may create ( change this value in z_login.sh: dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "2" )<br>
@@ -16,6 +17,7 @@ What You Get:
 <br>
 <br>
 The Extra's You Have to Get First...
+<br>
 <br>
 1. Download Cinnamenu was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322<br>
 2. xautomation allows for ESC key emulation when if using EXPO applet to create workspaces ( ctrl + up ) when the count goes above 4, a dconf write to number of workspaces 4 is made, and ESC key triggered to close page.<br>
@@ -26,6 +28,7 @@ The Extra's You Have to Get First...
 <br>
 <br>
 How It All Works:
+<br>
 <br>
 1. Copy 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas. Then as su/sudo run this from a terminal: glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
 2. Copy /etc/xdg/autostart/z_login.desktop into /etc/xdg/autostart/. This calls a script (z_login.sh) that runs per user $EUID at login. Very useful and good time to personalise and mount user ID specifics like named home remote mounts/drives/smb shares.<br>
