@@ -111,8 +111,10 @@ sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_confi
 <br>
 <br>
 <br>
-THINK ABOUT LOCKING DOWN TO A GOOD KNOWN SET OF APPLETS, DESKLETS AND EXTENSIONS BY REMOVING USER ABILITY TO SET THEM.
-THE DEFAULTS SHIPPED ARE PROBABLY ENOUGH FOR MOST PEOPLE TO ENGAGE IN MEANINGFUL WORKFLOW
+LOCK DOWN TO A GOOD KNOWN SET OF APPLETS, DESKLETS AND EXTENSIONS BY REMOVING USER ABILITY TO SET THEM.
+THE DEFAULTS SHIPPED ARE PROBABLY ENOUGH FOR MOST PEOPLE TO ENGAGE IN MEANINGFUL WORKFLOW.
+<br>
+<br>
 rm /usr/share/applications/cinnamon-settings-applets.desktop <br>
 rm /usr/share/applications/cinnamon-settings-desklets.desktop <br>
 rm /usr/share/applications/cinnamon-settings-extensions.desktop <br>
