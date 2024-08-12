@@ -101,57 +101,12 @@ dconf write /org/nemo/preferences/default-folder-viewer "'icon-view'"
 rm -rf ~/.config/GIMP/
 mkdir ~/.config/GIMP/
 
-
-
-rm ~/.config/mimeapps.list
-> ~/.config/mimeapps.list
-echo "[Default Applications]" >> ~/.config/mimeapps.list
-echo "application/pdf=io.gitlab.librewolf-community.desktop" >> ~/.config/mimeapps.list
-echo "image/jpeg=org.gnome.eog.desktop" >> ~/.config/mimeapps.list
-echo "image/jpg=org.gnome.eog.desktop" >> ~/.config/mimeapps.list
-echo "image/png=org.gnome.eog.desktop" >> ~/.config/mimeapps.list
-echo "image/gif=org.gnome.eog.desktop" >> ~/.config/mimeapps.list
-echo "image/tiff=org.gnome.eog.desktop" >> ~/.config/mimeapps.list
-echo "image/webp=org.gnome.eog.desktop" >> ~/.config/mimeapps.list
-echo "audio/mpeg=com.github.neithern.g4music.desktop" >> ~/.config/mimeapps.list
-echo "audio/mp3=com.github.neithern.g4music.desktop" >> ~/.config/mimeapps.list
-echo "audio/flac=com.github.neithern.g4music.desktop" >> ~/.config/mimeapps.list
-echo "video/mkv=vlc.desktop" >> ~/.config/mimeapps.list
-echo "video/webm=vlc.desktop" >> ~/.config/mimeapps.list
-echo "video/mp4=vlc.desktop" >> ~/.config/mimeapps.list
-echo " " >> ~/.config/mimeapps.list
-
-echo "inode/directory=org.gnome.Nautilus.desktop" >> ~/.config/mimeapps.list
-echo "application/x-gnome-saved-search=org.gnome.Nautilus.desktop" >> ~/.config/mimeapps.list
-echo "[Added Associations]" >> ~/.config/mimeapps.list
-
-rm ~/.config/weston.ini
-> ~/.config/weston.ini
-
-echo "[core]" >> ~/.config/weston.ini
-echo "xwayland=true" >> ~/.config/weston.ini
-echo "#" >> ~/.config/weston.ini
-echo "[shell]" >> ~/.config/weston.ini
-echo "background-image=/boot/grub/splash.png" >> ~/.config/weston.ini
-echo "background-type=scale-crop" >> ~/.config/weston.ini
-echo "panel-position=bottom" >> ~/.config/weston.ini
-echo "panel-position=bottom" >> ~/.config/weston.ini
-echo "clock-format=minutes" >> ~/.config/weston.ini
-
-echo "#" >> ~/.config/weston.ini
-echo "[launcher]" >> ~/.config/weston.ini
-echo "path=/usr/bin/waydroid first-launch" >> ~/.config/weston.ini
-echo "icon=/usr/share/icons/gnome/24x24/devices/pda.png" >> ~/.config/weston.ini
-
-echo "#" >> ~/.config/weston.ini
-echo "[launcher]" >> ~/.config/weston.ini
-echo "path=/usr/bin/waydroid session stop" >> ~/.config/weston.ini
-echo "icon=/usr/share/icons/Paper/48x48/apps/gitraken.png" >> ~/.config/weston.ini
-
 dconf write /org/cinnamon/theme/name "'Light'"
 dconf write /org/cinnamon/desktop/interface/gtk-theme "'Light'"
 > ~/.config/firstlogincomplete_DONOTDelete
+
 dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "2"
+
 ##THIS MUST STAY
 cinnamon-session-quit --logout --force 
 
@@ -175,7 +130,7 @@ killall nemo
 killall dbus-monitor
 
 
-function function_preventnemohiddenfiles_limit workspaces {
+function function_preventnemohiddenfiles_limitworkspaces {
 if [ "$EUID" -gt 999 ];then
 stdbuf -oL dbus-monitor --session interface='ca.desrt.dconf.Writer',member='Notify' |
 while grep -q 'string "/org/nemo/preferences/show-hidden-files"'; do
