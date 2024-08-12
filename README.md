@@ -36,7 +36,9 @@ How It All Works:
 <br>
 <br>
 <br>
-What Happens At Login Of The Very First User? (/etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh).<br>It does the following:
+What Happens At Login Of The Very First User? <br>
+(/etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh).
+<br>It does the following:
 <br>
 The first user that was created during setup/install and then when logging out and back in for the very first time, a check is made for a file named: ~/.config/firstlogincomplete_DONOTDelete.<br>
 This file ~/.config/firstlogincomplete_DONOTDelete won't be there yet, so the Cinnamenu schema file 9999.json wil be copied into ~/.config/cinnamon/spices/Cinnamenu@json, and a dconf write enables the default applets including Cinnamenu.<br>
@@ -96,9 +98,9 @@ fi <br>
 sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null <br>
 sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_configure) == 100|g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null <br>
 
---- END OF BE VERY CAREFUL ---
-You will note other non-relevant stuff in z_login.sh I have left there for educational purposes.
+--- END OF BE VERY CAREFUL ---<br><br>
+You will note other non-relevant stuff in z_login.sh I have left there for educational purposes.<br><br>
 Finally, please note: I'm not a professional GIT contributor and there may be better ways to present this. Don't criticise me but I am certainly open to good suggestions in polite language, and willing to help with any realistic questions...
-
+<br><br>
 
 END OF README---
