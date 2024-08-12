@@ -44,7 +44,7 @@ What Happens At Login Of The Very First User? <br>
 <br>
 The first user that was created during setup/install and then when logging out and back in for the very first time, a check is made for a file named: ~/.config/firstlogincomplete_DONOTDelete.<br>
 This file ~/.config/firstlogincomplete_DONOTDelete won't be there yet, so the Cinnamenu schema file 9999.json wil be copied into ~/.config/cinnamon/spices/Cinnamenu@json, and a dconf write enables the default applets including Cinnamenu.<br>
-You will be logged out only once duein this part of z_login.sh: cinnamon-session-quit --logout --force <br>
+Logging out happens only once due in this part of z_login.sh: cinnamon-session-quit --logout --force <br>
 The file ~/.config/firstlogincomplete_DONOTDelete will be created so the logout check passes over it next time.<br>
 Now your first ever user that was created during first setup/install when logging in again gets Cinnamenu and won't ever get logged out again unless ~/.config/firstlogincomplete_DONOTDelete is removed.
 <br>
@@ -53,7 +53,8 @@ Now your first ever user that was created during first setup/install when loggin
 What Happens At Login Of Subsequently Created Users?
 <br>
 <br>
-Subsequent users will get Cinnamenu as default as they were created after we copied 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas and ran: glib-compile-schemas /usr/share/glib-2.0/schemas/
+Subsequent users will get Cinnamenu as default as they were created after we copied 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas and ran: glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
+They will also be logged out once, only, and never again after ~/.config/firstlogincomplete_DONOTDelete is created.
 <br>
 <br>
 <br>
@@ -103,7 +104,8 @@ sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_confi
 
 --- END OF BE VERY CAREFUL ---<br><br>
 You will note other non-relevant stuff in z_login.sh I have left there for educational purposes.<br><br>
-Finally, please note: I'm not a professional GIT contributor and there may be better ways to present this. Don't criticise me but I am certainly open to good suggestions in polite language, and willing to help with any realistic questions...
+Finally, please note: I'm not a professional GIT author and there may be better ways to present this.<br><br>
+Don't criticise me but I am certainly open to your good suggestions in polite language, and willing to help with anything realistic...
 <br><br>
 
 END OF README---
