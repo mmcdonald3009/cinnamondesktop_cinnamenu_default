@@ -72,7 +72,7 @@ At every login we run jsonlint to check the integrity of 9999.json. If the file 
 Also, if for some strange reason the file is missing it ( 9999.json ) will get copied in again.
 <br>
 <br>
---- BEGIN OF BE VERY VERY VERY CAREFUL --- :)
+--- BEGIN OF BE VERY VERY VERY CAREFUL ---
 <br>
 <br>
 PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" and "Other Stuff"  FUNCTIONS FROM CINNAMON <br>
