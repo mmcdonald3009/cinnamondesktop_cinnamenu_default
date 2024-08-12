@@ -51,9 +51,9 @@ What Happens At Login Of The Very First User? <br>
 <br>
 1. The first user that was created during setup/install and then when logging out and back in for the very first time, a check is made for a file named: ~/.config/firstlogincomplete_DONOTDelete.<br>
 2. This file ~/.config/firstlogincomplete_DONOTDelete won't be there yet, so the Cinnamenu schema file 9999.json wil be copied into ~/.config/cinnamon/spices/Cinnamenu@json, and a dconf write enables the default applets including Cinnamenu.<br>
-3. Auto Forced Logging out happens only once called by z_login.sh: cinnamon-session-quit --logout --force <br>
-4. The file ~/.config/firstlogincomplete_DONOTDelete will be created so going forward that during future logins it's triggers/functions are ignored.<br>
-5. Now your first ever user that was created during first setup/install when logging in again gets Cinnamenu and won't ever get logged out again unless ~/.config/firstlogincomplete_DONOTDelete gets manually deleted.
+3. Auto forced logging out will happen this once by: cinnamon-session-quit --logout --force <br>
+4. The file ~/.config/firstlogincomplete_DONOTDelete will be created so going forward that during future logins it's triggers/functions/force logout are ignored.<br>
+5. Now your first ever user that was created during first setup/install when logging in againnext gets Cinnamenu.
 <br>
 <br>
 <br>
