@@ -1,26 +1,26 @@
 At time of writing I am using Debian 12 which is the current stable release. I am using SpiralLinux which formats as BTRFS and has snapper rollback in GRUB - many many thanks to the OpenSUSE gecko dev for coming up with SpiralLinux.
 
-First - why am I doing this - because as a very experienced admin who has been fiddling with Linux for years when I saw Cinnamon Desktop with Cinnamenu I knew we finally had a solid windows breaker.
-Cinnamon is the maturity KDE wishes it could have. They have retained very early gnome functions which turns out to be the smartest way forward IMHO.
-It's also a finger up at the rather obnoxious Linux Mint admin who talked to me like I am an idiot for suggesting my way to disable hidden files for regular users.
+First - why am I doing this - because as a very experienced admin who has been fiddling with Linux for years when I saw Cinnamon Desktop with Cinnamenu I knew we finally had a solid windows breaker.<br>
+Cinnamon is the maturity KDE wishes it could have. They have retained very early gnome functions which turns out to be the smartest way forward IMHO.<br>
+It's also a finger up at the rather obnoxious Linux Mint admin who talked to me like I am an idiot for suggesting my way to disable hidden files for regular users.<br>
 <br>
 <br>
 <br>
 What You Get:
 <br>
-1. A self healing Cinnamon implementation using Cinnamenu as default that is stable enough for commercial deployment ( some panel functions like add and remove can get taken out see procedure below ) but MOVE is stil there.
-2. When a user toggles hidden files in Nemo, Nemo simply closes and restarts. Not a perfect solution but should keep your office workers from accidentally deleting hidden files.
-3. You can set a limit to the number of workspaces a user may create ( change this value in z_login.sh: dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "2" )
-4. At anytime you can stop 2 and 3 by typing killall dbus-monitor into a terminal.
+1. A self healing Cinnamon implementation using Cinnamenu as default that is stable enough for commercial deployment ( some panel functions like add and remove can get taken out see procedure below ) but MOVE is stil there.<br>
+2. When a user toggles hidden files in Nemo, Nemo simply closes and restarts. Not a perfect solution but should keep your office workers from accidentally deleting hidden files.<br>
+3. You can set a limit to the number of workspaces a user may create ( change this value in z_login.sh: dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "2" )<br>
+4. At anytime you can stop 2 and 3 by typing killall dbus-monitor into a terminal.<br>
 <br>
 <br>
 <br>
 The Extra's You Have to Get First...
 <br>
-1. Download Cinnamenu was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322
-2. xautomation allows for ESC key emulation when if using EXPO applet to create workspaces ( ctrl + up ) when the count goes above 4, a dconf write to number of workspaces 4 is made, and ESC key triggered to close page.
-3. jsonlint checks the integrity of json files.
-4. libgtk-3-bin provides gtk-launch for launching .desktop files ( found in /usr/share/applications) from a terminal.
+1. Download Cinnamenu was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322<br>
+2. xautomation allows for ESC key emulation when if using EXPO applet to create workspaces ( ctrl + up ) when the count goes above 4, a dconf write to number of workspaces 4 is made, and ESC key triggered to close page.<br>
+3. jsonlint checks the integrity of json files.<br>
+4. libgtk-3-bin provides gtk-launch for launching .desktop files ( found in /usr/share/applications) from a terminal.<br>
 5. So do this: apt install xautomation jsonlint libgtk-3-bin
 <br>
 <br>
