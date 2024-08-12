@@ -72,22 +72,22 @@ sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui
 sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null <br>  
 sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_configure) == 100|g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null <br>  
 <br>
-sed -i "s|this.context_menu_item_remove.connect('activate', (actor, event) => this.confirmRemoveApplet(event));||g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null 
-sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py 2>/dev/null
-#ln1=$(grep -n "Looking Glass" /usr/share/cinnamon/js/ui/panel.js | cut -d : -f 1)
+sed -i "s|this.context_menu_item_remove.connect('activate', (actor, event) => this.confirmRemoveApplet(event));||g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null <br>
+sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py 2>/dev/null <br>
+#ln1=$(grep -n "Looking Glass" /usr/share/cinnamon/js/ui/panel.js | cut -d : -f 1) <br>
 #sed -i "${ln1}d" /usr/share/cinnamon/js/ui/panel.js
 <br>
-if grep -q "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js;then
-ln7=$(grep -n "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js | cut -d : -f 1)
-ln8=$((ln7 - 1))
-ln9=$((ln8 + 1))
-sed -i "${ln9}d" /usr/share/cinnamon/js/ui/applet.js
-sed -i "${ln8}d" /usr/share/cinnamon/js/ui/applet.js
-sed -i "${ln7}d" /usr/share/cinnamon/js/ui/applet.js
-fi
+if grep -q "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js;then <br>
+ln7=$(grep -n "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js | cut -d : -f 1) <br>
+ln8=$((ln7 - 1)) <br>
+ln9=$((ln8 + 1)) <br>
+sed -i "${ln9}d" /usr/share/cinnamon/js/ui/applet.js <br>
+sed -i "${ln8}d" /usr/share/cinnamon/js/ui/applet.js <br>
+sed -i "${ln7}d" /usr/share/cinnamon/js/ui/applet.js<br>
+fi <br>
 <br>
-sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null 
-sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_configure) == 100|g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null
+sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null <br>
+sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_configure) == 100|g" /usr/share/cinnamon/js/ui/applet.js 2>/dev/null <br>
 
 --- END OF BE VERY CAREFUL ---
 
