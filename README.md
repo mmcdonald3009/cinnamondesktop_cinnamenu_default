@@ -37,6 +37,7 @@ How It All Works:
 <br>
 <br>
 What Happens At Login Of The Very First User? <br>
+<br>
 (/etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh).
 <br>It does the following:
 <br>
