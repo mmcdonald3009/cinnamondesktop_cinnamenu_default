@@ -12,7 +12,8 @@ What You Get:
 2. When a user toggles hidden files in Nemo, Nemo simply closes and restarts. Not a perfect solution but should keep your office workers from accidentally deleting hidden files.
 3. You can set a limit to the number of workspaces a user may create ( change this value in z_login.sh: dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "2" )
 4. At anytime you can stop 2 and 3 by typing killall dbus-monitor into a terminal.
-
+<br>
+<br>
 
 
 The Extra's You Have to Get First...
