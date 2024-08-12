@@ -1,5 +1,5 @@
 ------------------------------------
-What You Get:
+What You Get And What It Does
 ------------------------------------
 <br>
 <br>
@@ -23,9 +23,9 @@ If you've ever been a sysadmin you'll know that something is better than nothing
 <br>
 <br>
 
-------------------------------------
+------------------------------------------
 The Extra's You Have To Download / Install
-------------------------------------
+------------------------------------------
 <br>
 <br>
 1. Download Cinnamenu was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322<br>
@@ -51,7 +51,11 @@ All That Needs To Be Done To Make It Work...
 <br>
 <br>
 <br>
-What Happens At Login Of The Very First Ever Created User ( the user account created during setup/install...) ? <br>
+
+---------------------------------------------------------------------------------------------------------------
+What Happens At Login Of The Very First Ever Created User ( the user account created during setup/install...) ?
+---------------------------------------------------------------------------------------------------------------
+ <br>
 <br>
 (/etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh).
 <br>It does the following:
@@ -64,6 +68,7 @@ What Happens At Login Of The Very First Ever Created User ( the user account cre
 <br>
 <br>
 <br>
+
 -----------------------------------------------------
 What Happens At Login Of Subsequently Created Users?
 -----------------------------------------------------
@@ -74,7 +79,10 @@ They will also be automatically logged out once, only, and never again after ~/.
 <br>
 <br>
 <br>
+
+----------------------------------
 What Happens At Every Other Login?
+----------------------------------
 <br>
 <br>
 At every login we run jsonlint to check the integrity of 9999.json. If the file fails, it will be copied in from and overwritten by /usr/share/customscripts/9999.json<br>
@@ -88,11 +96,12 @@ Also, if for some strange reason the file is missing it ( 9999.json ) will get c
 <br>
 PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" and "Other Stuff"  FUNCTIONS FROM CINNAMON <br>
 I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc just in case you need to restore them.<br>
+----------------------------------------------
 DO THESE ONE BY ONE TO SEE THE CHANGES THINGS LIKE Add Applet To Panel, Remove From Panel, Applet Configure<br>
 WILL ALSO WILL BE REMOVED AND THEN YOU CAN RESTORE FROM YOUR BACKED UP FILE COPIES IF REQUIRED.
 ----------------------------------------------
 EVEN WITH A BROKEN MENU OR PANEL YOU CAN PROBABLY RIGHT-CLICK AND RUN TERMINAL AND LAUNCH NEMO AND USE PLUMA TO REPAIR.
-----------------------------------------------
+
 <br>
 <br>
 ------------The sed stuff deals with find and replace------------<br>
