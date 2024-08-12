@@ -24,6 +24,16 @@ How It All Works:
 2. Copy /etc/xdg/autostart/z_login.desktop into /etc/xdg/autostart/z_login.desktop. This calls a script that runs per user $EUID at login. Very useful and good time to personalise and mount user specifics like named home remote mounts/drives.
 3. mkdir /usr/share/customscripts and copy the file z_login.sh into it. chmod +x that file.
 
+What Happens At Login? (/etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh). It does the following:
+1. The first user created when logging out and back in for the very first time, a check is made for a file named: ~/.config/firstlogincomplete_DONOTDelete.
+~/.config/firstlogincomplete_DONOTDelete won't be there so the Cinnamenu schema file 9999.json wil be copied into ~/.config/cinnamon/spices/Cinnamenu@json, and a dconf write enables the default applets including Cinnamenu.
+There's other stuff in z_login.sh that is not relevant but I've left there in case it is of educational value to someone.
+Now that file will be created so the check passes over it next time.
+You will be logged out in this part of z_login.sh: cinnamon-session-quit --logout --force
+Now your first ever user when logging in again gets Cinnamenu.
+
+You will also note a function_resetcinnamenu
+
 
 If you are interested in taking out the Add Panel and Remove Panel function and leaving the Move Panel function from Cinnamon Desktop, then as su/sudo run these commands:
 
@@ -35,16 +45,5 @@ sed -i 's|menu.addMenuItem(panelEditMode);||g' /usr/share/cinnamon/js/ui/panel.j
 sed -i 's|Restarting Cinnamon|Restarting Display|g' /usr/share/cinnamon/js/ui/main.js 2>/dev/null
 sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "preferences-desktop"));||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null
 sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui/panel.js 2>/dev/null 
-
-What Happens At Login? (/etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh). It does the following:
-1. The first user created when logging out and back in for the very first time, a check is made for a file named: ~/.config/firstlogincomplete_DONOTDelete.
-~/.config/firstlogincomplete_DONOTDelete won't be there so the Cinnamenu schema file 9999.json wil be copied into ~/.config/cinnamon/spices/Cinnamenu@json, and a dconf write enables the default applets including Cinnamenu.
-There's other stuff in z_login.sh that is not relevant but I've left there in case it is of educational value to someone.
-Now that file will be created so the check passes over it next time.
-You will be logged out in this part of z_login.sh: cinnamon-session-quit --logout --force
-Now your first ever user when logging in again gets Cinnamenu.
-
-You will also note a function_resetcinnamenu
-
 
 END OF README---
