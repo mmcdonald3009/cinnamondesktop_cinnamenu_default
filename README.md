@@ -1,3 +1,4 @@
+
 What You Get:
 <br>
 <br>
@@ -9,6 +10,7 @@ What You Get:
 <br>
 <br>
 At time of writing I am using Debian 12 which is the current stable release. I am using SpiralLinux which formats as BTRFS and has snapper rollback in GRUB - many many thanks to the OpenSUSE gecko dev for coming up with SpiralLinux.
+![image](https://github.com/user-attachments/assets/fcafd529-91e1-4a97-973d-9a0ae452ad20)
 
 First - why am I doing this - because as a very experienced admin who has been fiddling with Linux for years when I saw Cinnamon Desktop with Cinnamenu I knew we finally had a solid windoze killer.<br><br>
 Cinnamon is the maturity KDE wishes it could have. They have retained very early gnome functions which turns out to be the smartest way forward IMHO.<br><br>
