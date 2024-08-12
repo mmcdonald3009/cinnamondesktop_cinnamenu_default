@@ -97,7 +97,7 @@ sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settin
 <br>
 <br>
 ------------This grep function deals with locating text in files and finding the line number and putting into variable so sed can remove that line by number------------<br>
-NOTE: It is a function between "if and fi" so all lines must be pasted into the terminal together.<br>
+NOTE: This is a function between "if and fi" so those and all lines between must be pasted into the terminal together.<br>
 if grep -q "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js;then <br>
 ln7=$(grep -n "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js | cut -d : -f 1) <br>
 ln8=$((ln7 - 1)) <br>
