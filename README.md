@@ -22,10 +22,11 @@ The Extra's You Have to Get First...
 <br>
 <br>
 1. Download Cinnamenu was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322<br>
-2. xautomation allows for ESC key emulation when if using EXPO applet to create workspaces ( ctrl + up ) when the count goes above 4, a dconf write to number of workspaces 4 is made, and ESC key triggered to close page.<br>
-3. jsonlint checks the integrity of json files.<br>
-4. libgtk-3-bin provides gtk-launch for launching .desktop files from a terminal.<br>
-5. So do this: apt install xautomation jsonlint libgtk-3-bin
+2. Copy the Cinnamenu#json files into /usr/share/cinnamon/applets/Cinnamenu@json/
+3. xautomation allows for ESC key emulation when if using EXPO applet to create workspaces ( ctrl + up ) when the count goes above 4, a dconf write to number of workspaces 4 is made, and ESC key triggered to close page.<br>
+4. jsonlint checks the integrity of json files.<br>
+5. libgtk-3-bin provides gtk-launch for launching .desktop files from a terminal.<br>
+6. So do this: apt install xautomation jsonlint libgtk-3-bin
 <br>
 <br>
 <br>
@@ -35,6 +36,7 @@ To Make It Work:
 1. Copy 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas. Then as su/sudo run this from a terminal: glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
 2. Copy /etc/xdg/autostart/z_login.desktop into /etc/xdg/autostart/. This calls a script (z_login.sh) that runs per user $EUID at login. Very useful and good time to personalise and mount user ID specifics like named home remote mounts/drives/smb shares.<br>
 3. mkdir /usr/share/customscripts and copy the files z_login.sh and 9999.json into it.<br>
+...(9999.json is just a modified to my requirements copy of /usr/share/cinnamon/applets/Cinnamenu@json/4.0/settings-schema.json)
 4. chmod +x /usr/share/customscripts/z_login.sh.<br>
 <br>
 <br>
