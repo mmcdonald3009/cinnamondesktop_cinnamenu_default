@@ -91,7 +91,11 @@ Also, if for some strange reason the file is missing it ( 9999.json ) will get c
 <br>
 <br>
 <br>
+
+----------------------------------------------------
 --- BEGIN OF BE "VERY VERY VERY" CAREFUL SECTION ---
+----------------------------------------------------
+
 <br>
 <br>
 PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" and "Other Stuff"  FUNCTIONS FROM CINNAMON <br>
