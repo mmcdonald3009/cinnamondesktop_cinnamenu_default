@@ -100,7 +100,7 @@ dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "4"
 xte 'key Escape'
 fi
 done
-dbus-monitor
+
 fi
 }
 
