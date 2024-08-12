@@ -1,6 +1,6 @@
-----------------------------------
+------------------------------------
 What You Get:
-----------------------------------
+------------------------------------
 <br>
 <br>
 1. A "self healing" Cinnamon Desktop implementation using Cinnamenu as the default Menu applet that is stable enough for commercial deployment ( some panel functions like add and remove can get taken out - procedures are below at bottom of page - BE CAREFUL ).<br>
@@ -22,8 +22,9 @@ If you've ever been a sysadmin you'll know that something is better than nothing
 <br>
 <br>
 <br>
+
 ------------------------------------
-The Extra's You Have to Get First...
+The Extra's You Have To Download / Install
 ------------------------------------
 <br>
 <br>
@@ -36,6 +37,7 @@ The Extra's You Have to Get First...
 <br>
 <br>
 <br>
+
 ----------------------------------------------
 All That Needs To Be Done To Make It Work...
 ----------------------------------------------
