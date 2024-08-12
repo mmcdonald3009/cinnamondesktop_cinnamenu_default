@@ -17,7 +17,7 @@ https://spirallinux.github.io/#download
 First - why am I doing this - because as a tinkerer who has been fiddling with Linux for 18 years when I saw Cinnamon Desktop with Cinnamenu I knew we finally had a solid windoze killer.<br><br>
 Cinnamon is the maturity KDE wishes it could have. They have retained very early lightweight gnome javascript functions which turns out to be the smartest way forward IMHO.<br><br>
 It's also a snout at the rather obnoxious Linux Mint admin who treated me like I am an idiot for suggesting my way to disable hidden files for regular users.<br>
-Mate you may not know me but you might now... ( laughing )...
+Mate you may not have known me but you might now... ( laughing )...
 <br>
 <br>
 <br>
