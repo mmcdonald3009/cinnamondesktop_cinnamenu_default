@@ -51,9 +51,11 @@ All That Needs To Be Done To Make It Work...
 <br>
 <br>
 <br>
+
 --------------------------------------------------------
 To Change The MAX Number Of Workspaces A User May Create
 --------------------------------------------------------
+
 <br>
 Set the value in z_login.sh by changing both the numbers under this line (4 is default):<br>
 ############ SET MAX NUMBER OF WORKSPACES HERE ###############<br>
