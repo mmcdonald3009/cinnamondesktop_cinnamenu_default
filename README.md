@@ -2,7 +2,7 @@
 What You Get And What It Does
 ------------------------------------
 <br>
-<br>
+
 1. A "self healing" Cinnamon Desktop implementation using Cinnamenu as the default Menu applet that is stable enough for commercial deployment ( some panel functions like add and remove can get taken out - procedures are below at bottom of page - BE CAREFUL ).<br>
 2. When a user toggles hidden files in Nemo, Nemo simply closes and restarts.<br>Not a perfect solution but should keep your office workers from accidentally deleting hidden files.<br>
 3. You can set a limit to the number of workspaces a user may create:<br>( change this value in z_login.sh by changing the number - dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "4" )<br>
@@ -28,7 +28,7 @@ If you've ever been a sysadmin you'll know that something is better than nothing
 The Extra's To Download / Install
 ------------------------------------------
 <br>
-<br>
+
 1. Download Cinnamenu was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322<br>
 2. Copy the Cinnamenu@json files into /usr/share/cinnamon/applets/Cinnamenu@json/<br>
 3. INSTALL PACKAGES:# apt install xautomation jsonlint libgtk-3-bin<br>
@@ -43,13 +43,13 @@ The Extra's To Download / Install
 All That Needs To Be Done To Make It Work...
 ----------------------------------------------
 <br>
-<br>
+
 1. Copy 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas. Then as su/sudo run this in a terminal: glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
 2. Copy /etc/xdg/autostart/z_login.desktop into /etc/xdg/autostart/. This calls a script (z_login.sh) that runs per user $EUID at login.<br>
 3. Make a directory: /usr/share/customscripts and copy the files z_login.sh and 9999.json into it.<br>
  (9999.json is just a modified to my requirements copy of /usr/share/cinnamon/applets/Cinnamenu@json/4.0/settings-schema.json). You might want change 4.0 to 5.8 on later Cinnamon versions or if using actual Mint.<br> You also might want your own default Cinnamenu configuration ( custom layout, what appears, etc ) just change settings-schema.json to what you want and save as 9999.json .<br>
 4. chmod +x /usr/share/customscripts/z_login.sh.<br>
-
+<br>
 -------------------------------------------------------------------------------------------------------------------------
 What To Do If You Have Different Applets To Those Specified In The Provided File<br>/usr/share/glib-2.0/schemas/11_cinnamon.gschema.override
 -------------------------------------------------------------------------------------------------------------------------
