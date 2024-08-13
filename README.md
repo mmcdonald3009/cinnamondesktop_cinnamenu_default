@@ -53,6 +53,7 @@ All That Needs To Be Done To Make It Work...
 -------------------------------------------------------------------------------------------------------------------------
 What To Do If You Have Different Applets To Those Specified In The Provided File<br>/usr/share/glib-2.0/schemas/11_cinnamon.gschema.override
 -------------------------------------------------------------------------------------------------------------------------
+<br>
 Change them in the file, and ensure ( you can copy and paste the array directly from this file ) into the function_resetcinnamenu<br>
 in /usr/share/customscripts/z_login.sh. As long as these files have the same array content everything will work.
 Also, if you do modify /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override then you will have to run this from su/sudo again in a terminal:<br>
@@ -70,7 +71,6 @@ enabled-applets=[ 'panel1:center:0:Cinnamenu@json', 'panel1:left:0:workspace-swi
 ---------------------------------------------------------------------------------------------------------------
 What Happens At Next Login Of The Very First Ever Created User <br> ( the user account created during OS setup/install ) ?
 ---------------------------------------------------------------------------------------------------------------
- <br>
 <br>
 1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh, which does the following:
 <br>
@@ -87,7 +87,6 @@ What Happens At Next Login Of The Very First Ever Created User <br> ( the user a
 What Happens At Login Of Subsequently Created Users?
 -----------------------------------------------------
 <br>
-<br>
 Subsequently created users will get Cinnamenu as default.<br>
 They will also be automatically logged out once, only, and never again because the file ~/.config/firstlogincomplete_DONOTDelete will be created.
 <br>
@@ -97,7 +96,6 @@ They will also be automatically logged out once, only, and never again because t
 ----------------------------------
 What Happens At Every Other Login?
 ----------------------------------
-<br>
 <br>
 At every login we run jsonlint to check the integrity of 9999.json.<br>If the file fails, it will be copied in from and overwritten by /usr/share/customscripts/9999.json<br>
 Also, if for some strange reason the file is missing it ( 9999.json ) will also be copied in from and overwritten.
