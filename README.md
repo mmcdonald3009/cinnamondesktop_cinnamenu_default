@@ -3,7 +3,7 @@ What You Get And What It Does
 ------------------------------------
 <br>
 
-1. A "self healing" Cinnamon Desktop implementation using Cinnamenu as the default Menu applet that is made stable enough for commercial deployment ( some panel functions like add and remove can get taken out - procedures are below at bottom of page - BE CAREFUL ).<br>
+1. A "self healing" Cinnamon Desktop implementation using Cinnamenu as the default Menu applet that is made stable enough for commercial deployment ( some panel functions like add and remove can be removed - procedures are below at bottom of page - BE CAREFUL ).<br>
 2. When a user toggles hidden files in Nemo, Nemo simply closes and restarts.<br>Not a perfect solution but should keep your office workers from accidentally deleting hidden files.<br>
 3. You can set a limit to the number of workspaces a user may create.<br>
 Change the value in z_login.sh by changing the number under this line:<br>
