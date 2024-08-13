@@ -9,7 +9,7 @@ What It Does
 4. At anytime you can stop pt's (2 & 3 above) by typing into a terminal: killall dbus-monitor.
 <br>Logout and then Login and they will be running again. 
 <br>
-At time of writing I am using Debian 12 which is the current stable release.<br>
+At time of writing I am using Debian 12.6.<br>
 I am using SpiralLinux which formats as BTRFS and has snapper rollback in the GRUB menu!<br>
 Many Many Many thanks to the OpenSUSE GeckoLinux dev for coming up with SpiralLinux.<br>
 https://spirallinux.github.io/#download
