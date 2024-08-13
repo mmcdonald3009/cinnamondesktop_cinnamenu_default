@@ -70,8 +70,8 @@ What To Do If You Have Different Applets To Those Specified In<br>/usr/share/gli
 
 <br>
 Change them in the file, and ensure ( you can copy and paste the array directly from this file ) into the function_resetcinnamenu<br>
-in /usr/share/customscripts/z_login.sh. As long as these files have the same array content everything will work.
-Also, if you do modify /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override then you will have to run this from su/sudo again in a terminal:<br>
+in /usr/share/customscripts/z_login.sh.
+if you do modify /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override then you will have to run this from su/sudo again in a terminal:<br>
 glib-compile-schemas /usr/share/glib-2.0/schemas/
 <br>
 <br>
