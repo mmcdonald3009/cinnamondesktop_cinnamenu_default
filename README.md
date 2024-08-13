@@ -30,7 +30,9 @@ The Extra's To Download / Install
 
 1. Download Cinnamenu - was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322<br>
 2. Copy the Cinnamenu@json files into /usr/share/cinnamon/applets/Cinnamenu@json/<br>
-3. INSTALL PACKAGES:# apt install xautomation jsonlint libgtk-3-bin<br>
+3. INSTALL PACKAGE:# apt install xautomation<br>
+4. INSTALL PACKAGE:# apt install xautomation jsonlint<br>
+5. INSTALL PACKAGE:# apt install xautomation jsonlint libgtk-3-bin<br>
 * xautomation allows for bash script key emulation when using Expo applet to manage number of workspaces ( ctrl + alt + up ).
   If attempt is made to exceed MAX NUMBER OF WORKSPACES ( you set MAX in z_login.sh, see up above ), a dconf write to number of workspaces is made to hold MAX, and ESC key press is emulated to close the Expo page.<br>
 * jsonlint checks the integrity of json files.<br>
