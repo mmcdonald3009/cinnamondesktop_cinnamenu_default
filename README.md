@@ -140,14 +140,21 @@ EVEN WITH A BROKEN PANEL YOU CAN PROBABLY RIGHT-CLICK AND RUN TERMINAL, AND LAUN
 <br>
 <br>
 ------------These sed's do find and replace in files ------------<br>
-*** This deletes "Remove Panel" ***<br>
+*** This deletes "(Panel Right-Click) Remove Panel" ***<br>
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
-*** This deletes "Add Panel" ***<br>
+
+*** This deletes "(Panel Right-Click) Add Panel" ***<br>
 sed -i 's|menu.addMenuItem(menu.addPanelItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+
+*** This deletes "(Panel Right-Click) Applets" ***<br>
 sed -i 's|this.addMenuItem(applet_settings_item);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
-*** This deletes "Panel Edit Mode" ***<br>
-sed -i 's|menu.addMenuItem(panelEditMode);||g' /usr/share/cinnamon/js/ui/panel.js  <br>
-sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "preferences-desktop"));||g' /usr/share/cinnamon/js/ui/panel.js  <br>
+
+*** This deletes "(Panel Right-Click) Panel Edit Mode" ***<br>
+sed -i 's|menu.addMenuItem(panelEditMode);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+
+*** This deletes "(Panel Right-Click) System Settings" ***<br>
+sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "preferences-desktop"));||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+
 sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui/panel.js <br>
 sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js <br>  
 sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_configure) == 100|g" /usr/share/cinnamon/js/ui/applet.js <br>  
