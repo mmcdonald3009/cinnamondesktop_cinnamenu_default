@@ -138,8 +138,11 @@ sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_confi
 <br>
 <br>
 <br>
-LOCK DOWN TO A GOOD KNOWN SET OF APPLETS, DESKLETS AND EXTENSIONS BY REMOVING USER ABILITY TO SET THEM.
-THE DEFAULTS SHIPPED ARE PROBABLY ENOUGH FOR MOST PEOPLE TO ENGAGE IN MEANINGFUL WORKFLOW.
+
+------------------------------------------------------------------------------------------------------
+Restrict Users To A Good Known Set Of Applets, Desklet and Extensions And Remove Ability to Modify Them.
+The Defaults That Ship With The Cinnamon Desktop Are Probably Enough For Productive Computing.
+------------------------------------------------------------------------------------------------------
 <br>
 <br>
 rm /usr/share/applications/cinnamon-settings-applets.desktop <br>
