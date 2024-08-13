@@ -8,7 +8,7 @@ What You Get And What It Does
 3. You can set a limit to the number of workspaces a user may create.<br>
 Change the value in z_login.sh by changing both the numbers under this line (4 is default):<br>
 ############ SET MAX NUMBER OF WORKSPACES HERE ###############<br>
-if [ "$wksp" -gt 4 ];then
+if [ "$wksp" -gt 4 ];then<br>
 dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "4".<br>
 4. At anytime you can stop pt's (2 & 3 above) by typing into a terminal: killall dbus-monitor.
 <br>Logout and then Login and they will be running again. 
