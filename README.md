@@ -47,9 +47,11 @@ All That Needs To Be Done To Make It Work...
  (9999.json is just a modified to my requirements copy of /usr/share/cinnamon/applets/Cinnamenu@json/4.0/settings-schema.json). You might want change 4.0 to 5.8 on later Cinnamon versions or if using actual Mint.<br> You also might want your own default Cinnamenu configuration ( custom layout, what appears, etc ) just change settings-schema.json to what you want and save as 9999.json .<br>
 4. chmod +x /usr/share/customscripts/z_login.sh.<br>
 <br>
+
 -------------------------------------------------------------------------------------------------------------------------
 What To Do If You Have Different Applets To Those Specified In The Provided File<br>/usr/share/glib-2.0/schemas/11_cinnamon.gschema.override
 -------------------------------------------------------------------------------------------------------------------------
+
 <br>
 Change them in the file, and ensure ( you can copy and paste the array directly from this file ) into the function_resetcinnamenu<br>
 in /usr/share/customscripts/z_login.sh. As long as these files have the same array content everything will work.
