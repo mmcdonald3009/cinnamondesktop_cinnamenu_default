@@ -49,15 +49,19 @@ All That Needs To Be Done To Make It Work...
  (9999.json is just a modified to my requirements copy of /usr/share/cinnamon/applets/Cinnamenu@json/4.0/settings-schema.json). You might want change 4.0 to 5.8 on later Cinnamon versions or if using actual Mint.<br> You also might want your own default Cinnamenu configuration ( custom layout, what appears, etc ) just change settings-schema.json to what you want and save as 9999.json .<br>
 4. chmod +x /usr/share/customscripts/z_login.sh.<br>
 <br>
+<br>
+<br>
 
 --------------------------------------------------------
-TO CHANGE THE MAX NUMBER OF WORKSPACES A USER MAY CREATE
+To Change The MAX Number Of Workspaces A User May Create
 --------------------------------------------------------
 Change the value in z_login.sh by changing both the numbers under this line (4 is default):<br>
 ############ SET MAX NUMBER OF WORKSPACES HERE ###############<br>
 if [ "$wksp" -gt 4 ];then<br>
 dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "4".<br>
-
+<br>
+<br>
+<br>
 -------------------------------------------------------------------------------------------------------------------------
 What To Do If You Have Different Applets To Those Specified In The Provided File<br>/usr/share/glib-2.0/schemas/11_cinnamon.gschema.override
 -------------------------------------------------------------------------------------------------------------------------
