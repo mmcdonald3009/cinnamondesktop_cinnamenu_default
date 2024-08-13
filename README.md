@@ -34,8 +34,7 @@ The Extra's To Download / Install
 * jsonlint checks the integrity of json files.<br>
 * libgtk-3-bin provides gtk-launch for launching .desktop files from a terminal.<br> 
 <br>
-<br>
-<br>
+
 
 ----------------------------------------------
 All That Needs To Be Done To Make It Work...
