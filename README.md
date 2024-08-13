@@ -135,11 +135,6 @@ PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" and "Other Stuff"  FUNCTIONS
 ----------------------------------------------------------------------------------------------------
 
 I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc just in case you need to restore them.
-<br>
-<br>
-DO THESE ONE BY ONE TO SEE THE CHANGES THINGS LIKE Add Applet To Panel, Remove From Panel, Remove Applet WILL BE DELETED FROM PANEL
-<br>
-<br>
 EVEN WITH A BROKEN PANEL YOU CAN PROBABLY RIGHT-CLICK AND RUN TERMINAL, AND LAUNCH NEMO TO COPY/PASTE/RENAME BACKUPS ( ...edit as root ).
 <br>
 <br>
@@ -184,5 +179,10 @@ rm /usr/share/cinnamon/cinnamon-settings/modules/cs_workspaces.py <br>
 You will note other non-relevant stuff in z_login.sh I have left there for educational purposes.<br><br>
 Have a good day and try and be nice to others :)
 <br><br>
+
+---------------------------------------------------------------------------
+What Happens During An Apt Update/Upgrade To The Cinnamon Desktop Version?
+---------------------------------------------------------------------------
+Cinnamenu@json will be deleted and has to be downloaded and added again into /usr/share/cinnamon/applets/
 
 ---END OF README---
