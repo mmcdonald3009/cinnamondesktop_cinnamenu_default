@@ -51,7 +51,7 @@ All That Needs To Be Done To Make It Work...
 4. chmod +x /usr/share/customscripts/z_login.sh.<br>
 
 -------------------------------------------------------------------------------------------------------------------------
-What To Do If You Have Different Applets To Those Specified In The Provided /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override
+What To Do If You Have Different Applets To Those Specified In The Provided File<br>/usr/share/glib-2.0/schemas/11_cinnamon.gschema.override
 -------------------------------------------------------------------------------------------------------------------------
 Change them in the file, and ensure ( you can copy and paste the array directly from this file ) into the function_resetcinnamenu<br>
 in /usr/share/customscripts/z_login.sh. As long as these files have the same array content everything will work.
