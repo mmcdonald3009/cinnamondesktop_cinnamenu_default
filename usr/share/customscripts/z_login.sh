@@ -61,7 +61,7 @@ dconf write /org/cinnamon/theme/name "'Light'"
 dconf write /org/cinnamon/desktop/interface/gtk-theme "'Light'"
 > ~/.config/firstlogincomplete_DONOTDelete
 
-dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "2"
+gsettings set org.cinnamon.desktop.wm.preferences num-workspaces "2"
 
 ##THIS MUST STAY
 cinnamon-session-quit --logout --force 
