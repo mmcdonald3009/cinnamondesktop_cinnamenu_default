@@ -161,9 +161,7 @@ sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui
 *** This deletes "(Panel Right-Click) Remove {Applet By Name]" ***<br>
 sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js <br>  
 
-sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_configure) == 100|g" /usr/share/cinnamon/js/ui/applet.js <br>  
-sed -i "s|this.context_menu_item_remove.connect('activate', (actor, event) => this.confirmRemoveApplet(event));||g" /usr/share/cinnamon/js/ui/applet.js <br>
-sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py <br>
+
 <br>
 <br>
 ------------This grep locates text in files to get a line number into variable so sed can remove that line number------------<br>
@@ -177,8 +175,7 @@ sed -i "${ln8}d" /usr/share/cinnamon/js/ui/applet.js <br>
 sed -i "${ln7}d" /usr/share/cinnamon/js/ui/applet.js<br>
 fi <br>
 <br>
-sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js <br>
-sed -i "s|(this.context_menu_item_configure) == -1|(this.context_menu_item_configure) == 100|g" /usr/share/cinnamon/js/ui/applet.js <br>
+
 <br>
 <br>
 <br>
