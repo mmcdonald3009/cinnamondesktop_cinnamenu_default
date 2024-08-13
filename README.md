@@ -44,11 +44,19 @@ All That Needs To Be Done To Make It Work...
 ----------------------------------------------
 <br>
 <br>
-1. Copy 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas. Then as su/sudo run this from a terminal: glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
+1. Copy 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas. Then as su/sudo run this in a terminal: glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
 2. Copy /etc/xdg/autostart/z_login.desktop into /etc/xdg/autostart/. This calls a script (z_login.sh) that runs per user $EUID at login.<br>
 3. Make a directory: /usr/share/customscripts and copy the files z_login.sh and 9999.json into it.<br>
  (9999.json is just a modified to my requirements copy of /usr/share/cinnamon/applets/Cinnamenu@json/4.0/settings-schema.json). You might want change 4.0 to 5.8 on later Cinnamon versions or if using actual Mint.<br> You also might want your own default Cinnamenu configuration ( layout, what appears, etc ) just change settings-schema.json to what you want and save as 9999.json .<br>
 4. chmod +x /usr/share/customscripts/z_login.sh.<br>
+
+-------------------------------------------------------------------------------------------------------------------------
+What To Do If You Have Different Applets To Those Specified into /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override
+-------------------------------------------------------------------------------------------------------------------------
+Change them in this file, and ensure ( you can copy and paste the array directly from this file ) into the function_resetcinnamenu<br>
+in /usr/share/customscripts/z_login.sh. As long as these files have the same array everything will work.
+If you do modify /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override then you will have to run this from su/sudo again in a terminal:<br>
+glib-compile-schemas /usr/share/glib-2.0/schemas/
 <br>
 <br>
 <br>
