@@ -125,10 +125,14 @@ Also, if for some strange reason the file is missing it ( 9999.json ) will also 
 ----------------------------------------------------
 --- BEGIN OF BE "VERY VERY VERY" CAREFUL SECTION ---
 ----------------------------------------------------
-
-<br>
-<br>
+------------------------------------------------------------------------------------------------------
+Restrict Users To A Good Known Set Of Applets, Desklet and Extensions And Remove Ability to Modify Them.
+The Defaults That Ship With The Cinnamon Desktop Are Probably Enough For Productive Computing.
+------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" and "Other Stuff"  FUNCTIONS FROM CINNAMON <br>
+----------------------------------------------------------------------------------------------------
+
 I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc just in case you need to restore them.
 <br>
 <br>
@@ -139,7 +143,7 @@ WILL ALSO WILL BE REMOVED AND THEN YOU CAN RESTORE FROM YOUR BACKED UP FILE COPI
 EVEN WITH A BROKEN PANEL YOU CAN PROBABLY RIGHT-CLICK AND RUN TERMINAL, AND LAUNCH NEMO TO COPY/PASTE/RENAME BACKUPS ( ...edit as root ).
 <br>
 <br>
-------------These sed's do find and replace in files ------------<br>
+
 *** This deletes "(Panel Right-Click) Remove Panel" ***<br>
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
 
@@ -162,28 +166,6 @@ sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui
 sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js <br>  
 
 
-<br>
-<br>
-------------This grep locates text in files to get a line number into variable so sed can remove that line number------------<br>
-NOTE: This is a function between "if and fi" so those and all lines between must be pasted into the terminal together.<br>
-if grep -q "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js;then <br>
-ln7=$(grep -n "(items.indexOf(this.context_menu_item_remove) == -1)" /usr/share/cinnamon/js/ui/applet.js | cut -d : -f 1) <br>
-ln8=$((ln7 - 1)) <br>
-ln9=$((ln8 + 1)) <br>
-sed -i "${ln9}d" /usr/share/cinnamon/js/ui/applet.js <br>
-sed -i "${ln8}d" /usr/share/cinnamon/js/ui/applet.js <br>
-sed -i "${ln7}d" /usr/share/cinnamon/js/ui/applet.js<br>
-fi <br>
-<br>
-
-<br>
-<br>
-<br>
-
-------------------------------------------------------------------------------------------------------
-Restrict Users To A Good Known Set Of Applets, Desklet and Extensions And Remove Ability to Modify Them.
-The Defaults That Ship With The Cinnamon Desktop Are Probably Enough For Productive Computing.
-------------------------------------------------------------------------------------------------------
 <br>
 rm /usr/share/applications/cinnamon-settings-applets.desktop <br>
 rm /usr/share/applications/cinnamon-settings-desklets.desktop <br>
