@@ -3,7 +3,8 @@ What It Does
 ------------------------------------
 <br>
 
-1. A "self healing" Cinnamon Desktop implementation using Cinnamenu as the default Menu applet that is made stable enough for commercial deployment ( some panel functions like add and remove can be removed - procedures are below at bottom of page - BE CAREFUL ).<br>
+1. A "self healing" Cinnamon Desktop implementation using Cinnamenu on a single moveable pabel, as the default Menu.
+( Some panel functions like add and remove are to be removed - procedures are below at bottom of page - BE CAREFUL. But, nothing is dangerous if done with everything properly considered. ).<br>
 2. When a user toggles hidden files in Nemo, Nemo simply closes and restarts.<br>Not a perfect solution but should keep your office workers from accidentally deleting hidden files.<br>
 3. You can set a limit to the number of workspaces a user may create.<br>
 4. At anytime you can stop pt's (2 & 3 above) by typing into a terminal: killall dbus-monitor.
@@ -136,8 +137,7 @@ PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" and "Other Stuff"  FUNCTIONS
 I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc just in case you need to restore them.
 <br>
 <br>
-DO THESE ONE BY ONE TO SEE THE CHANGES THINGS LIKE Add Applet To Panel, Remove From Panel, Applet Configure<br>
-WILL ALSO WILL BE REMOVED AND THEN YOU CAN RESTORE FROM YOUR BACKED UP FILE COPIES IF REQUIRED.
+DO THESE ONE BY ONE TO SEE THE CHANGES THINGS LIKE Add Applet To Panel, Remove From Panel, Remove Applet WILL BE DELETED FROM PANEL
 <br>
 <br>
 EVEN WITH A BROKEN PANEL YOU CAN PROBABLY RIGHT-CLICK AND RUN TERMINAL, AND LAUNCH NEMO TO COPY/PASTE/RENAME BACKUPS ( ...edit as root ).
