@@ -34,7 +34,7 @@ The Extra's You Have To Download / Install
 3. xautomation allows for ESC key emulation when if using EXPO applet to create workspaces ( ctrl + alt + up ) when the count goes above 4, a dconf write to number of workspaces 4 is made, and ESC key triggered to close page.<br>
 4. jsonlint checks the integrity of json files.<br>
 5. libgtk-3-bin provides gtk-launch for launching .desktop files from a terminal.<br>
-6. So do this: apt install xautomation jsonlint libgtk-3-bin
+6. INSTALL PACKAGES:# apt install xautomation jsonlint libgtk-3-bin
 <br>
 <br>
 <br>
