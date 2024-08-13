@@ -85,7 +85,7 @@ enabled-applets=[ 'panel1:center:0:Cinnamenu@json', 'panel1:left:0:workspace-swi
 <br>
 
 ---------------------------------------------------------------------------------------------------------------
-What Happens At Next Login Of The Very First Ever Created User <br> ( the user account created during OS setup/install ) ?
+What Happens At Next Login Of The Very First Ever Created User <br> ( The user account created as part of OS setup/install ) ?
 ---------------------------------------------------------------------------------------------------------------
 <br>
 1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh, which does the following:
