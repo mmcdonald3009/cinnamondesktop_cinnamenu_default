@@ -156,7 +156,6 @@ Restrict Users To A Good Known Set Of Applets, Desklet and Extensions And Remove
 The Defaults That Ship With The Cinnamon Desktop Are Probably Enough For Productive Computing.
 ------------------------------------------------------------------------------------------------------
 <br>
-<br>
 rm /usr/share/applications/cinnamon-settings-applets.desktop <br>
 rm /usr/share/applications/cinnamon-settings-desklets.desktop <br>
 rm /usr/share/applications/cinnamon-settings-extensions.desktop <br>
