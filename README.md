@@ -86,7 +86,7 @@ What Happens At Every Other Login?
 <br>
 <br>
 At every login we run jsonlint to check the integrity of 9999.json.<br>If the file fails, it will be copied in from and overwritten by /usr/share/customscripts/9999.json<br>
-Also, if for some strange reason the file is missing it ( 9999.json ) will get copied in again.
+Also, if for some strange reason the file is missing it ( 9999.json ) will also be copied in from and overwritten.
 <br>
 <br>
 <br>
