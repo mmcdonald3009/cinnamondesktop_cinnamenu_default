@@ -126,7 +126,7 @@ enabled-applets=[ 'panel1:center:0:Cinnamenu@json', 'panel1:left:0:workspace-swi
 <br>
 
 ------------------------------------------
-UP & RUNNING
+You Are Up & Running
 ------------------------------------------
 ---------------------------------------------------------------------------------------------------------------
 What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user account created as part of OS setup/install )
