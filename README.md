@@ -48,7 +48,8 @@ What To Do To Make It Work...
 <br>
 
 ----------------------------------------------------------------------------------------------------
-IMPORTANT PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" and "Other Stuff"  FUNCTIONS FROM CINNAMON
+IMPERATIVE FOR STABILITY
+Removing "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely
 ----------------------------------------------------------------------------------------------------
 
 I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc just in case you need to restore them.
