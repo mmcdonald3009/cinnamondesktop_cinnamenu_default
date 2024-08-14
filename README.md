@@ -49,7 +49,7 @@ Copy A Few Files In
 
 ----------------------------------------------------------------------------------------------------
 IMPERATIVE FOR STABILITY !!!<br>
-Removing "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely
+Remove "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely
 ----------------------------------------------------------------------------------------------------
 
 Take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc in case you need to restore them.<br>
