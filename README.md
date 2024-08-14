@@ -40,8 +40,7 @@ Copy A Few Files In
 
 1. Copy 11_cinnamon.gschema.override into /usr/share/glib-2.0/schemas.<br>Then as su/sudo run this in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
 2. Copy /etc/xdg/autostart/z_login.desktop into /etc/xdg/autostart/. This calls a script (z_login.sh) that runs at user login.<br>
-3. Make a directory: /usr/share/customscripts and copy the files z_login.sh and 9999.json into it.<br>
- (9999.json is just a modified to my requirements copy of /usr/share/cinnamon/applets/Cinnamenu@json/4.0/settings-schema.json). You might want change 4.0 to 5.8 on later Cinnamon versions or if using actual Mint.<br> You also might want your own default Cinnamenu configuration ( custom layout, what appears, etc ) just change settings-schema.json to what you want and also save as a new 9999.json .<br>
+3. Make a directory: /usr/share/customscripts and copy the file z_login.sh into it.<br>
 4. Run in terminal:# chmod +x /usr/share/customscripts/z_login.sh.
 <br>
 
@@ -132,7 +131,7 @@ What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user 
 <br>
 1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh.<br>
 2. A check is made for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and that triggers some actions.<br>
-3. Trigger actions: Cinnamenu schema file 9999.json copied into ~/.config/cinnamon/spices/Cinnamenu@json/,<br> and a dconf write to enable the default applets including Cinnamenu.<br>
+3. Trigger actions: Cinnamenu schema file /usr/share/cinnamon/applets/Cinnamenu@json/5.8/schema-settings.json gets copied to ~/.config/cinnamon/spices/Cinnamenu@json/9999.json,<br> and a dconf write to enable the default applets including Cinnamenu.<br>
 4. Auto forced logged out will happen just this once: cinnamon-session-quit --logout --force <br>
 5. Filename ~/.config/firstlogincomplete_DONOTDelete will be created so going forward file is found at login,<br> and future triggers/functions/forced logout are all skipped.<br>
 
@@ -147,8 +146,8 @@ They will also be automatically logged out once, only, and never again because t
 What Happens At Every Other Login?
 ----------------------------------
 
-At every login we run jsonlint to check the integrity of 9999.json.<br>If the file fails, it will be copied in from and overwritten by /usr/share/customscripts/9999.json<br>
-Also, if for some strange reason the file is missing it ( 9999.json ) will also be copied in from and overwritten.
+At every login we run jsonlint to check the integrity of 9999.json.<br>If the file fails, /usr/share/cinnamon/applets/Cinnamenu@json/5.8/schema-settings.json gets copied to ~/.config/cinnamon/spices/Cinnamenu@json/9999.json.<br>
+Also, if the file is missing it ( 9999.json ) will also be copied in.
 
 ---------------------------------------------------------------------------
 What Happens During An Apt Update/Upgrade To The Cinnamon Desktop Version?
