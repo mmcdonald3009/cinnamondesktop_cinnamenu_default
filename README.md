@@ -36,7 +36,7 @@ Download & Install
 
 
 ----------------------------------------------
-All That Needs To Be Done To Make It Work...
+What To Do To Make It Work...
 ----------------------------------------------
 <br>
 
