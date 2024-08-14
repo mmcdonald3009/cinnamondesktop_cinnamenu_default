@@ -103,7 +103,7 @@ dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "4".<br>
 <br>
 
 -------------------------------------------------------------------------------------------------------------------------
-What To Do If You Have Different Panel Applets (/usr/share/cinnamon/applets/)<br>To Those In /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override
+What To Do If Using Different Panel Applets (/usr/share/cinnamon/applets/)<br>To Those In /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override
 -------------------------------------------------------------------------------------------------------------------------
 
 <br>
