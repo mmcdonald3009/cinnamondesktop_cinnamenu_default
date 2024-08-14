@@ -3,7 +3,7 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 ------------------------------------
 <br>
 
-1. Some panel functions like Add Panel and Remove Panel <u>MUST</u> be deleted for stability - procedures are below.<br> Nothing is dangerous when everything is properly considered.<br>
+1. Some panel functions like Add Panel and Remove Panel MUST be deleted for stability - procedures are below.<br> Nothing is dangerous when everything is properly considered.<br>
 2. When a user toggles hidden files in Nemo, Nemo simply closes and restarts.<br>Not a perfect solution but should keep kids from accidentally deleting hidden files.<br>
 3. You can set a limit to the number of workspaces a user may create.<br>
 4. At anytime you can stop (2 & 3 above ) by typing into a terminal:# killall dbus-monitor.
