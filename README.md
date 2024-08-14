@@ -151,9 +151,9 @@ At every login we run jsonlint to check the integrity of 9999.json.<br>If the fi
 Also, if the file is missing it ( 9999.json ) will also be copied in.
 
 ---------------------------------------------------------------------------
-What Happens During An Apt Update/Upgrade To The Cinnamon Desktop Version?
+What Happens To The Cinnamon Desktop During An Apt Update/Upgrade To The Version ?
 ---------------------------------------------------------------------------
-Cinnamenu@json will be deleted and has to be downloaded and added again into /usr/share/cinnamon/applets/
+Cinnamenu@json will get deleted and have to be downloaded and copied again into /usr/share/cinnamon/applets/
 <br><br>
 Have a good day and try and be nice to others :)
 <br><br>
