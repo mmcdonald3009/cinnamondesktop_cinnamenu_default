@@ -49,6 +49,45 @@ What To Do To Make It Work...
 <br>
 <br>
 
+----------------------------------------------------------------------------------------------------
+IMPORTANT PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" and "Other Stuff"  FUNCTIONS FROM CINNAMON
+----------------------------------------------------------------------------------------------------
+
+I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc just in case you need to restore them.
+EVEN WITH A BROKEN PANEL YOU CAN PROBABLY RIGHT-CLICK AND RUN TERMINAL, AND LAUNCH NEMO TO COPY/PASTE/RENAME BACKUPS ( ...edit as root ).
+<br>
+<br>
+
+*** This deletes "(Panel Right-Click) Remove Panel" ***<br>
+sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+
+*** This deletes "(Panel Right-Click) Add Panel" ***<br>
+sed -i 's|menu.addMenuItem(menu.addPanelItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+
+*** This deletes "(Panel Right-Click) Applets" ***<br>
+sed -i 's|this.addMenuItem(applet_settings_item);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+
+*** This deletes "(Panel Right-Click) Panel Edit Mode" ***<br>
+sed -i 's|menu.addMenuItem(panelEditMode);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+
+*** This deletes "(Panel Right-Click) System Settings" ***<br>
+sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "preferences-desktop"));||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+
+*** This deletes "(Panel Right-Click) Troubleshooting" ***<br>
+sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+
+*** This deletes "(Panel Right-Click) Remove {Applet By Name]" ***<br>
+sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js <br>  
+
+rm /usr/share/applications/cinnamon-settings-applets.desktop <br>
+rm /usr/share/applications/cinnamon-settings-desklets.desktop <br>
+rm /usr/share/applications/cinnamon-settings-extensions.desktop <br>
+rm /usr/share/applications/cinnamon-settings-workspaces.desktop <br>
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py <br>
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py <br>
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_extensions.py <br>
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_workspaces.py <br>
+
 --------------------------------------------------------
 To Change The MAX Number Of Workspaces A User May Create
 --------------------------------------------------------
@@ -117,58 +156,9 @@ Also, if for some strange reason the file is missing it ( 9999.json ) will also 
 <br>
 <br>
 
-----------------------------------------------------
---- BEGIN OF BE "VERY VERY VERY" CAREFUL SECTION ---
-----------------------------------------------------
-------------------------------------------------------------------------------------------------------
-Restrict Users To A Good Known Set Of Applets, Desklet and Extensions And Remove Ability to Modify Them.
-The Defaults That Ship With The Cinnamon Desktop Are Probably Enough For Productive Computing.
-------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------
-PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" and "Other Stuff"  FUNCTIONS FROM CINNAMON <br>
-----------------------------------------------------------------------------------------------------
-
-I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc just in case you need to restore them.
-EVEN WITH A BROKEN PANEL YOU CAN PROBABLY RIGHT-CLICK AND RUN TERMINAL, AND LAUNCH NEMO TO COPY/PASTE/RENAME BACKUPS ( ...edit as root ).
-<br>
-<br>
-
-*** This deletes "(Panel Right-Click) Remove Panel" ***<br>
-sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
-
-*** This deletes "(Panel Right-Click) Add Panel" ***<br>
-sed -i 's|menu.addMenuItem(menu.addPanelItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
-
-*** This deletes "(Panel Right-Click) Applets" ***<br>
-sed -i 's|this.addMenuItem(applet_settings_item);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
-
-*** This deletes "(Panel Right-Click) Panel Edit Mode" ***<br>
-sed -i 's|menu.addMenuItem(panelEditMode);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
-
-*** This deletes "(Panel Right-Click) System Settings" ***<br>
-sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "preferences-desktop"));||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
-
-*** This deletes "(Panel Right-Click) Troubleshooting" ***<br>
-sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
-
-*** This deletes "(Panel Right-Click) Remove {Applet By Name]" ***<br>
-sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js <br>  
 
 
-<br>
-rm /usr/share/applications/cinnamon-settings-applets.desktop <br>
-rm /usr/share/applications/cinnamon-settings-desklets.desktop <br>
-rm /usr/share/applications/cinnamon-settings-extensions.desktop <br>
-rm /usr/share/applications/cinnamon-settings-workspaces.desktop <br>
-rm /usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py <br>
-rm /usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py <br>
-rm /usr/share/cinnamon/cinnamon-settings/modules/cs_extensions.py <br>
-rm /usr/share/cinnamon/cinnamon-settings/modules/cs_workspaces.py <br>
 
-<br>
-<br>
-<br>
---- END OF BE VERY CAREFUL SECTION ---<br><br>
 
 You will note other non-relevant stuff in z_login.sh I have left there for educational purposes.<br><br>
 Have a good day and try and be nice to others :)
