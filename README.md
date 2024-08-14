@@ -3,7 +3,7 @@ About
 ------------------------------------
 <br>
 
-1. A "self healing" Cinnamon Desktop implementation using Cinnamenu on a single moveable pabel, as the default Menu.
+1. A "self healing" Cinnamon Desktop implementation implementing Cinnamenu on a single moveable pabel, as the default Menu.
 ( Some panel functions like Add Panel and Remove Panel are to be deleted - procedures are below. Nothing is dangerous if done with everything properly considered. ).<br>
 2. When a user toggles hidden files in Nemo, Nemo simply closes and restarts.<br>Not a perfect solution but should keep your office workers from accidentally deleting hidden files.<br>
 3. You can set a limit to the number of workspaces a user may create.<br>
