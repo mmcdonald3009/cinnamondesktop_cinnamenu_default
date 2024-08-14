@@ -32,7 +32,8 @@ if [ ! -f ~/.config/firstlogincomplete_DONOTDelete ];then
 rm ~/.local/share/applications/*.desktop
 rm ~/Desktop/language-support.desktop
 function_resetcinnamenu
-
+gsettings reset org.cinnamon panels-enabled
+gsettings reset-recursively org.cinnamon
 
 dconf write /org/cinnamon/desktop/interface/icon-theme "'Sharp'"
 dconf write /org/cinnamon/desktop/background/picture-uri "'file:///usr/share/wallpapers/material_wallpaper.jpg'"
