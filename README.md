@@ -132,13 +132,11 @@ You Are Up & Running
 What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user account created as part of OS setup/install )
 ---------------------------------------------------------------------------------------------------------------
 <br>
-1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh, which does the following:
-<br>
-2. The first user that was created during setup/install - when logging out and back in for the very first time<br>- a check is made for a filename: ~/.config/firstlogincomplete_DONOTDelete.<br>
-3. This filename ~/.config/firstlogincomplete_DONOTDelete won't be there yet, because of missing filename the<br>Cinnamenu schema file 9999.json will be copied into ~/.config/cinnamon/spices/Cinnamenu@json/, and a dconf write will enable the default applets - including Cinnamenu.<br>
-4. Auto forced logging out will happen just this once by: cinnamon-session-quit --logout --force <br>
-5. The file ~/.config/firstlogincomplete_DONOTDelete will be created so going forward that file is found and so during future logins it's triggers/functions/forced logout (all get skipped).<br>
-6. Now your first ever user that was created during first setup/install when logging in again next time and going forward gets Cinnamenu.
+1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh.<br>
+2. A check is made for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and that triggers some actions.<br>
+3. Trigger actions: Cinnamenu schema file 9999.json copied into ~/.config/cinnamon/spices/Cinnamenu@json/, and a dconf write to enable the default applets including Cinnamenu.<br>
+4. Auto forced logged out will happen just this once: cinnamon-session-quit --logout --force <br>
+5. Filename ~/.config/firstlogincomplete_DONOTDelete will be created so going forward file is found at login, and future triggers/functions/forced logout are all skipped.<br>
 
 -----------------------------------------------------
 What Happens At Login Of Subsequently Created Users?
