@@ -122,7 +122,13 @@ enabled-applets=[ 'panel1:center:0:Cinnamenu@json', 'panel1:left:0:workspace-swi
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
 
+------------------------------------------
+UP & RUNNING
+------------------------------------------
 ---------------------------------------------------------------------------------------------------------------
 What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user account created as part of OS setup/install )
 ---------------------------------------------------------------------------------------------------------------
@@ -134,42 +140,30 @@ What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user 
 4. Auto forced logging out will happen just this once by: cinnamon-session-quit --logout --force <br>
 5. The file ~/.config/firstlogincomplete_DONOTDelete will be created so going forward that file is found and so during future logins it's triggers/functions/forced logout (all get skipped).<br>
 6. Now your first ever user that was created during first setup/install when logging in again next time and going forward gets Cinnamenu.
-<br>
-<br>
-<br>
 
 -----------------------------------------------------
 What Happens At Login Of Subsequently Created Users?
 -----------------------------------------------------
-<br>
+
 Subsequently created users will get Cinnamenu as default.<br>
 They will also be automatically logged out once, only, and never again because the file ~/.config/firstlogincomplete_DONOTDelete will be created.
-<br>
-<br>
-<br>
 
 ----------------------------------
 What Happens At Every Other Login?
 ----------------------------------
-<br>
+
 At every login we run jsonlint to check the integrity of 9999.json.<br>If the file fails, it will be copied in from and overwritten by /usr/share/customscripts/9999.json<br>
 Also, if for some strange reason the file is missing it ( 9999.json ) will also be copied in from and overwritten.
-<br>
-<br>
-<br>
-<br>
 
-
+---------------------------------------------------------------------------
+What Happens During An Apt Update/Upgrade To The Cinnamon Desktop Version?
+---------------------------------------------------------------------------
+Cinnamenu@json will be deleted and has to be downloaded and added again into /usr/share/cinnamon/applets/
 
 
 
 You will note other non-relevant stuff in z_login.sh I have left there for educational purposes.<br><br>
 Have a good day and try and be nice to others :)
 <br><br>
-
----------------------------------------------------------------------------
-What Happens During An Apt Update/Upgrade To The Cinnamon Desktop Version?
----------------------------------------------------------------------------
-Cinnamenu@json will be deleted and has to be downloaded and added again into /usr/share/cinnamon/applets/
 
 ---END OF README---
