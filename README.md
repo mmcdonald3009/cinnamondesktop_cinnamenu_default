@@ -154,10 +154,7 @@ Also, if the file is missing it ( 9999.json ) will also be copied in.
 What Happens During An Apt Update/Upgrade To The Cinnamon Desktop Version?
 ---------------------------------------------------------------------------
 Cinnamenu@json will be deleted and has to be downloaded and added again into /usr/share/cinnamon/applets/
-
-
-
-You will note other non-relevant stuff in z_login.sh I have left there for educational purposes.<br><br>
+<br><br>
 Have a good day and try and be nice to others :)
 <br><br>
 
