@@ -52,8 +52,8 @@ IMPERATIVE FOR STABILITY !!!<br>
 Removing "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely
 ----------------------------------------------------------------------------------------------------
 
-I would take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc just in case you need to restore them.
-EVEN WITH A BROKEN PANEL YOU CAN PROBABLY RIGHT-CLICK AND RUN TERMINAL, AND LAUNCH NEMO TO COPY/PASTE/RENAME BACKUPS ( ...edit as root ).
+Take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc in case you need to restore them.
+EVEN WITH A BROKEN PANEL YOU CAN RIGHT-CLICK-> RUN IN TERMINAL, AND LAUNCH NEMO TO COPY/PASTE/RENAME BACKUPS ( ...edit as root ).
 <br>
 <br>
 
