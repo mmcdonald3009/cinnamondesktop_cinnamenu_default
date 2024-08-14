@@ -110,8 +110,8 @@ What To Do If You Have Different Panel Applets (/usr/share/cinnamon/applets)<br>
 
 <br>
 Change them in this 11_cinnamon.gschema.override file, and ensure you copy and paste the array directly from that file into function_resetcinnamenu
-in /usr/share/customscripts/z_login.sh.
-Run this again as su/sudo in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/
+in /usr/share/customscripts/z_login.sh. <br>
+Run again as su/sudo in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/
 <br>
 <br>
 Here Is The Current Array So You May Compare If All These Applets Are Currently In Your /usr/share/cinnamon/applets Folder:
