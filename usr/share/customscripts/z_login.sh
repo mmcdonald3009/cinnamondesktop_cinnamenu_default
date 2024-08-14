@@ -14,9 +14,6 @@ dconf write /org/cinnamon/enabled-applets "'[]'"
 dconf write /org/cinnamon/enabled-applets " [ 'panel1:center:0:Cinnamenu@json', 'panel1:left:0:workspace-switcher@cinnamon.org' , 'panel1:left:1:grouped-window-list@cinnamon.org', 'panel1:right:0:systray@cinnamon.org', 'panel1:right:1:xapp-status@cinnamon.org', 'panel1:right:2:notifications@cinnamon.org', 'panel1:right:3:printers@cinnamon.org', 'panel1:right:4:removable-drives@cinnamon.org', 'panel1:right:5:keyboard@cinnamon.org', 'panel1:right:6:favorites@cinnamon.org', 'panel1:right:7:network@cinnamon.org', 'panel1:right:8:sound@cinnamon.org', 'panel1:right:9:power@cinnamon.org', 'panel1:right:10:calendar@cinnamon.org' ] "
 gsettings reset org.cinnamon panels-enabled
 gsettings reset-recursively org.cinnamon
-dconf write /org/cinnamon/theme/name "'Light'"
-dconf write /org/cinnamon/desktop/interface/gtk-theme "'Light'"
-dconf write /org/cinnamon/desktop/interface/font-name "'Ubuntu Bold 11'"
 }
 
 result=$(jsonlint-php ~/.config/cinnamon/spices/Cinnamenu@json/9999.json)
