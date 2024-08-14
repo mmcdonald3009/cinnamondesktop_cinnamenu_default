@@ -19,7 +19,7 @@ https://spirallinux.github.io/#download
 <br>
 
 ------------------------------------------
-The Extra's To Download / Install
+Download & Install
 ------------------------------------------
 <br>
 
