@@ -46,8 +46,6 @@ What To Do To Make It Work...
  (9999.json is just a modified to my requirements copy of /usr/share/cinnamon/applets/Cinnamenu@json/4.0/settings-schema.json). You might want change 4.0 to 5.8 on later Cinnamon versions or if using actual Mint.<br> You also might want your own default Cinnamenu configuration ( custom layout, what appears, etc ) just change settings-schema.json to what you want and also save as a new 9999.json .<br>
 4. chmod +x /usr/share/customscripts/z_login.sh.
 <br>
-<br>
-<br>
 
 ----------------------------------------------------------------------------------------------------
 IMPORTANT PROCEDURES TO REMOVE "Add Panel" and "Remove Panel" and "Other Stuff"  FUNCTIONS FROM CINNAMON
