@@ -45,7 +45,7 @@ Copy A Few Files In
 <br>
 
 ----------------------------------------------------------------------------------------------------
-IMPERATIVE FOR STABILITY !!!<br>
+IMPERATIVE - YOU MUST DO THESE FOR UBREAKABILIY  / STABILITY !!!<br>
 Remove "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely
 ----------------------------------------------------------------------------------------------------
 <br>
