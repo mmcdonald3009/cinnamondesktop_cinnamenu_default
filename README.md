@@ -2,7 +2,7 @@
 Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 ------------------------------------
 <br>
-1. You get by default for new users Cinnamenu as the default menu on a cinnamon panel with Move enabled.
+1. You get by default for new users Cinnamenu as the default menu on a cinnamon panel with Move enabled.<br>
 2. Some panel functions like Add Panel and Remove Panel HAVE to be deleted for stability - procedures are below.<br> Nothing is dangerous when everything is properly considered.<br>
 3. When a user toggles hidden files in Nemo, Nemo simply closes and restarts.<br>Not a perfect solution but should keep kids from accidentally deleting hidden files.<br>
 4. You can set a limit to the number of workspaces a user may create.<br>
