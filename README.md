@@ -39,7 +39,7 @@ Copy A Few Files In
 <br>
 
 1. Copy provided /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override into your file system /usr/share/glib-2.0/schemas/.<br>Then as su/sudo run this in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
-2. Copy provided /etc/xdg/autostart/z_login.desktop into your file system /etc/xdg/autostart/. This calls a script (z_login.sh) that runs at user login.<br>
+2. Copy provided /etc/xdg/autostart/z_login.desktop into your file system /etc/xdg/autostart/. This calls a script (/usr/share/customscripts/z_login.sh) that runs at user login.<br>
 3. Make a directory: /usr/share/customscripts, and copy the provided /usr/share/customscripts/z_login.sh into it.<br>
 4. Run in terminal:# chmod +x /usr/share/customscripts/z_login.sh.
 <br>
