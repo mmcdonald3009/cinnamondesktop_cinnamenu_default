@@ -7,7 +7,7 @@ About
  Some panel functions like Add Panel and Remove Panel must be deleted for stability - procedures are below.<br> Nothing is dangerous when everything is properly considered.<br>
 2. When a user toggles hidden files in Nemo, Nemo simply closes and restarts.<br>Not a perfect solution but should keep your office workers from accidentally deleting hidden files.<br>
 3. You can set a limit to the number of workspaces a user may create.<br>
-4. At anytime you can stop pt's (2 & 3 above) by typing into a terminal: killall dbus-monitor.
+4. At anytime you can stop (2 & 3 above ) by typing into a terminal: killall dbus-monitor.
 <br>Logout and then Login and they will be running again. 
 <br>
 At time of writing I am using Debian 12.6, this is the minimum so do apt upgrade if you are using an earlier version.<br>
