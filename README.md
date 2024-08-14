@@ -58,7 +58,7 @@ EVEN WITH A BROKEN PANEL YOU CAN PROBABLY RIGHT-CLICK AND RUN TERMINAL, AND LAUN
 <br>
 <br>
 
-Do these as su/sudo:
+Do these as su/sudo:<br><br>
 *** This deletes "(Panel Right-Click) Remove Panel" ***<br>
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
 
