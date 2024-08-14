@@ -54,7 +54,7 @@ EVEN WITH A BROKEN PANEL YOU CAN RIGHT-CLICK->RUN IN TERMINAL:# nemo, COPY/PASTE
 <br>
 <br>
 
-Do these as su/sudo:<br><br>
+Do these as su/sudo in a terminal:#<br><br>
 *** This deletes "(Panel Right-Click) Remove Panel" ***<br>
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
 
