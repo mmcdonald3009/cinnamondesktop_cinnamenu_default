@@ -131,7 +131,7 @@ What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user 
 <br>
 1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh.<br>
 2. A check is made for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and that triggers some actions.<br>
-3. Trigger actions: Cinnamenu schema file /usr/share/cinnamon/applets/Cinnamenu@json/5.8/schema-settings.json gets copied to ~/.config/cinnamon/spices/Cinnamenu@json/9999.json,<br> and a dconf write to enable the default applets including Cinnamenu.<br>
+3. Trigger actions: Cinnamenu schema file /usr/share/cinnamon/applets/Cinnamenu@json/5.8/schema-settings.json gets copied to ~/.config/cinnamon/spices/Cinnamenu@json/9999.json, and a dconf write to enable the default applets including Cinnamenu is made.<br>
 4. Auto forced logged out will happen just this once: cinnamon-session-quit --logout --force <br>
 5. Filename ~/.config/firstlogincomplete_DONOTDelete will be created so going forward file is found at login,<br> and future triggers/functions/forced logout are all skipped.<br>
 
