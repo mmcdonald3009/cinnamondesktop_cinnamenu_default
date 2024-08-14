@@ -36,7 +36,7 @@ Download & Install
 
 
 ----------------------------------------------
-What To Do To Make It Work...
+Copy A Few Files In
 ----------------------------------------------
 <br>
 
