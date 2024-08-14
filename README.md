@@ -43,7 +43,7 @@ Copy A Few Files In
 2. Copy /etc/xdg/autostart/z_login.desktop into /etc/xdg/autostart/. This calls a script (z_login.sh) that runs per user $EUID at login.<br>
 3. Make a directory: /usr/share/customscripts and copy the files z_login.sh and 9999.json into it.<br>
  (9999.json is just a modified to my requirements copy of /usr/share/cinnamon/applets/Cinnamenu@json/4.0/settings-schema.json). You might want change 4.0 to 5.8 on later Cinnamon versions or if using actual Mint.<br> You also might want your own default Cinnamenu configuration ( custom layout, what appears, etc ) just change settings-schema.json to what you want and also save as a new 9999.json .<br>
-4. terminal:# chmod +x /usr/share/customscripts/z_login.sh.
+4. Run in terminal:# chmod +x /usr/share/customscripts/z_login.sh.
 <br>
 
 ----------------------------------------------------------------------------------------------------
