@@ -122,7 +122,7 @@ enabled-applets=[ 'panel1:center:0:Cinnamenu@json', 'panel1:left:0:workspace-swi
 
 
 ------------------------------------------
-You Are Up & Running
+At This Stage You Are Up & Running...
 ------------------------------------------
 <br>
 
