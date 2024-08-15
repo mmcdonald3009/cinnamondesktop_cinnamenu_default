@@ -142,10 +142,10 @@ What Happens At Login Of Subsequently Created Users?
 
 Subsequently created users will also get Cinnamenu as default Menu.<br>
 They will also be automatically logged out once, only, and then never again once the file ~/.config/firstlogincomplete_DONOTDelete has been created.
-
+<br>
 
 -----------------------------------------------------
-Troubleshooting Procedure
+Fixing Procedure
 -----------------------------------------------------
 <br>
 If you have done all the 'sed' and 'rm' to remove certain Panel functions, you shouldn't have any issues.
