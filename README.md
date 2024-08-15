@@ -150,7 +150,7 @@ Troubleshooting Procedure
 <br>
 If you have done all the 'sed' and 'rm' to remove certain Panel functions, you shouldn't have any issues.
 However if you get a smarty who uses the terminal to access hidden files and accidentally deletes ~/.config/cinnamon/spices/Cinamenu@json or the .json file that should be there,<br>
-then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and there will be the usual one off forced logout the first time and<br>
+then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and there will be the usual one off forced logout the first time and
 then everything returns to normal.
 
 
