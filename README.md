@@ -107,19 +107,11 @@ What To Do If Using Different Panel Applets (/usr/share/cinnamon/applets/)<br>To
 -------------------------------------------------------------------------------------------------------------------------
 
 <br>
-Change them in /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override, and copy and paste the array from that file into <br>
-the function named function_resetcinnamenu in /usr/share/customscripts/z_login.sh. <br>
-Run again as su/sudo in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/
-<br>
-<br>
-Here Is The Provided Array For Comparison:
-<br>
-<br>
-enabled-applets=[ 'panel1:center:0:Cinnamenu@json', 'panel1:left:0:workspace-switcher@cinnamon.org' , 'panel1:left:1:grouped-window-list@cinnamon.org', 'panel1:right:0:systray@cinnamon.org', 'panel1:right:1:xapp-status@cinnamon.org', 'panel1:right:2:notifications@cinnamon.org', 'panel1:right:3:printers@cinnamon.org', 'panel1:right:4:removable-drives@cinnamon.org', 'panel1:right:5:keyboard@cinnamon.org', 'panel1:right:6:favorites@cinnamon.org', 'panel1:right:7:network@cinnamon.org', 'panel1:right:8:sound@cinnamon.org', 'panel1:right:9:power@cinnamon.org', 'panel1:right:10:calendar@cinnamon.org' ]
+Change them to match in /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override.<br>
+Then again as su/sudo run in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/
 <br>
 <br>
 <br>
-
 
 ------------------------------------------
 At This Stage You Are Up & Running...
