@@ -126,7 +126,7 @@ What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user 
 2. A check is made for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and that triggers some actions.<br>
 3. Trigger actions: Enable Default Applets Sets Cinnamenu As The Main Menu <br>
 4. Auto forced logged out will happen just this once: cinnamon-session-quit --logout --force <br>
-5. Filename ~/.config/firstlogincomplete_DONOTDelete will be created so going forward file is found at login,<br> and future triggers/functions/forced logout are all skippedas the file was found.<br>
+5. Filename ~/.config/firstlogincomplete_DONOTDelete will be created ,<br> so going forward triggers/functions/forced logout are all skipped as the file now exists.<br>
 
 -----------------------------------------------------
 What Happens At Login Of Subsequently Created Users?
