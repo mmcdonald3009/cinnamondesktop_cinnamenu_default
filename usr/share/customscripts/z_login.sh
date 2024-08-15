@@ -6,29 +6,10 @@ chmod 700 ~/
 if [ "$EUID" -gt 999 ]
 then
 
-function function_resetcinnamenu {
-rm -rf ~/.config/cinnamon/spices/Cinnamenu@json/
-mkdir ~/.config/cinnamon/spices/Cinnamenu@json/
-cp /usr/share/cinnamon/applets/Cinnamenu@json/5.8/settings-schema.json ~/.config/cinnamon/spices/Cinnamenu@json/9999.json
-dconf write /org/cinnamon/enabled-applets "'[]'" 
-dconf write /org/cinnamon/enabled-applets " [ 'panel1:center:0:Cinnamenu@json', 'panel1:left:0:workspace-switcher@cinnamon.org' , 'panel1:left:1:grouped-window-list@cinnamon.org', 'panel1:right:0:systray@cinnamon.org', 'panel1:right:1:xapp-status@cinnamon.org', 'panel1:right:2:notifications@cinnamon.org', 'panel1:right:3:printers@cinnamon.org', 'panel1:right:4:removable-drives@cinnamon.org', 'panel1:right:5:keyboard@cinnamon.org', 'panel1:right:6:favorites@cinnamon.org', 'panel1:right:7:network@cinnamon.org', 'panel1:right:8:sound@cinnamon.org', 'panel1:right:9:power@cinnamon.org', 'panel1:right:10:calendar@cinnamon.org' ] "
-gsettings reset org.cinnamon panels-enabled
-gsettings reset-recursively org.cinnamon
-}
-
-result=$(jsonlint-php ~/.config/cinnamon/spices/Cinnamenu@json/9999.json)
-if [[ ! $result == *"Valid JSON"* ]]; then
-function_resetcinnamenu
-fi
-
-if [ ! -f ~/.config/cinnamon/spices/Cinnamenu@json/9999.json ];then
-function_resetcinnamenu
-fi
-
 if [ ! -f ~/.config/firstlogincomplete_DONOTDelete ];then
 rm ~/.local/share/applications/*.desktop
 rm ~/Desktop/language-support.desktop
-function_resetcinnamenu
+
 gsettings reset org.cinnamon panels-enabled
 gsettings reset-recursively org.cinnamon
 
