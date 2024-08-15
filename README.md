@@ -144,6 +144,15 @@ Subsequently created users will also get Cinnamenu as default Menu.<br>
 They will also be automatically logged out once, only, and then never again once the file ~/.config/firstlogincomplete_DONOTDelete has been created.
 
 
+-----------------------------------------------------
+Troubleshooting Procedure
+-----------------------------------------------------
+<br>
+If you have done all the 'sed' and 'rm' to remove certain Panel functions, you shouldn't have any issues.
+However if you get a smarty user who uses the terminal to access hidden files and deletes ~/config/cinnamon/spices/Cinamenu@json or the .json file that should be there<br>
+Then in terminal run:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and there will be the usual one off forced logout the first time.
+
+
 ---------------------------------------------------------------------------
 What Happens To The Cinnamon Desktop During An Apt Update/Upgrade To The Version ?
 ---------------------------------------------------------------------------
