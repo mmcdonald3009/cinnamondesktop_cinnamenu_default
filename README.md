@@ -32,7 +32,7 @@ Download & Install
 
 
 ----------------------------------------------
-Copy A Few Files In
+Copy Provided Files Into Place
 ----------------------------------------------
 <br>
 
