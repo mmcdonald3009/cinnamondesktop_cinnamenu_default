@@ -25,10 +25,8 @@ Download & Install
 1. Download Cinnamenu - was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322<br>
 2. Copy the Cinnamenu@json files into /usr/share/cinnamon/applets/Cinnamenu@json/<br>
 3. INSTALL PACKAGE:# apt install xautomation<br>
-4. INSTALL PACKAGE:# apt install jsonlint<br>
-5. INSTALL PACKAGE:# apt install libgtk-3-bin<br>
+4. INSTALL PACKAGE:# apt install libgtk-3-bin<br>
 * xautomation allows for bash script key emulation.<br>
-* jsonlint checks the integrity of json files.<br>
 * libgtk-3-bin provides gtk-launch for launching .desktop files from a terminal.<br> 
 <br>
 
