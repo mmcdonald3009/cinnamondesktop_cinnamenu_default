@@ -130,7 +130,7 @@ What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user 
 <br>
 1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh.<br>
 2. A check is made for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and that triggers some actions.<br>
-3. Trigger actions: Cinnamenu schema file /usr/share/cinnamon/applets/Cinnamenu@json/5.8/schema-settings.json gets copied to ~/.config/cinnamon/spices/Cinnamenu@json/9999.json, and a dconf write to enable the default applets including Cinnamenu is made.<br>
+3. Trigger actions: Enable Default Applets Sets Cinnamenu As The Main Menu <br>
 4. Auto forced logged out will happen just this once: cinnamon-session-quit --logout --force <br>
 5. Filename ~/.config/firstlogincomplete_DONOTDelete will be created so going forward file is found at login,<br> and future triggers/functions/forced logout are all skippedas the file was found.<br>
 
@@ -138,15 +138,9 @@ What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user 
 What Happens At Login Of Subsequently Created Users?
 -----------------------------------------------------
 
-Subsequently created users will get Cinnamenu as default.<br>
+Subsequently created users will also get Cinnamenu as default Menu.<br>
 They will also be automatically logged out once, only, and then never again once the file ~/.config/firstlogincomplete_DONOTDelete has been created.
 
-----------------------------------
-What Happens At Every Other Login?
-----------------------------------
-
-At every login we run jsonlint to check the integrity of 9999.json.<br>If the file fails, /usr/share/cinnamon/applets/Cinnamenu@json/5.8/schema-settings.json gets copied to ~/.config/cinnamon/spices/Cinnamenu@json/9999.json.<br>
-Also, if the file is missing it ( 9999.json ) will also be copied in.
 
 ---------------------------------------------------------------------------
 What Happens To The Cinnamon Desktop During An Apt Update/Upgrade To The Version ?
