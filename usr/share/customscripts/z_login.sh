@@ -35,9 +35,8 @@ dconf write /org/cinnamon/desktop/interface/gtk-theme "'Light'"
 gsettings set org.cinnamon.desktop.wm.preferences num-workspaces "2"
 
 cinnamon --replace &
-
 ##If The Line Above ( cinnamon --replace & ) doesn't give the desired result, comment it out and uncomment the line below for a one-off forced logout at first time logging in only.
-##This may be necessary when muffin wayland is releasedand I haven't tested that.
+##This might be necessary when muffin wayland is released and I haven't tested that.
 cinnamon-session-quit --logout --force 
 
 fi 
