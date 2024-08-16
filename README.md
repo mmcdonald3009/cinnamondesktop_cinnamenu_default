@@ -124,10 +124,10 @@ At This Stage You Are Up & Running...
 What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user account created as part of OS setup/install )
 ---------------------------------------------------------------------------------------------------------------
 <br>
-1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh.<br>
-2. Script checks for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and that triggers some actions.<br>
-3. Trigger action: Enable Default Applets - Set Cinnamenu@json applet As The Default Main Menu <br>
-4. Filename ~/.config/firstlogincomplete_DONOTDelete will now get created, so going forward trigger function not applied again.<br>
+1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh
+2. Script checks for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and that triggers some actions
+3. Trigger action: Enable Default Applets - Set Cinnamenu@json applet As The Default Main Menu
+4. Filename ~/.config/firstlogincomplete_DONOTDelete will now get created, so going forward trigger function not applied again
 
 -----------------------------------------------------
 What Happens At Login Of Subsequently Created Users?
@@ -142,7 +142,7 @@ Fixing Procedure
 -----------------------------------------------------
 <br>
 If you have done all the 'sed' and 'rm' to remove certain Panel functions, you shouldn't have any issues.
-However if you get a smarty who uses the terminal to access hidden files and accidentally deletes ~/.config/cinnamon/spices/Cinamenu@json or the .json file that should be there,<br>
+However if you get a smarty who uses the terminal to access hidden files and "accidentally" deletes ~/.config/cinnamon/spices/Cinamenu@json or the .json file that should be there,<br>
 then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and everything resets.
 
 
