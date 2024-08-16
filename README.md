@@ -126,7 +126,7 @@ What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user 
 1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh.<br>
 2. Script checks for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and that triggers some actions.<br>
 3. Trigger actions: Includes Enable Default Applets And Set Cinnamenu As The Main Menu <br>
-4. Filename ~/.config/firstlogincomplete_DONOTDelete will now get created ,<br> so going forward triggers functions not applied while that file exists.<br>
+4. Filename ~/.config/firstlogincomplete_DONOTDelete will now get created, so going forward trigger functions are not applied while as file now exists.<br>
 
 -----------------------------------------------------
 What Happens At Login Of Subsequently Created Users?
