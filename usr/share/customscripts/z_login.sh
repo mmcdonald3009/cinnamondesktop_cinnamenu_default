@@ -36,8 +36,9 @@ gsettings set org.cinnamon.desktop.wm.preferences num-workspaces "2"
 
 cinnamon --replace &
 
-##In Future Wayland Version You Might Have To Comment Out The Line Above ( cinnamon --replace & ) and uncomment line below and use one off forced logout.
-#cinnamon-session-quit --logout --force 
+##If The Line Above ( cinnamon --replace & ) doesn't give the desired result, comment it out and uncomment the line below for a one-off forced logout at first time logging in only.
+##This may be necessary when muffin wayland is releasedand I haven't tested that.
+cinnamon-session-quit --logout --force 
 
 fi 
 
