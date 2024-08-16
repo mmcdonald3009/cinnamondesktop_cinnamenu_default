@@ -11,7 +11,7 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 <br>Logout and then Login and they will be running again. 
 <br>
 <br>
-At time of writing I am using Debian 12.6, this is the minimum so DO apt upgrade to make sure you are current.<br>
+At time of writing I am using Debian 12.6, this is the minimum so DO an apt update && upgrade to make sure you are current.<br>
 I am using SpiralLinux which formats as BTRFS and has snapper rollback in the GRUB menu!<br>
 Many Many Many thanks to the OpenSUSE GeckoLinux dev for coming up with SpiralLinux.<br>
 https://spirallinux.github.io/#download
