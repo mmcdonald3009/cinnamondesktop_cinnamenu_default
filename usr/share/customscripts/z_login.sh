@@ -1,7 +1,5 @@
 #!/bin/bash
 
-chmod 700 ~/
-
 
 if [ "$EUID" -gt 999 ]
 then
@@ -38,7 +36,7 @@ gsettings set org.cinnamon.desktop.wm.preferences num-workspaces "2"
 
 cinnamon --replace &
 
-##In Future Wayland Version You Might Have To Comment Out The Line Above ( cinnamon --replace & ) and uncomment line below forced logout.
+##In Future Wayland Version You Might Have To Comment Out The Line Above ( cinnamon --replace & ) and uncomment line below and use one off forced logout.
 #cinnamon-session-quit --logout --force 
 
 fi 
