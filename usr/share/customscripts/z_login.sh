@@ -69,8 +69,7 @@ stdbuf -oL dbus-monitor --session interface='ca.desrt.dconf.Writer',member='Noti
 while grep -q 'string "/org/cinnamon/desktop/wm/preferences/num-workspaces"'; do
 wksp=$(dconf read /org/cinnamon/desktop/wm/preferences/num-workspaces)
 
-############ SET MAX NUMBER OF WORKSPACES HERE ###############
-
+############ SET MAX NUMBER OF WORKSPACES IN 2 PLACES HERE ###############
 if [ "$wksp" -gt 4 ];then
 dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "4"
 xte 'key Escape'
