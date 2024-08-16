@@ -45,7 +45,7 @@ Copy Provided Files Into Place
 <br>
 
 ----------------------------------------------------------------------------------------------------
-IMPERATIVE - YOU MUST ALSO DO THESE FOR UNBREAKABILITY  / STABILITY !!!<br>
+YOU REALLY SHOULD DO THESE FOR UNBREAKABILITY  / STABILITY !!!<br>
 Remove "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely
 ----------------------------------------------------------------------------------------------------
 <br>
