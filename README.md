@@ -80,7 +80,8 @@ sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);|
 
 *** This deletes "Add new panel (From Panel Settings)" ***<br>
 sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py<br><br>
-And do these removes - the default set is good enough for productive computing and released as part of Cinnamon stable, so no real need to change.
+And do these removes...
+The default set is good enough for productive computing and released as part of Cinnamon stable, so no real need to change:
 <br>
 <br>
 rm /usr/share/applications/cinnamon-settings-applets.desktop <br>
