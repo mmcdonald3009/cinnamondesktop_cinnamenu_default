@@ -40,8 +40,10 @@ dconf write /org/cinnamon/desktop/interface/gtk-theme "'Light'"
 
 gsettings set org.cinnamon.desktop.wm.preferences num-workspaces "2"
 
-##THIS MUST STAY
-cinnamon-session-quit --logout --force 
+cinnamon --replace &
+
+##In Future Wayland Version You Might Have TO Comment Line Above ( cinnamon --replace & ) out and replace with forced logout.
+#cinnamon-session-quit --logout --force 
 
 fi 
 
