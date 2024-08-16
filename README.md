@@ -7,7 +7,7 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 3. Nothing is dangerous when everything is considered in proper context.<br>
 4. When a user toggles hidden files in Nemo, Nemo simply closes and restarts.<br>Not a perfect solution but should keep kids from accidentally deleting hidden files.<br>
 5. You can set a limit to the number of workspaces a user may create.<br>
-6. At anytime you can stop (3 & 4 above ) by typing into a terminal:# killall dbus-monitor.
+6. At anytime you can stop Nemo restarting & Workspace Max Number Limiting by typing into a terminal:# killall dbus-monitor.
 <br>Logout and then Login and they will be running again. 
 <br>
 <br>
