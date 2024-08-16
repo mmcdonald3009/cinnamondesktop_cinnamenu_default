@@ -39,7 +39,7 @@ Copy Provided Files Into Place
 
 1. Copy provided /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override into your file system /usr/share/glib-2.0/schemas/.<br>Then as su/sudo run this in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
 2. Copy provided /etc/xdg/autostart/z_login.desktop into your file system /etc/xdg/autostart/. This runs at userlogin and calls a script (/usr/share/customscripts/z_login.sh).<br>
-3. Make a directory: /usr/share/customscripts, and copy the provided /usr/share/customscripts/z_login.sh into it.<br>
+3. Make a directory: /usr/share/customscripts ( make sure group: others can read & execute permissions), and copy the provided /usr/share/customscripts/z_login.sh into it.<br>
 4. Make z_login.sh executable by run in terminal:# chmod +x /usr/share/customscripts/z_login.sh.
 5. This is all that is actually required to make it work. However, be sure to remove Panel functions as per next below. 
 <br>
@@ -124,16 +124,15 @@ What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user 
 <br>
 1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh.<br>
 2. A check is made for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and that triggers some actions.<br>
-3. Trigger actions: Enable Default Applets Sets Cinnamenu As The Main Menu <br>
-4. Auto forced logged out will happen just this once: cinnamon-session-quit --logout --force <br>
-5. Filename ~/.config/firstlogincomplete_DONOTDelete will be created ,<br> so going forward triggers/functions/forced logout are all skipped as the file now exists.<br>
+3. Trigger actions: Includes Enable Default Applets Sets Cinnamenu As The Main Menu <br>
+4. Filename ~/.config/firstlogincomplete_DONOTDelete will be created ,<br> so going forward triggers functions/forced not applied while that file exists.<br>
 
 -----------------------------------------------------
 What Happens At Login Of Subsequently Created Users?
 -----------------------------------------------------
 
-Subsequently created users will also get Cinnamenu as default Menu.<br>
-They will also be automatically logged out once, only, and then never again once the file ~/.config/firstlogincomplete_DONOTDelete has been created.
+Same as directly above.<br>
+
 <br>
 
 -----------------------------------------------------
@@ -142,8 +141,7 @@ Fixing Procedure
 <br>
 If you have done all the 'sed' and 'rm' to remove certain Panel functions, you shouldn't have any issues.
 However if you get a smarty who uses the terminal to access hidden files and accidentally deletes ~/.config/cinnamon/spices/Cinamenu@json or the .json file that should be there,<br>
-then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and there will be the usual one off forced logout the first time and
-then everything returns to normal.
+then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and everything returns to normal.
 
 
 ---------------------------------------------------------------------------
