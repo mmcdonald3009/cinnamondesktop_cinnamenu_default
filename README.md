@@ -147,7 +147,7 @@ then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have t
 
 
 ---------------------------------------------------------------------------
-What Happens To The Cinnamon Desktop During An Apt Update/Upgrade To The Version ?
+What Happens To The Cinnamon Desktop During An Apt Upgrade To The Library/Version ?
 ---------------------------------------------------------------------------
 Cinnamenu@json will get deleted and have to be downloaded and copied again into /usr/share/cinnamon/applets/
 <br><br>
