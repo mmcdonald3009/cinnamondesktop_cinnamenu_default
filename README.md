@@ -28,7 +28,7 @@ Download & Install
 2. Copy the Cinnamenu@json files into /usr/share/cinnamon/applets/Cinnamenu@json/<br>
 3. INSTALL PACKAGE:# apt install xautomation<br>
 4. INSTALL PACKAGE:# apt install libgtk-3-bin<br>
-* xautomation allows for key emulation from a script.<br>
+* xautomation allows for keypress emulation from a script.<br>
 * libgtk-3-bin provides gtk-launch for launching .desktop files from a terminal.<br> 
 <br>
 
