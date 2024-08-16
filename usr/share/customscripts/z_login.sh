@@ -7,14 +7,10 @@ if [ "$EUID" -gt 999 ]
 then
 
 if [ ! -f ~/.config/firstlogincomplete_DONOTDelete ];then
-rm ~/.local/share/applications/*.desktop
-rm ~/Desktop/language-support.desktop
 
 gsettings reset org.cinnamon panels-enabled
 gsettings reset-recursively org.cinnamon
 
-dconf write /org/cinnamon/desktop/interface/icon-theme "'Sharp'"
-dconf write /org/cinnamon/desktop/background/picture-uri "'file:///usr/share/wallpapers/material_wallpaper.jpg'"
 dconf write /org/cinnamon/panels-resizable "['1:true']"
 dconf write /org/cinnamon/panels-height "['1:40']"
 
@@ -42,7 +38,7 @@ gsettings set org.cinnamon.desktop.wm.preferences num-workspaces "2"
 
 cinnamon --replace &
 
-##In Future Wayland Version You Might Have TO Comment Line Above ( cinnamon --replace & ) out and replace with forced logout.
+##In Future Wayland Version You Might Have To Comment Out The Line Above ( cinnamon --replace & ) and uncomment line below forced logout.
 #cinnamon-session-quit --logout --force 
 
 fi 
@@ -74,7 +70,9 @@ done &
 stdbuf -oL dbus-monitor --session interface='ca.desrt.dconf.Writer',member='Notify' |
 while grep -q 'string "/org/cinnamon/desktop/wm/preferences/num-workspaces"'; do
 wksp=$(dconf read /org/cinnamon/desktop/wm/preferences/num-workspaces)
+
 ############ SET MAX NUMBER OF WORKSPACES HERE ###############
+
 if [ "$wksp" -gt 4 ];then
 dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "4"
 xte 'key Escape'
