@@ -124,10 +124,10 @@ At This Stage You Are Up & Running...
 What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user account created as part of OS setup/install )
 ---------------------------------------------------------------------------------------------------------------
 <br>
-1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh
-2. Script checks for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and that triggers some actions
-3. Trigger action: Enable Default Applets - Set Cinnamenu@json applet As The Default Main Menu
-4. Filename ~/.config/firstlogincomplete_DONOTDelete will now get created, so going forward trigger function not applied again
+1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh<br>
+2. Script checks for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and that triggers some actions<br>
+3. Trigger action: Enable Default Applets - Set Cinnamenu@json applet As The Default Main Menu<br>
+4. Filename ~/.config/firstlogincomplete_DONOTDelete will now get created, so going forward trigger function not applied again<br>
 
 -----------------------------------------------------
 What Happens At Login Of Subsequently Created Users?
