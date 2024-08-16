@@ -123,15 +123,15 @@ What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user 
 ---------------------------------------------------------------------------------------------------------------
 <br>
 1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh.<br>
-2. A check is made for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and that triggers some actions.<br>
-3. Trigger actions: Includes Enable Default Applets Sets Cinnamenu As The Main Menu <br>
-4. Filename ~/.config/firstlogincomplete_DONOTDelete will be created ,<br> so going forward triggers functions/forced not applied while that file exists.<br>
+2. Script checks for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and that triggers some actions.<br>
+3. Trigger actions: Includes Enable Default Applets And Set Cinnamenu As The Main Menu <br>
+4. Filename ~/.config/firstlogincomplete_DONOTDelete will now get created ,<br> so going forward triggers functions not applied while that file exists.<br>
 
 -----------------------------------------------------
 What Happens At Login Of Subsequently Created Users?
 -----------------------------------------------------
 
-Same as directly above.<br>
+Same as What Happens At Next Login Of The Very First Ever Created User.<br>
 
 <br>
 
@@ -141,7 +141,7 @@ Fixing Procedure
 <br>
 If you have done all the 'sed' and 'rm' to remove certain Panel functions, you shouldn't have any issues.
 However if you get a smarty who uses the terminal to access hidden files and accidentally deletes ~/.config/cinnamon/spices/Cinamenu@json or the .json file that should be there,<br>
-then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and everything returns to normal.
+then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and everything resets.
 
 
 ---------------------------------------------------------------------------
