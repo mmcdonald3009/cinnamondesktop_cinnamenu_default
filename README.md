@@ -133,7 +133,7 @@ What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user 
 What Happens At Login Of Subsequently Created Users?
 -----------------------------------------------------
 
-Same as What Happens At Next Login Of The Very First Ever Created User.<br>
+Same as what happens at next login of the very first ever created user.<br>
 
 <br>
 
