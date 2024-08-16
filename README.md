@@ -47,8 +47,8 @@ Copy Provided Files Into Place
 <br>
 
 ----------------------------------------------------------------------------------------------------
-YOU REALLY SHOULD DO THESE FOR UNBREAKABILITY  / STABILITY !!!<br>
 Remove "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely
+YOU REALLY SHOULD DO THESE FOR UNBREAKABILITY & STABILITY ...<br>
 ----------------------------------------------------------------------------------------------------
 <br>
 Take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc in case you need to restore them.<br>
