@@ -20,8 +20,8 @@ I was servicing Novell and early NT networks in gold mine offices and on aborigi
 7. I started coding PHP and JS and playing with Linux in 2006 and developed successful business applications in Laravel and vanilla PHP/js.
 
 <br><br>
-I stripped the Add & Remove panel functions because I wanted something I could deploy commercially, mainstream requiring minimal user support by removing anything that could break it.<br>
-And if you want to compete with Mac or Windoze you only need one panel and want minimal IT support headaches.
+I have stripped the Add & Remove panel functions because I wanted something I could deploy mainstream requiring minimal user support by removing anything that could break it.<br>
+If you want to compete with Mac or Windoze you actually only need one stable moveable panel.
 Note I make Cinnamenu an applet in the main /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders. 
 
 <br>
