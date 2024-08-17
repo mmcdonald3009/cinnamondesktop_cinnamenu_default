@@ -26,7 +26,7 @@ If you want to a viable alternative to Mac or Windoze, imho you actually only ne
 Note I make Cinnamenu an applet in the main /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders. 
 
 <br>
-At time of writing I am using Debian 12.6. Do an apt update && upgrade to make sure you are current.<br>Also works fine on LMDE Mint.<br>
+At time of writing I am using Debian 12.6. Do an apt update && upgrade to make sure you are current.<br>Also tested on LMDE Mint.<br>
 Should work on most distros as there isn't much to it and relies mostly on the gnome function that lets you can call a per user login script from a .desktop file in /etc/xdg/autostart<br><br>
 I am using SpiralLinux which formats as BTRFS and has snapper rollback in the GRUB menu !<br>
 Many Many thanks to the OpenSUSE GeckoLinux dev for coming up with SpiralLinux.<br>
