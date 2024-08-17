@@ -15,7 +15,7 @@ I was servicing Novell and early NT networks in gold mine offices and on aborigi
 2. I returned to Sydney in 1998 and took on team roles that were being made vacant as more seniors moved into y2k remediation projects.<br>
 3. I spent time on integration projects involving Windows NT 4.0, Lotus Notes To Exchange, etc...<br>
 4. I was an IT systems (AD 2000, Citrix Metaframe) admin for the AMTL/Connex Melbourne JV when they held the commuter train franchise there in the early 2000's.<br>
-5. I have also workied in property construction management and building operations.
+5. I have also workied in property construction management and building operations.<br>
 6. I started coding PHP and JS and playing with Linux in 2006 and have developed successful business applications in Laravel & Wordpress.
 
 
