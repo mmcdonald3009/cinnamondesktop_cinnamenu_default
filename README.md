@@ -7,8 +7,7 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 3. Nothing is dangerous when everything is considered in it's proper context.<br>
 4. When a user toggles Show Hidden Files in Nemo, Nemo will immediately close and restart. Not a perfect solution but should keep kids from accidentally deleting hidden files.<br>
 5. You can set a limit to the number of workspaces a user may create.<br>
-6. You can stop Nemo Show Hidden Files closing/restarting & Workspace Max Number Limiting by typing this into a terminal:# killall dbus-monitor<br>
-7. If you don't want the max workspaces limit and Nemo disable hidden files, comment out the last line in z_login.sh
+
 
 <br>
 <br>
@@ -148,12 +147,14 @@ Same as what happens at next login of the very first ever created user.<br>
 <br>
 
 -----------------------------------------------------
-Fixing Procedure
+Fixing / Adjusting
 -----------------------------------------------------
 <br>
 If you have done all the 'sed' and 'rm' to remove certain Panel functions, you shouldn't have any issues.
 However if you get a smarty who uses the terminal to access hidden files and "accidentally" deletes ~/.config/cinnamon/spices/Cinamenu@json or the .json file that should be there,<br>
-then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and everything resets.
+then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and everything resets.<br><br>
+- You can stop Nemo Show Hidden Files closing/restarting & Workspace Max Number Limiting by typing this into a terminal:# killall dbus-monitor<br>
+- If you don't want the max workspaces limit and Nemo disable hidden files, comment out the last line in z_login.sh
 
 
 -----------------------------------------------------------------------------------
