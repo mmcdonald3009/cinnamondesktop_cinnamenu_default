@@ -18,7 +18,7 @@ I was servicing Novell and early NT networks in gold mine offices and on aborigi
 4. I spent time on integration projects involving Windows NT 4.0, Lotus Notes To Exchange, etc...<br>
 5. I was an IT systems (AD 2000, Citrix Metaframe) admin for the AMTL/Connex JV in Melbourne when they held the commuter train franchise there in the early 2000's.<br>
 6. I have also worked in property construction and building/facilities operations management.<br>
-7. I started coding PHP and JS and playing with Linux in 2006 and developed successful business applications in Laravel and vanilla PHP/js.
+7. I started coding PHP and JS and playing with Linux in 2006 and have developed complex business applications in Laravel and vanilla PHP/js.
 
 <br><br>
 I have stripped the Add & Remove panel functions because I wanted something I could deploy mainstream requiring minimal user support by removing anything that could break it.<br>
