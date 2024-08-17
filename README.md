@@ -67,7 +67,7 @@ https://spirallinux.github.io/#download
 
 ----------------------------------------------------------------------------------------------------
 ( How To: 3 of 3 ) Delete "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely...
-YOU REALLY SHOULD DO THESE FOR UNBREAKABILITY & STABILITY ...<br>
+YOU REALLY GOTTA DO THESE FOR THE UNBREAKABILITY/STABILITY ...<br>
 ----------------------------------------------------------------------------------------------------
 <br>
 Take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc in case you need to restore them.<br>
