@@ -179,8 +179,8 @@ Cinnamenu@json will get deleted and have to be downloaded and copied again into 
 -----------------------------------------------------------------------------------
 Not related But Maybe Useful Knowledge: Display Manager - LightDM or GDM3?
 -----------------------------------------------------------------------------------
-The issue may be that I am using Debian. Both cinnamon-settings-users and users-admin ( gnome-system-tools ) have problems deleting users when running LightDM.
-Howver, they work properly running on GDM3.
+The issue may be that I am using Debian. Both cinnamon-settings-users and users-admin ( gnome-system-tools ) have problems deleting users when running under LightDM.
+However, they work properly when GDM3 is the display manager.
 <br><br>
 Have a good day and try and be nice to others :)
 <br><br>
