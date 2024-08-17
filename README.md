@@ -21,8 +21,9 @@ I was servicing Novell and early NT networks in gold mine offices and on aborigi
 7. I started coding PHP and JS and playing with Linux in 2006 and have developed complex business applications in Laravel and vanilla PHP/js.
 
 <br><br>
-I have stripped the Add & Remove panel functions because I wanted something I could deploy mainstream requiring minimal user support by removing anything unnecessary that could break it.<br>
+I have stripped the Add & Remove panel and applet/desklet functions because I wanted something I could deploy mainstream requiring minimal user support by removing anything unnecessary that could break it.<br>
 If you want to a viable alternative to Mac or Windoze, imho you actually only need one stable moveable panel.
+The default applets/desklets set released as part of Cinnamon stable is enough for a productive computing experience.
 Note I make Cinnamenu an applet in the main /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders. 
 
 <br>
@@ -67,7 +68,6 @@ https://spirallinux.github.io/#download
 ----------------------------------------------------------------------------------------------------
 ( How To 3 of 3 ) Delete "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely...
 YOU REALLY SHOULD DO THESE FOR UNBREAKABILITY & STABILITY ...<br>
-The default set released as part of Cinnamon stable is enough for a productive computing experience.
 ----------------------------------------------------------------------------------------------------
 <br>
 Take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc in case you need to restore them.<br>
