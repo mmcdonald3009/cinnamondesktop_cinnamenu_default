@@ -155,12 +155,19 @@ However if you get a smarty who uses the terminal to access hidden files and "ac
 then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and everything resets.
 
 
----------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 What Happens To The Cinnamon Desktop During An Apt Upgrade To The Library/Version ?
----------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 Cinnamenu@json will get deleted and have to be downloaded and copied again into /usr/share/cinnamon/applets/
 <br><br>
 Have a good day and try and be nice to others :)
 <br><br>
+
+-----------------------------------------------------------------------------------
+Not related But Maybe Useful Knowledge Display Manager - LightDM or GDM3?
+-----------------------------------------------------------------------------------
+The issue may be that I am using Debian. Both cinnamon-settings-users and users-admin ( gnome-system-tools ) have problems deleting users when running LightDM.
+They work properly running on GDM3.
+
 
 ---END OF README---
