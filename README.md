@@ -13,7 +13,7 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 <br>
 At time of writing I am using Debian 12.6, this is the minimum so DO an apt update && upgrade to make sure you are current. Works fine on Mint.<br><br>
 I am using SpiralLinux which formats as BTRFS and has snapper rollback in the GRUB menu !<br>
-Many Many Many Special thanks to the OpenSUSE GeckoLinux dev for coming up with SpiralLinux.<br>
+Many Many thanks to the OpenSUSE GeckoLinux dev for coming up with SpiralLinux.<br>
 https://spirallinux.github.io/#download
 <br>
 <br>
