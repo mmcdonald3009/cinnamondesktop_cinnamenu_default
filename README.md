@@ -14,7 +14,7 @@ A quick about me so you have some context for the logic I apply in deciding what
 1. I am a trades qualified Electrical Mechanic in the state of NSW, Australia (Otis Elevators, 1990).<br>
 2. My IT career began with running a small computer shop at the back of a BP petrol station in Tennant Creek, Northern Territory, outback Australia in 1996.<br>There, 
 I was servicing Novell and early NT networks in gold mine offices and on aboriginal council office and educational centres.<br>
-3. I returned to Sydney in 1998 and took on team contract roles that were being made available due to WIN NT market driving and vacancies as seniors moved into y2k remediation projects.<br>
+3. I moved to Sydney in 1998 and took on team contract roles that were being made available due to WIN NT market driving and vacancies as seniors moved into y2k remediation projects.<br>
 4. I spent time on integration projects involving Windows NT 4.0, Lotus Notes To Exchange, etc...<br>
 5. I was an IT systems (AD 2000, Citrix Metaframe) admin for the AMTL/Connex Melbourne JV when they held the commuter train franchise there in the early 2000's.<br>
 6. I have also worked in property construction and building/facilities operations management.<br>
