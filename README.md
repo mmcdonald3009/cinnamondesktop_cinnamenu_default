@@ -28,7 +28,8 @@ Note I make Cinnamenu an applet in the main /usr/share/cinnamon/applets folder a
 
 <br>
 At time of writing I am using Debian 12.6. Do an apt update && upgrade to make sure you are current.<br>Also tested on LMDE Mint.<br>
-Should work on most distros as there isn't much to it and relies mostly on the gnome function that lets you can call a per user login script from a .desktop file in /etc/xdg/autostart<br><br>
+Should work on most distros as there isn't much to it. Relies mostly on the gnome function that lets you can call a per user login script from a .desktop file in /etc/xdg/autostart
+and the gschema override function.<br>
 I am using SpiralLinux Debian Cinnamon, which formats FS to BTRFS and has snapper rollback in the GRUB menu !<br>
 Many Many thanks to the OpenSUSE GeckoLinux dev for coming up with SpiralLinux.<br>
 https://spirallinux.github.io/#download
