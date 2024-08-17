@@ -11,10 +11,10 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 <br>
 A quick about me so you understand the logic I apply to deciding what I think is useful in a mainstream environment:<br>
 1. My IT career began running a small computer shop at the back of a BP petrol station in Tennant Creek, Northern Territory, outback Australia.<br>
-I was servicing Novell and early NT networks in gold mine offices and on aboriginal council office and educational centres.
-2. I returned to Sydney in 1998 and took on team roles that were being made vacant as more seniors moved into y2k remediation projects.
-3. I spent time on integration projects involving Windows NT 4.0, Lotus Notes To Exchange, etc...
-4. I was an IT systems (AD 2000) admin for the AMTL/Connex Melbourne JV when they held the commuter train franchise there in the early 2000's.
+I was servicing Novell and early NT networks in gold mine offices and on aboriginal council office and educational centres.<br>
+2. I returned to Sydney in 1998 and took on team roles that were being made vacant as more seniors moved into y2k remediation projects.<br>
+3. I spent time on integration projects involving Windows NT 4.0, Lotus Notes To Exchange, etc...<br>
+4. I was an IT systems (AD 2000, Citrix Metaframe) admin for the AMTL/Connex Melbourne JV when they held the commuter train franchise there in the early 2000's.<br>
 5. I have also workied in property construction management and building operations.
 6. I started coding PHP and JS and playing with Linux in 2006 and have developed successful business applications in Laravel & Wordpress.
 
