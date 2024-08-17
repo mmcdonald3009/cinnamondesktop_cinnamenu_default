@@ -37,7 +37,7 @@ https://spirallinux.github.io/#download
 
 
 ------------------------------------------
-Download & Install These
+( How To 1 of 3 ) Download & Install These
 ------------------------------------------
 <br>
 
@@ -50,9 +50,9 @@ Download & Install These
 <br>
 
 
-----------------------------------------------
-Copy My Provided Files (here ... this github download them) Into Place
-----------------------------------------------
+--------------------------------------------------------------------------------------------
+( How To 2 of 3 ) Copy My Provided Files (here ... this github download them) Into Place
+--------------------------------------------------------------------------------------------
 <br>
 
 1. Copy provided /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override into your file system /usr/share/glib-2.0/schemas/<br>Then as su/sudo run this in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
@@ -65,7 +65,7 @@ Copy My Provided Files (here ... this github download them) Into Place
 <br>
 
 ----------------------------------------------------------------------------------------------------
-Delete "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely...
+( How To 3 of 3 ) Delete "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely...
 YOU REALLY SHOULD DO THESE FOR UNBREAKABILITY & STABILITY ...<br>
 The default set released as part of Cinnamon stable is enough for a productive computing experience.
 ----------------------------------------------------------------------------------------------------
