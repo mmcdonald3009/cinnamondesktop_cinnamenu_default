@@ -1,16 +1,23 @@
-------------------------------------
+------------------------------------------------------------------------
 Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
-------------------------------------
+------------------------------------------------------------------------
 <br>
 1. Sets Cinnamenu as the default menu for new users, on a single cinnamon desktop panel.<br>
 2. Some panel functions like Add Panel and Remove Panel get deleted for stability - procedures are below. We do, however keep the ability to Move the single panel.<br>
 3. Nothing is dangerous when everything is considered in it's proper context.<br>
 4. When a user toggles Show Hidden Files in Nemo, Nemo will immediately close and restart. Not a perfect solution but should keep kids from accidentally deleting hidden files.<br>
 5. You can set a limit to the number of workspaces a user may create.<br>
-
-
 <br>
 <br>
+A quick about me so you understand the logic I apply to what is useful in a mainstream environment:
+1. My IT career began running a small computer shop at the back of a BP petrol station in Tennant Creek, outback Australia.<br>
+I was servicing Novell and early NT networks in gold mine offices and on aboriginal council office and educational centres.
+2. I returned to Sydney in 1998 and took on team roles that were being made vacant as more seniors moved into y2k remediation projects.
+3. I spent time on integration projects involving Windows NT 4.0, Lotus Notes To Exchange, etc...
+4. I was an IT systems (AD 2000) admin for the AMTL/Connex Melbourne JV when they held the commuter train franchise there in the early 2000's.
+5. I have also workied in property construction management and building operations.
+6. I started coding PHP and JS and playing with Linux in 2006 and have developed successful business applications in Laravel & Wordpress.
+
 
 I stripped the Add & Remove panel functions because I wanted something I could deploy commercially, mainstream requiring minimal user support by removing anything that could break it.<br>
 And if you want to compete with Mac or Windoze you only need one panel and want no IT support headaches.
@@ -25,6 +32,7 @@ https://spirallinux.github.io/#download
 <br>
 <br>
 <br>
+
 
 ------------------------------------------
 Download & Install
@@ -56,6 +64,7 @@ Copy Provided Files Into Place
 ----------------------------------------------------------------------------------------------------
 Delete "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely...
 YOU REALLY SHOULD DO THESE FOR UNBREAKABILITY & STABILITY ...<br>
+The default set released as part of Cinnamon stable is enough for a productive computing experience.
 ----------------------------------------------------------------------------------------------------
 <br>
 Take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc in case you need to restore them.<br>
@@ -88,7 +97,7 @@ sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);|
 *** This deletes "Add new panel (From Panel Settings)" ***<br>
 sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py<br><br>
 And do these removes...<br>
-The default set is good enough for productive computing and released as part of Cinnamon stable, so no real need to change:
+
 <br>
 <br>
 rm /usr/share/applications/cinnamon-settings-applets.desktop <br>
