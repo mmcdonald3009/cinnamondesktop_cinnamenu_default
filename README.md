@@ -10,7 +10,6 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 6. You can stop Nemo Show Hidden Files closing/restarting & Workspace Max Number Limiting by typing this into a terminal:# killall dbus-monitor<br>
 7. If you don't want the max workspaces limit and Nemo disable hidden files, comment out the last line in z_login.sh
 
-<br>Logout and then Login and they will be running again. 
 <br>
 <br>
 
