@@ -38,7 +38,7 @@ https://spirallinux.github.io/#download
 
 
 ------------------------------------------
-( How To 1 of 3 ) Download & Install These
+( How To: 1 of 3 ) Download & Install These
 ------------------------------------------
 <br>
 
@@ -52,7 +52,7 @@ https://spirallinux.github.io/#download
 
 
 --------------------------------------------------------------------------------------------
-( How To 2 of 3 ) Copy My Provided Files (here ... this github download them) Into Place
+( How To: 2 of 3 ) Copy In My Provided Files (yes from this github download them !)
 --------------------------------------------------------------------------------------------
 <br>
 
@@ -66,7 +66,7 @@ https://spirallinux.github.io/#download
 <br>
 
 ----------------------------------------------------------------------------------------------------
-( How To 3 of 3 ) Delete "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely...
+( How To: 3 of 3 ) Delete "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely...
 YOU REALLY SHOULD DO THESE FOR UNBREAKABILITY & STABILITY ...<br>
 ----------------------------------------------------------------------------------------------------
 <br>
