@@ -1,6 +1,7 @@
 ------------------------------------------------------------------------
 Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 ------------------------------------------------------------------------
+WHAT IT DOES
 <br>
 1. Sets Cinnamenu as the default menu for new users, on a single cinnamon desktop panel.<br>
 2. Some panel functions like Add Panel and Remove Panel get deleted for stability - procedures are below. We do, however keep the ability to Move the single panel.<br>
