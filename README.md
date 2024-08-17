@@ -9,7 +9,7 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 5. You can set a limit to the number of workspaces a user may create.<br>
 <br>
 <br>
-A quick about me so you understand the logic I apply to deciding what I think is useful in a mainstream environment:<br>
+A quick about me so you have some context for the logic I apply in deciding what I think is suitable for a mainstream Deployment:<br><br>
 1. I am a trades qualified Electrical Mechanic in the state of NSW, Australia (Otis Elevators, 1990).<br>
 2. My IT career began with running a small computer shop at the back of a BP petrol station in Tennant Creek, Northern Territory, outback Australia in 1996.<br>There, 
 I was servicing Novell and early NT networks in gold mine offices and on aboriginal council office and educational centres.<br>
