@@ -14,8 +14,8 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 <br>
 
 I stripped the Add & Remove panel functions because I wanted something I could deploy commercially, mainstream requiring minimal user support by removing anything that could break it.<br>
-And if you want to compete with Mac or Windoxe you only need one panel and no IT support headaches.
-Note I make Cinnamenu an applet in the main /usr/share/cinnamon/applets folder as opposed to the users home hidden folders. 
+And if you want to compete with Mac or Windoze you only need one panel and want no IT support headaches.
+Note I make Cinnamenu an applet in the main /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders. 
 
 <br>
 At time of writing I am using Debian 12.6, this is the minimum so DO an apt update && upgrade to make sure you are current.<br>Works fine on Mint.<br>
