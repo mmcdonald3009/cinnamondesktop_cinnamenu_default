@@ -36,7 +36,7 @@ https://spirallinux.github.io/#download
 
 
 ------------------------------------------
-Download & Install
+Download & Install These
 ------------------------------------------
 <br>
 
@@ -50,7 +50,7 @@ Download & Install
 
 
 ----------------------------------------------
-Copy Provided Files Into Place
+Copy My Provided Files (here ... this github download them) Into Place
 ----------------------------------------------
 <br>
 
