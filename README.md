@@ -174,14 +174,15 @@ What Happens To The Cinnamon Desktop During An Apt Upgrade To The Library/Versio
 -----------------------------------------------------------------------------------
 Cinnamenu@json will get deleted and have to be downloaded and copied again into /usr/share/cinnamon/applets/
 <br><br>
-Have a good day and try and be nice to others :)
-<br><br>
+
 
 -----------------------------------------------------------------------------------
-Not related But Maybe Useful Knowledge Display Manager - LightDM or GDM3?
+Not related But Maybe Useful Knowledge: Display Manager - LightDM or GDM3?
 -----------------------------------------------------------------------------------
 The issue may be that I am using Debian. Both cinnamon-settings-users and users-admin ( gnome-system-tools ) have problems deleting users when running LightDM.
-They work properly running on GDM3.
-
+Howver, they work properly running on GDM3.
+<br><br>
+Have a good day and try and be nice to others :)
+<br><br>
 
 ---END OF README---
