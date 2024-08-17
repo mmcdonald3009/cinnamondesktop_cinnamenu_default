@@ -60,7 +60,8 @@ https://spirallinux.github.io/#download
 1. Copy provided /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override into your file system /usr/share/glib-2.0/schemas/<br>Then as su/sudo run this in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
 2. Copy provided /etc/xdg/autostart/z_login.desktop into your file system /etc/xdg/autostart/. This runs at userlogin and calls a script (/usr/share/customscripts/z_login.sh)<br>
 3. Make a directory: /usr/share/customscripts ( make sure group: others can read & execute permissions), and copy the provided /usr/share/customscripts/z_login.sh into it<br>
-4. Make z_login.sh executable by run in terminal:# chmod +x /usr/share/customscripts/z_login.sh
+4. Have a look around inside z_login.sh and note the functions ... 
+5. Make z_login.sh executable by run in terminal:# chmod +x /usr/share/customscripts/z_login.sh
 5. Check all your permissions
 6. This is all that is actually required to make the core work. However, be sure to remove unnecessary Panel functions as per next section below !
 
@@ -168,7 +169,6 @@ However if you get a smarty who uses the terminal to access hidden files and "ac
 then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and everything resets.<br><br>
 - You can stop Nemo Show Hidden Files closing/restarting & Workspace Max Number Limiting by typing this into a terminal:# killall dbus-monitor<br>
 - If you don't want the max workspaces limit and Nemo disable hidden files, comment out the last line in z_login.sh
-
 
 -----------------------------------------------------------------------------------
 What Happens To The Cinnamon Desktop During An Apt Upgrade To The Library/Version ?
