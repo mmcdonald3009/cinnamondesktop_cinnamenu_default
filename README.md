@@ -3,7 +3,7 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 ------------------------------------
 <br>
 1. Sets Cinnamenu as the default menu for new users, on a single cinnamon desktop panel.<br>
-2. Some panel functions like Add Panel and Remove Panel REALLY SHOULD be deleted for stability - procedures are below. We do, however keep the ability to move the single panel.<br>
+2. Some panel functions like Add Panel and Remove Panel REALLY SHOULD be deleted for stability - procedures are below. We do, however keep the ability to Move the single panel.<br>
 3. Nothing is dangerous when everything is considered in it's proper context.<br>
 4. When a user toggles Show Hidden Files in Nemo, Nemo will immediately close and restart. Not a perfect solution but should keep kids from accidentally deleting hidden files.<br>
 5. You can set a limit to the number of workspaces a user may create.<br>
@@ -11,7 +11,12 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 <br>Logout and then Login and they will be running again. 
 <br>
 <br>
-At time of writing I am using Debian 12.6, this is the minimum so DO an apt update && upgrade to make sure you are current. Works fine on Mint.<br><br>
+At time of writing I am using Debian 12.6, this is the minimum so DO an apt update && upgrade to make sure you are current. Works fine on Mint.<br>
+I stripped the Add & Remove panel functions because I wanted something I could deploy commercially, mainstream requiring minimal user support by removing anything that could break it.<br>
+And if you want to compete with Mac or Windoxe you only need one panel and no IT support headaches.
+Note I make Cinnamenu an applet in the main /usr/share/cinnamon/applets folder as opposed to the users home hidden folders. 
+
+<br>
 I am using SpiralLinux which formats as BTRFS and has snapper rollback in the GRUB menu !<br>
 Many Many thanks to the OpenSUSE GeckoLinux dev for coming up with SpiralLinux.<br>
 https://spirallinux.github.io/#download
