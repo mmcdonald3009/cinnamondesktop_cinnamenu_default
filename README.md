@@ -18,7 +18,7 @@ And if you want to compete with Mac or Windoze you only need one panel and want 
 Note I make Cinnamenu an applet in the main /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders. 
 
 <br>
-At time of writing I am using Debian 12.6, this is the minimum so DO an apt update && upgrade to make sure you are current.<br>Works fine on Mint.<br>
+At time of writing I am using Debian 12.6, this is the minimum so DO an apt update && upgrade to make sure you are current.<br>Also works fine on Mint.<br>
 I am using SpiralLinux which formats as BTRFS and has snapper rollback in the GRUB menu !<br>
 Many Many thanks to the OpenSUSE GeckoLinux dev for coming up with SpiralLinux.<br>
 https://spirallinux.github.io/#download
