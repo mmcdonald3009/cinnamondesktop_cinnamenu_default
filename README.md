@@ -10,13 +10,14 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 <br>
 <br>
 A quick about me so you understand the logic I apply to deciding what I think is useful in a mainstream environment:<br>
-1. My IT career began running a small computer shop at the back of a BP petrol station in Tennant Creek, Northern Territory, outback Australia.<br>
+1. I am a trades qualified Electrical Mechanic in the state of NSW, Australia (Otis Elevators).
+2. My IT career began with running a small computer shop at the back of a BP petrol station in Tennant Creek, Northern Territory, outback Australia.<br>
 I was servicing Novell and early NT networks in gold mine offices and on aboriginal council office and educational centres.<br>
-2. I returned to Sydney in 1998 and took on team roles that were being made vacant as more seniors moved into y2k remediation projects.<br>
-3. I spent time on integration projects involving Windows NT 4.0, Lotus Notes To Exchange, etc...<br>
-4. I was an IT systems (AD 2000, Citrix Metaframe) admin for the AMTL/Connex Melbourne JV when they held the commuter train franchise there in the early 2000's.<br>
-5. I have also workied in property construction management and building operations.<br>
-6. I started coding PHP and JS and playing with Linux in 2006 and developed successful business applications in Laravel and vanilla PHP/js.
+3. I returned to Sydney in 1998 and took on team roles that were being made vacant as more seniors moved into y2k remediation projects.<br>
+4. I spent time on integration projects involving Windows NT 4.0, Lotus Notes To Exchange, etc...<br>
+5. I was an IT systems (AD 2000, Citrix Metaframe) admin for the AMTL/Connex Melbourne JV when they held the commuter train franchise there in the early 2000's.<br>
+6. I have also workied in property construction building operations management.<br>
+7. I started coding PHP and JS and playing with Linux in 2006 and developed successful business applications in Laravel and vanilla PHP/js.
 
 
 I stripped the Add & Remove panel functions because I wanted something I could deploy commercially, mainstream requiring minimal user support by removing anything that could break it.<br>
