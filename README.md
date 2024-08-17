@@ -58,8 +58,9 @@ Copy My Provided Files (here ... this github download them) Into Place
 2. Copy provided /etc/xdg/autostart/z_login.desktop into your file system /etc/xdg/autostart/. This runs at userlogin and calls a script (/usr/share/customscripts/z_login.sh)<br>
 3. Make a directory: /usr/share/customscripts ( make sure group: others can read & execute permissions), and copy the provided /usr/share/customscripts/z_login.sh into it<br>
 4. Make z_login.sh executable by run in terminal:# chmod +x /usr/share/customscripts/z_login.sh
-5. This is all that is actually required to make it work. However, be sure to remove Panel functions as per next below
-6. Check all your permissions
+5. Check all your permissions
+6. This is all that is actually required to make the core work. However, be sure to remove unnecessary Panel functions as per next section below !
+
 <br>
 
 ----------------------------------------------------------------------------------------------------
