@@ -62,7 +62,7 @@ https://spirallinux.github.io/#download
 3. Make a directory: /usr/share/customscripts ( make sure group: others can read & execute permissions), and copy the provided /usr/share/customscripts/z_login.sh into it<br>
 4. Have a look around inside z_login.sh and note the functions ... 
 5. Make z_login.sh executable by run in terminal:# chmod +x /usr/share/customscripts/z_login.sh
-5. Check all your permissions
+5. Check all your permissions( 755 is usually good )
 6. This is all that is actually required to make the core work. However, be sure to remove unnecessary Panel functions as per next section below !
 
 <br>
