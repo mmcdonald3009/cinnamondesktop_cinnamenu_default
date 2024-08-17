@@ -10,17 +10,7 @@ WHAT THIS DOES
 5. You can set a limit to the number of workspaces a user may create.<br>
 <br>
 <br>
-A quick about me so you have some context of the mind behind logic being applied in deciding what is suitable for mainstream deployment:<br><br>
-1. I am a trades qualified Electrical Mechanic in the state of NSW, Australia (Otis Elevators, 1990).<br>
-2. My IT career began with running a small computer shop at the back of a BP petrol station in Tennant Creek, Northern Territory, outback Australia in 1996.<br>There, 
-I was servicing Novell and early NT networks in gold mine offices and on aboriginal council office and educational centres.<br>
-3. I moved to Sydney in 1998 and took on team contract roles that were being made available due to WIN NT market driving and vacancies as seniors moved into y2k remediation projects.<br>
-4. I spent time on integration projects involving Windows NT 4.0, Lotus Notes To Exchange, etc...<br>
-5. I was an IT systems (AD 2000, Citrix Metaframe) admin for the AMTL/Connex JV in Melbourne when they held the commuter train franchise there in the early 2000's.<br>
-6. I have also worked in property construction and building/facilities operations management.<br>
-7. I started coding PHP and JS and playing with Linux in 2006 and have developed complex business applications in Laravel and vanilla PHP/js.
-
-<br><br>
+<br>
 I have stripped the Add & Remove panel and applet/desklet functions because I wanted something I could deploy mainstream requiring minimal user support by removing anything unnecessary that could break it.<br>
 If you want to a viable alternative to Mac or Windoze, imho you actually only need one stable moveable panel.
 The default applets/desklets set released as part of Cinnamon stable is enough for a productive computing experience.
