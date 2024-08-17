@@ -11,7 +11,7 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 <br>
 A quick about me so you understand the logic I apply to deciding what I think is useful in a mainstream environment:<br>
 1. I am a trades qualified Electrical Mechanic in the state of NSW, Australia (Otis Elevators).<br>
-2. My IT career began with running a small computer shop at the back of a BP petrol station in Tennant Creek, Northern Territory, outback Australia.<br>
+2. My IT career began with running a small computer shop at the back of a BP petrol station in Tennant Creek, Northern Territory, outback Australia. There, 
 I was servicing Novell and early NT networks in gold mine offices and on aboriginal council office and educational centres.<br>
 3. I returned to Sydney in 1998 and took on team roles that were being made vacant as more seniors moved into y2k remediation projects.<br>
 4. I spent time on integration projects involving Windows NT 4.0, Lotus Notes To Exchange, etc...<br>
