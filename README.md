@@ -45,12 +45,12 @@ Copy Provided Files Into Place
 ----------------------------------------------
 <br>
 
-1. Copy provided /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override into your file system /usr/share/glib-2.0/schemas/.<br>Then as su/sudo run this in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
-2. Copy provided /etc/xdg/autostart/z_login.desktop into your file system /etc/xdg/autostart/. This runs at userlogin and calls a script (/usr/share/customscripts/z_login.sh).<br>
-3. Make a directory: /usr/share/customscripts ( make sure group: others can read & execute permissions), and copy the provided /usr/share/customscripts/z_login.sh into it.<br>
-4. Make z_login.sh executable by run in terminal:# chmod +x /usr/share/customscripts/z_login.sh.
-5. This is all that is actually required to make it work. However, be sure to remove Panel functions as per next below.
-6. Check all your permissions.
+1. Copy provided /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override into your file system /usr/share/glib-2.0/schemas/<br>Then as su/sudo run this in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/<br>
+2. Copy provided /etc/xdg/autostart/z_login.desktop into your file system /etc/xdg/autostart/. This runs at userlogin and calls a script (/usr/share/customscripts/z_login.sh)<br>
+3. Make a directory: /usr/share/customscripts ( make sure group: others can read & execute permissions), and copy the provided /usr/share/customscripts/z_login.sh into it<br>
+4. Make z_login.sh executable by run in terminal:# chmod +x /usr/share/customscripts/z_login.sh
+5. This is all that is actually required to make it work. However, be sure to remove Panel functions as per next below
+6. Check all your permissions
 <br>
 
 ----------------------------------------------------------------------------------------------------
