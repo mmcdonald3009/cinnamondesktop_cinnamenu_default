@@ -158,9 +158,9 @@ If you have done all the 'sed' and 'rm' to remove certain Panel functions, you s
 However if you get a smarty who uses the terminal to access hidden files and "accidentally" deletes ~/.config/cinnamon/spices/Cinamenu@json or the .json file that should be there,<br>
 then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and everything resets.
 <br><br>
-When you create a user, if the Cinnamenu does not toggle as default on first login - it does work if you:
-* Manual logout and then it works at every login afterwards
-* Setup forced logout by default after the first login - and then it works at every login afterwards by:
+When you create a user, if the Cinnamenu does not toggle as default on first login - it does work if you:<br>
+* Manual logout and then it works at every login afterwards<br>
+* Setup forced logout by default after the first login - and then it works at every login afterwards by:<br>
 <br><br> commenting out #cinnamon --replace &<br>
 AND<br><br>uncommenting #cinnamon-session-quit --logout --force in /usr/share/customscripts z_login.sh<br>
 Forced logout may have to be the norm in future wayland implementations I have not tested as muffin wayland at this time is exmperimental anyway.
