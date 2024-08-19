@@ -143,8 +143,8 @@ Adjusting / Fixing
 -----------------------------------------------------
 <br>
 * You can stop Nemo Show Hidden Files closing/restarting & Workspace Max Number Limiting by typing this in terminal:# killall dbus-monitor<br>
-* If you don't want the max workspaces limit and Nemo disable hidden files, comment out the last line in z_login.sh<br><br>
-To Change The MAX Number Of Workspaces A User May Create<br>
+* If you don't want the max workspaces limit and Nemo disable hidden files, comment out the last line in z_login.sh<br>
+* To Change The MAX Number Of Workspaces A User May Create<br>
 <br>
 Set the value in z_login.sh by changing both the numbers under this line (4 is default):<br>
 ############ SET MAX NUMBER OF WORKSPACES HERE ###############<br>
@@ -167,10 +167,6 @@ AND<br><br>uncommenting #cinnamon-session-quit --logout --force in /usr/share/cu
 Forced logout may have to be the norm in future wayland implementations I have not tested as muffin wayland at this time is exmperimental anyway.
 <br><br>
 
-<br>
-<br>
-<br>
-<br>
 
 -----------------------------------------------------------------------------------
 What Happens To The Cinnamon Desktop During An Apt Upgrade To The Library/Version ?
