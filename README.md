@@ -10,7 +10,6 @@ WHAT THIS DOES
 5. You can set a limit to the number of workspaces a user may create.<br>
 <br>
 <br>
-<br>
 I have stripped the Add & Remove panel and applet/desklet functions because I wanted something I could deploy mainstream requiring minimal user support by removing anything unnecessary that could break it.<br>
 If you want a viable alternative to Mac or Windoze, imho you actually only need one stable moveable panel.
 The default applets/desklets set released as part of Cinnamon stable is enough for a productive computing experience.<br>
