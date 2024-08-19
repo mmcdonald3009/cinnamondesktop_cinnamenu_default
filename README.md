@@ -151,18 +151,19 @@ Same as what happens at next login of the very first ever created user.<br>
 <br>
 
 -----------------------------------------------------
-Fixing / Adjusting
+Adjusting / Fixing
 -----------------------------------------------------
 <br>
-If you have done all the 'sed' and 'rm' to remove certain Panel functions, you shouldn't have any issues.
-However if you get a smarty who uses the terminal to access hidden files and "accidentally" deletes ~/.config/cinnamon/spices/Cinamenu@json or the .json file that should be there,<br>
-then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and everything resets.<br><br>
 * You can stop Nemo Show Hidden Files closing/restarting & Workspace Max Number Limiting by typing this in terminal:# killall dbus-monitor<br>
 * If you don't want the max workspaces limit and Nemo disable hidden files, comment out the last line in z_login.sh
 <br><br>
 Cinnamenu appears in panel centre. If you want it in another position, change in 11_cinnamon.gschema.override:
 'panel1:center:0:Cinnamenu@json',
-And remember as su/sudo to do this in terminal:#glib-compile-schemas /usr/share/glib-2.0/schemas/ 
+And remember as su/sudo to do this in terminal:#glib-compile-schemas /usr/share/glib-2.0/schemas/
+<br><br>
+If you have done all the 'sed' and 'rm' to remove certain Panel functions, you shouldn't have any issues.
+However if you get a smarty who uses the terminal to access hidden files and "accidentally" deletes ~/.config/cinnamon/spices/Cinamenu@json or the .json file that should be there,<br>
+then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and everything resets.
 
 -----------------------------------------------------------------------------------
 What Happens To The Cinnamon Desktop During An Apt Upgrade To The Library/Version ?
