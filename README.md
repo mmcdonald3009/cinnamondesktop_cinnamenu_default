@@ -144,9 +144,8 @@ Adjusting / Fixing
 <br>
 * You can stop Nemo Show Hidden Files closing/restarting & Workspace Max Number Limiting by typing this in terminal:# killall dbus-monitor<br>
 * If you don't want the max workspaces limit and Nemo disable hidden files, comment out the last line in z_login.sh<br>
-* To Change The MAX Number Of Workspaces A User May Create<br>
-<br>
-Set the value in z_login.sh by changing both the numbers under this line (4 is default):<br>
+* To Change The MAX Number Of Workspaces A User May Create:<br>
+Set the value in z_login.sh by changing both the numbers under this line (4 is default)<br>
 ############ SET MAX NUMBER OF WORKSPACES HERE ###############<br>
 if [ "$wksp" -gt 4 ];then<br>
 dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "4".
