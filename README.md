@@ -103,18 +103,7 @@ rm /usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py <br>
 rm /usr/share/cinnamon/cinnamon-settings/modules/cs_extensions.py <br>
 rm /usr/share/cinnamon/cinnamon-settings/modules/cs_workspaces.py <br>
 
---------------------------------------------------------
-To Change The MAX Number Of Workspaces A User May Create
---------------------------------------------------------
 
-<br>
-Set the value in z_login.sh by changing both the numbers under this line (4 is default):<br>
-############ SET MAX NUMBER OF WORKSPACES HERE ###############<br>
-if [ "$wksp" -gt 4 ];then<br>
-dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "4".<br>
-<br>
-<br>
-<br>
 
 -------------------------------------------------------------------------------------------------------------------------
 What To Do If Using Different Panel Applets (/usr/share/cinnamon/applets/)<br>To Those In /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override ?
@@ -170,6 +159,17 @@ When you create a user, if the Cinnamenu does not toggle as default on first log
 <br><br> commenting out #cinnamon --replace &<br>
 AND<br><br>uncommenting #cinnamon-session-quit --logout --force in /usr/share/customscripts z_login.sh<br>
 Forced logout may have to be the norm in future wayland implementations I have not tested as muffin wayland at this time is exmperimental anyway.
+<br><br>
+
+To Change The MAX Number Of Workspaces A User May Create<br>
+<br>
+Set the value in z_login.sh by changing both the numbers under this line (4 is default):<br>
+############ SET MAX NUMBER OF WORKSPACES HERE ###############<br>
+if [ "$wksp" -gt 4 ];then<br>
+dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "4".<br>
+<br>
+<br>
+<br>
 
 -----------------------------------------------------------------------------------
 What Happens To The Cinnamon Desktop During An Apt Upgrade To The Library/Version ?
