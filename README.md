@@ -159,6 +159,10 @@ However if you get a smarty who uses the terminal to access hidden files and "ac
 then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and everything resets.<br><br>
 - You can stop Nemo Show Hidden Files closing/restarting & Workspace Max Number Limiting by typing this into a terminal:# killall dbus-monitor<br>
 - If you don't want the max workspaces limit and Nemo disable hidden files, comment out the last line in z_login.sh
+<br><br>
+Cinnamenu appears in panel centre. If yu woud like it in another position, change in 11_cinnamon.gschema.override:
+'panel1:center:0:Cinnamenu@json',
+And remember as su/sudo to do this in terminal:#glib-compile-schemas /usr/share/glib-2.0/schemas/ 
 
 -----------------------------------------------------------------------------------
 What Happens To The Cinnamon Desktop During An Apt Upgrade To The Library/Version ?
