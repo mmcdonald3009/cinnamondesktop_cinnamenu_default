@@ -54,9 +54,9 @@ https://spirallinux.github.io/#download
 2. Copy provided /etc/xdg/autostart/z_login.desktop into your file system /etc/xdg/autostart/. This runs at userlogin and calls a script (/usr/share/customscripts/z_login.sh)
 3. Make a directory: /usr/share/customscripts ( make sure group: others can read & execute permissions), and copy the provided /usr/share/customscripts/z_login.sh into it
 4. Have a look around inside z_login.sh and note the functions ...
-5. Make z_login.sh executable by run in terminal:# chmod +x /usr/share/customscripts/z_login.sh<br>
-5. Check all your permissions( 755 is usually good )<br>
-6. This is all that is actually required to make the core work. However, be sure to remove unnecessary Panel functions as per next section below !<br>
+5. Make z_login.sh executable by run in terminal:# chmod +x /usr/share/customscripts/z_login.sh
+5. Check all your permissions( 755 is usually good )
+6. This is all that is actually required to make the core work. However, be sure to remove unnecessary Panel functions as per next section below !
 
 
 ----------------------------------------------------------------------------------------------------
@@ -68,33 +68,42 @@ YOU REALLY GOTTA DO THESE FOR THE UNBREAKABILITY/STABILITY ...<br>
 Take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc in case you want to restore them.<br>
 EVEN WITH A BROKEN PANEL YOU CAN RIGHT-CLICK->RUN IN TERMINAL:# nemo, COPY/PASTE/RENAME BACKUPS ( ...edit as root ).
 
-Copy/Paste these lines (not the ones beginning with ***, the ones below starting with 'sed' - and then the lines beginning with 'rm' ) all as su/sudo in a terminal:#<br><br>
+Copy/Paste these lines (not the ones beginning with ***, the ones below starting with 'sed' - and then the lines beginning with 'rm' ) all as su/sudo in a terminal:#
+
+
 *** This deletes "(Panel Right-Click) Remove Panel" ***
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js
+
 
 *** This deletes "(Panel Right-Click) Add Panel" ***<br>
 sed -i 's|menu.addMenuItem(menu.addPanelItem);||g' /usr/share/cinnamon/js/ui/panel.js
 
+
 *** This deletes "(Panel Right-Click) Applets" ***<br>
 sed -i 's|this.addMenuItem(applet_settings_item);||g' /usr/share/cinnamon/js/ui/panel.js
+
 
 *** This deletes "(Panel Right-Click) Panel Edit Mode" ***
 sed -i 's|menu.addMenuItem(panelEditMode);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
 
+
 *** This deletes "(Panel Right-Click) System Settings" ***
 sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "preferences-desktop"));||g' /usr/share/cinnamon/js/ui/panel.js 
+
 
 *** This deletes "(Panel Right-Click) Troubleshooting" ***
 sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
 
+
 *** This deletes "(Panel Right-Click) Remove {Applet By Name]" ***<br>
 sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js <br><br>  
 
+
 *** This deletes "Add new panel (From Panel Settings)" ***<br>
-sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py<br><br>
+sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py
+
 And do these removes...
-<br>
-<br>
+
 rm /usr/share/applications/cinnamon-settings-applets.desktop <br>
 rm /usr/share/applications/cinnamon-settings-desklets.desktop <br>
 rm /usr/share/applications/cinnamon-settings-extensions.desktop <br>
@@ -110,22 +119,20 @@ rm /usr/share/cinnamon/cinnamon-settings/modules/cs_workspaces.py <br>
 What To Do If Using Different Panel Applets (/usr/share/cinnamon/applets/)<br>To Those In /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override ?
 -------------------------------------------------------------------------------------------------------------------------
 
-<br>
+
 Change them to match in /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override.<br>
 Then again as su/sudo run in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/
-<br>
-<br>
-<br>
+
 
 ------------------------------------------
 At This Stage You Are Up & Running...
 ------------------------------------------
-<br>
+
 
 ---------------------------------------------------------------------------------------------------------------
 What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user account created as part of OS setup/install )
 ---------------------------------------------------------------------------------------------------------------
-<br>
+
 1. /etc/xdg/autostart/z_login.desktop calls script /usr/share/customscripts/z_login.sh<br>
 2. Script checks for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and being missing triggers some actions...<br>
 3. Trigger action: Enable Default Applets - Set Cinnamenu@json applet As The Default Main Menu<br>
@@ -137,41 +144,39 @@ What Happens At Login Of Subsequently Created Users?
 
 Same as what happens at next login of the very first ever created user.<br>
 
-<br>
-
 -----------------------------------------------------
 Adjusting / Fixing
 -----------------------------------------------------
-<br>
-* You can stop Nemo Show Hidden Files closing/restarting & Workspace Max Number Limiting by typing this in terminal:# killall dbus-monitor<br>
-* If you don't want the max workspaces limit and Nemo disable hidden files, comment out the last line in z_login.sh<br>
-* To Change The MAX Number Of Workspaces A User May Create:<br>
-Set the value in z_login.sh by changing both the numbers under this line (4 is default)<br>
+
+1. You can stop Nemo Show Hidden Files closing/restarting & Workspace Max Number Limiting by typing this in terminal:# killall dbus-monitor
+2. If you don't want the max workspaces limit and Nemo disable hidden files, comment out the last line in z_login.sh
+3. To Change The MAX Number Of Workspaces A User May Create:
+Set the value in z_login.sh by changing both the numbers under this line (4 is default)
 ############ SET MAX NUMBER OF WORKSPACES HERE ###############<br>
 if [ "$wksp" -gt 4 ];then<br>
 dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "4".
-<br><br>
+
 Cinnamenu appears in panel centre. If you want it in another position, change in 11_cinnamon.gschema.override:
 'panel1:center:0:Cinnamenu@json',
 And remember as su/sudo to do this in terminal:#glib-compile-schemas /usr/share/glib-2.0/schemas/
-<br><br>
+
 If you have done all the 'sed' and 'rm' to remove certain Panel functions, you shouldn't have any issues.
+
 However if you get a smarty who uses the terminal to access hidden files and "accidentally" deletes ~/.config/cinnamon/spices/Cinamenu@json or the .json file that should be there,<br>
 then in a terminal type:# rm ~/.config/firstlogincomplete_DONOTDelete and have them logout and login again and everything resets.
-<br><br>
-When you create a user, if the Cinnamenu does not toggle as default on first login - it does work if you:<br>
-* Manual logout and then it works at every login afterwards<br>
-* Setup forced logout by default after the first login - and then it works at every login afterwards by:<br>
-uncommenting cinnamon-session-quit --logout --force in /usr/share/customscripts z_login.sh<br><br>
-Forced logout may have to be the norm in future wayland implementations I have not tested as muffin wayland at this time is exmperimental anyway.
-<br><br>
 
+When you create a user, if the Cinnamenu does not toggle as default on first login - it does work if you:
+* Manual logout and then it works at every login afterwards
+* Setup forced logout by default after the first login - and then it works at every login afterwards by:
+uncommenting cinnamon-session-quit --logout --force in /usr/share/customscripts z_login.sh
+Forced logout may have to be the norm in future wayland implementations I have not tested as muffin wayland at this time is exmperimental anyway.
 
 -----------------------------------------------------------------------------------
 What Happens To The Cinnamon Desktop During An Apt Upgrade To The Library/Version ?
 -----------------------------------------------------------------------------------
+
+
 Cinnamenu@json will get deleted and have to be downloaded and copied again into /usr/share/cinnamon/applets/
-<br><br>
 
 
 -----------------------------------------------------------------------------------
@@ -179,8 +184,8 @@ Not related But Maybe Useful Knowledge: Display Manager - LightDM or GDM3?
 -----------------------------------------------------------------------------------
 The issue may be that I am using Debian. Both cinnamon-settings-users and users-admin ( gnome-system-tools ) have problems deleting users when running under LightDM.
 However, they work properly when GDM3 is the display manager.
-<br><br>
+
 Have a good day and try and be nice to others :)
-<br><br>
+
 
 ---END OF README---
