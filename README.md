@@ -11,7 +11,7 @@ WHAT THIS DOES
 5. The ability to Move the single panel is retained.
 6. Nothing is dangerous when everything is considered in it's proper context.
 
-I delete the Add & Remove panel and applet/desklet/extension functions because I wanted something I could deploy mainstream requiring minimal user support by removing anything unnecessary that could break it.
+I delete the Add & Remove panel and applet/desklet/extension functions because I wanted something I could deploy mainstream requiring minimal user support which means removing anything unnecessary that could break it.
 
 If you want a viable alternative to Mac or Windoze, you actually only require one stable moveable panel.
 
