@@ -20,7 +20,7 @@ The default applets/desklets/extensions set released as part of Cinnamon stable 
 
 Note, I make Cinnamenu an applet in the OS system /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders - where it might otherwise get deleted. 
 
-Should work on most distros as there really isn't much to it. Relies on the gnome functions that lets you call a per user login script from a .desktop file in /etc/xdg/autostart, the gschema override function, and dbus-monitor to detect system app calls that change state of things, and issue a command response (dconf write, etc ) from a script if required.
+Should work on most distros as there really isn't much to it. Relies on the gnome functions that lets you call a per user login script from a .desktop file in /etc/xdg/autostart, the gschema override function, and dbus-monitor to detect app calls that change state of things, and respond with (dconf write, etc ) from script if required.
 
 
 I am using SpiralLinux Debian 12.6 Cinnamon, which formats FS to BTRFS and has snapper rollback in the GRUB menu !
