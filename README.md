@@ -51,13 +51,15 @@ https://spirallinux.github.io/#download
 --------------------------------------------------------------------------------------------
 
 
-1. Copy provided /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override into your file system /usr/share/glib-2.0/schemas/<br>Then as su/sudo run this in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/
-2. Copy provided /etc/xdg/autostart/z_login.desktop into your file system /etc/xdg/autostart/. This runs at userlogin and calls a script (/usr/share/customscripts/z_login.sh)
-3. Make a directory: /usr/share/customscripts ( make sure group: others can read & execute permissions), and copy the provided /usr/share/customscripts/z_login.sh into it
-4. Have a look around inside z_login.sh and note the functions ...
-5. Make z_login.sh executable by run in terminal:# chmod +x /usr/share/customscripts/z_login.sh
-5. Check all your permissions( 755 is usually good )
-6. This is all that is actually required to make the core work. However, be sure to remove unnecessary Panel functions as per next section below !
+1. Copy provided /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override into your system folder /usr/share/glib-2.0/schemas/
+2. As su/sudo run this in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/
+3. Copy provided /etc/xdg/autostart/z_login.desktop into your system folder /etc/xdg/autostart/. This runs at userlogin and will execute a script->(/usr/share/customscripts/z_login.sh)
+4. Make a system folder: /usr/share/customscripts and copy in the provided /usr/share/customscripts/z_login.sh
+5. Make sure group: ( others have read & execute permissions)
+6. Have a look around inside z_login.sh and note the functions ...
+7. Make z_login.sh executable from terminal:# chmod +x /usr/share/customscripts/z_login.sh
+8. Check all your permissions( 755 is usually good )
+9. This is all that is actually required to make the core work. However, be sure to remove unnecessary Panel functions as per next section below !
 
 
 ----------------------------------------------------------------------------------------------------
