@@ -22,11 +22,16 @@ The default applets/desklets set released as part of Cinnamon stable are enough 
 Note, I make Cinnamenu an applet in the OS system /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders. 
 <br>
 <br>
-At time of writing I am using Debian 12.6. Do an apt update && upgrade to make sure you are current.<br>Also tested on LMDE Mint.<br><br>
+At time of writing I am using Debian 12.6. Do an apt update && upgrade to make sure you are current.<br>Also tested on LMDE Mint.
+<br><br>
 Should work on most distros as there really isn't much to it. Relies mostly on the gnome function that lets you call a per user login script from a .desktop file in /etc/xdg/autostart
-and the gschema override function.<br><br>
-I am using SpiralLinux Debian Cinnamon, which formats FS to BTRFS and has snapper rollback in the GRUB menu !<br>
-<br>Many Many thanks to the OpenSUSE GeckoLinux dev for coming up with SpiralLinux.<br>
+and the gschema override function.
+<br><br>
+I am using SpiralLinux Debian Cinnamon, which formats FS to BTRFS and has snapper rollback in the GRUB menu !
+<br>
+<br>
+Many Many thanks to the OpenSUSE GeckoLinux dev for coming up with SpiralLinux.
+<br>
 https://spirallinux.github.io/#download
 <br>
 <br>
