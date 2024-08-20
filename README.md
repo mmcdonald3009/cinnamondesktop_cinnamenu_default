@@ -3,18 +3,24 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 ------------------------------------------------------------------------
 WHAT THIS DOES
 <br>
-1. Sets Cinnamenu as the default menu for new users, on a single cinnamon desktop panel.<br>
-2. When a user toggles Show Hidden Files in Nemo, Nemo will immediately close and restart. Not a perfect solution but should keep kids from accidentally deleting hidden files.<br>
-3. You can set a limit to the number of workspaces a user may create.<br>
-4. Some panel functions like Add and Remove Panels & Add/Remove Applets should get deleted for stability - procedures are below. We do, however keep the ability to Move the single panel.<br>
-5. Nothing is dangerous when everything is considered in it's proper context.<br>
+1. Sets Cinnamenu as the default menu for new users, on a single cinnamon desktop panel.
+<br>
+2. When a user toggles Show Hidden Files in Nemo, Nemo will immediately close and restart. Not a perfect solution but should keep kids from accidentally deleting hidden files.
+<br>
+3. You can set a limit to the number of workspaces a user may create.
+<br>
+4. Some panel functions like Add and Remove Panels & Add/Remove Applets should get deleted for stability - procedures are below. We do, however keep the ability to Move the single panel.
+<br>
+5. Nothing is dangerous when everything is considered in it's proper context.
+<br>
 
 <br>
 I delete the Add & Remove panel and applet/desklet/extension functions because I wanted something I could deploy mainstream requiring minimal user support by removing anything unnecessary that could break it.<br>
 If you want a viable alternative to Mac or Windoze, you actually only require one stable moveable panel.<br><br>
-The default applets/desklets set released as part of Cinnamon stable are enough for a productive computing experience, without adding more or deleting any.<br><br>
-Note, also I make Cinnamenu an applet in the OS system /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders. 
-
+The default applets/desklets set released as part of Cinnamon stable are enough for a productive computing experience, without adding more or deleting any.
+<br><br>
+Note, I make Cinnamenu an applet in the OS system /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders. 
+<br>
 <br>
 At time of writing I am using Debian 12.6. Do an apt update && upgrade to make sure you are current.<br>Also tested on LMDE Mint.<br><br>
 Should work on most distros as there really isn't much to it. Relies mostly on the gnome function that lets you call a per user login script from a .desktop file in /etc/xdg/autostart
