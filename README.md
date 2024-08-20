@@ -50,7 +50,7 @@ https://spirallinux.github.io/#download
 
 
 --------------------------------------------------------------------------------------------
-( How To: 2 of 3 ) Copy In My Provided Files (yes from this github download them !)
+( How To: 2 of 3 ) Copy In Provided Files (yes from this github download them !)
 --------------------------------------------------------------------------------------------
 
 
