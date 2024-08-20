@@ -24,7 +24,8 @@ Should work on most distros as there really isn't much to it. Relies on the gnom
 
 
 I am using SpiralLinux Debian 12.6 Cinnamon, which formats FS to BTRFS and has snapper rollback in the GRUB menu !
-Do an apt update && upgrade to make sure you have current repos!
+
+Do an:# apt update && upgrade to make sure you have current repos!
 
 Also tested on LMDE Mint.
 
