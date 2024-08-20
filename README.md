@@ -183,8 +183,8 @@ Same as what happens at next login of the very first ever created user.
 Adjusting / Fixing
 -----------------------------------------------------
 
-1. You can stop Nemo Show Hidden Files closing/restarting & Workspace Max Number Limiting by typing this in terminal:# killall dbus-monitor
-2. If you don't want the max workspaces limit and Nemo disable hidden files, comment out the last line in z_login.sh
+1. If you don't want the max workspaces limit and Nemo disable hidden files, comment out the last line in z_login.sh
+2. You can stop Nemo Show Hidden Files closing/restarting & Workspace Max Number Limiting by typing this in terminal:# killall dbus-monitor
 3. To Change The MAX Number Of Workspaces A User May Create:
 Set the value in z_login.sh by changing both the numbers under this line (4 is default)
 ############ SET MAX NUMBER OF WORKSPACES HERE ###############<br>
