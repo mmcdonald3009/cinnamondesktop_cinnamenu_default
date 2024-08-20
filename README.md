@@ -44,11 +44,8 @@ https://spirallinux.github.io/#download
 <br>
 
 1. Download Cinnamenu - was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322
-<br>
-2. Copy the Cinnamenu@json files into /usr/share/cinnamon/applets/Cinnamenu@json/
-<br>
+2. Copy the Cinnamenu@json files into /usr/share/cinnamon/applets/Cinnamenu@json
 3. INSTALL PACKAGE:# apt install xautomation
-<br>
 4. INSTALL PACKAGE:# apt install libgtk-3-bin
 <br>
 * xautomation allows for keypress emulation from a script.
@@ -64,13 +61,9 @@ https://spirallinux.github.io/#download
 <br>
 
 1. Copy provided /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override into your file system /usr/share/glib-2.0/schemas/<br>Then as su/sudo run this in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/
-
 2. Copy provided /etc/xdg/autostart/z_login.desktop into your file system /etc/xdg/autostart/. This runs at userlogin and calls a script (/usr/share/customscripts/z_login.sh)
-<br>
 3. Make a directory: /usr/share/customscripts ( make sure group: others can read & execute permissions), and copy the provided /usr/share/customscripts/z_login.sh into it
-<br>
 4. Have a look around inside z_login.sh and note the functions ...
-<br> 
 5. Make z_login.sh executable by run in terminal:# chmod +x /usr/share/customscripts/z_login.sh<br>
 5. Check all your permissions( 755 is usually good )<br>
 6. This is all that is actually required to make the core work. However, be sure to remove unnecessary Panel functions as per next section below !<br>
