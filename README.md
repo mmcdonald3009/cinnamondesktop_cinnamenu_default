@@ -30,11 +30,10 @@ Many Many thanks to the OpenSUSE GeckoLinux dev for coming up with SpiralLinux.
 https://spirallinux.github.io/#download
 
 
-
 ------------------------------------------
 ( How To: 1 of 3 ) Download & Install These
 ------------------------------------------
-<br>
+
 
 1. Download Cinnamenu - was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322
 2. Copy the Cinnamenu@json files into /usr/share/cinnamon/applets/Cinnamenu@json
@@ -44,14 +43,12 @@ https://spirallinux.github.io/#download
 * xautomation allows for keypress emulation from a script.
 
 * libgtk-3-bin provides gtk-launch for launching .desktop files from a terminal.
-<br> 
-<br>
 
 
 --------------------------------------------------------------------------------------------
 ( How To: 2 of 3 ) Copy In My Provided Files (yes from this github download them !)
 --------------------------------------------------------------------------------------------
-<br>
+
 
 1. Copy provided /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override into your file system /usr/share/glib-2.0/schemas/<br>Then as su/sudo run this in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/
 2. Copy provided /etc/xdg/autostart/z_login.desktop into your file system /etc/xdg/autostart/. This runs at userlogin and calls a script (/usr/share/customscripts/z_login.sh)
@@ -61,35 +58,33 @@ https://spirallinux.github.io/#download
 5. Check all your permissions( 755 is usually good )<br>
 6. This is all that is actually required to make the core work. However, be sure to remove unnecessary Panel functions as per next section below !<br>
 
-<br>
 
 ----------------------------------------------------------------------------------------------------
 ( How To: 3 of 3 ) Delete "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely...
 YOU REALLY GOTTA DO THESE FOR THE UNBREAKABILITY/STABILITY ...<br>
 ----------------------------------------------------------------------------------------------------
-<br>
+
+
 Take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc in case you want to restore them.<br>
 EVEN WITH A BROKEN PANEL YOU CAN RIGHT-CLICK->RUN IN TERMINAL:# nemo, COPY/PASTE/RENAME BACKUPS ( ...edit as root ).
-<br>
-<br>
 
 Copy/Paste these lines (not the ones beginning with ***, the ones below starting with 'sed' - and then the lines beginning with 'rm' ) all as su/sudo in a terminal:#<br><br>
-*** This deletes "(Panel Right-Click) Remove Panel" ***<br>
-sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+*** This deletes "(Panel Right-Click) Remove Panel" ***
+sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js
 
 *** This deletes "(Panel Right-Click) Add Panel" ***<br>
-sed -i 's|menu.addMenuItem(menu.addPanelItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+sed -i 's|menu.addMenuItem(menu.addPanelItem);||g' /usr/share/cinnamon/js/ui/panel.js
 
 *** This deletes "(Panel Right-Click) Applets" ***<br>
-sed -i 's|this.addMenuItem(applet_settings_item);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+sed -i 's|this.addMenuItem(applet_settings_item);||g' /usr/share/cinnamon/js/ui/panel.js
 
-*** This deletes "(Panel Right-Click) Panel Edit Mode" ***<br>
+*** This deletes "(Panel Right-Click) Panel Edit Mode" ***
 sed -i 's|menu.addMenuItem(panelEditMode);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
 
-*** This deletes "(Panel Right-Click) System Settings" ***<br>
-sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "preferences-desktop"));||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+*** This deletes "(Panel Right-Click) System Settings" ***
+sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "preferences-desktop"));||g' /usr/share/cinnamon/js/ui/panel.js 
 
-*** This deletes "(Panel Right-Click) Troubleshooting" ***<br>
+*** This deletes "(Panel Right-Click) Troubleshooting" ***
 sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
 
 *** This deletes "(Panel Right-Click) Remove {Applet By Name]" ***<br>
