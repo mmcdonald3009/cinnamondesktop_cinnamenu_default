@@ -78,43 +78,35 @@ EVEN WITH A BROKEN PANEL YOU CAN RIGHT-CLICK->RUN IN TERMINAL:# nemo, COPY/PASTE
 Copy/Paste these lines (not the ones beginning with ***, the ones below starting with 'sed' - and then the lines beginning with 'rm' ) all as su/sudo in a terminal:#
 
 
-*** This deletes "(Panel Right-Click) Remove Panel" ***
-
+*** This deletes "(Panel Right-Click) Remove Panel" ***<br>
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js
 
 
-*** This deletes "(Panel Right-Click) Add Panel" ***
-
+*** This deletes "(Panel Right-Click) Add Panel" ***<br>
 sed -i 's|menu.addMenuItem(menu.addPanelItem);||g' /usr/share/cinnamon/js/ui/panel.js
 
 
-*** This deletes "(Panel Right-Click) Applets" ***
-
+*** This deletes "(Panel Right-Click) Applets" ***<br>
 sed -i 's|this.addMenuItem(applet_settings_item);||g' /usr/share/cinnamon/js/ui/panel.js
 
 
-*** This deletes "(Panel Right-Click) Panel Edit Mode" ***
-
+*** This deletes "(Panel Right-Click) Panel Edit Mode" ***<br>
 sed -i 's|menu.addMenuItem(panelEditMode);||g' /usr/share/cinnamon/js/ui/panel.js
 
 
-*** This deletes "(Panel Right-Click) System Settings" ***
-
+*** This deletes "(Panel Right-Click) System Settings" ***<br>
 sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "preferences-desktop"));||g' /usr/share/cinnamon/js/ui/panel.js 
 
 
-*** This deletes "(Panel Right-Click) Troubleshooting" ***
-
+*** This deletes "(Panel Right-Click) Troubleshooting" ***<br>
 sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
 
 
-*** This deletes "(Panel Right-Click) Remove {Applet By Name]" ***
-
+*** This deletes "(Panel Right-Click) Remove {Applet By Name]" ***<br>
 sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js <br><br>  
 
 
-*** This deletes "Add new panel (From Panel Settings)" ***
-
+*** This deletes "Add new panel (From Panel Settings)" ***<br>
 sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py
 
 And do these removes...
