@@ -206,7 +206,7 @@ When you create a user, if the Cinnamenu does not toggle as default on first log
 * Manual logout and then it works at every login afterwards
 * Setup forced logout by default after the first login - and then it works at every login afterwards by:
 uncommenting cinnamon-session-quit --logout --force in /usr/share/customscripts z_login.sh
-Forced logout may have to be the norm in future wayland implementations I have not tested as muffin wayland at this time is exmperimental anyway.
+Forced logout may have to be the norm in future wayland implementations I have not tested as muffin wayland at this time is experimental.
 
 -----------------------------------------------------------------------------------
 What Happens To The Cinnamon Desktop During An Apt Upgrade To The Library/Version ?
