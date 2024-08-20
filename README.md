@@ -131,13 +131,12 @@ And do these removes all as su/sudo in a terminal:#
 
 rm /usr/share/applications/cinnamon-settings-applets.desktop
 
-rm /usr/share/applications/cinnamon-settings-desklets.desktop
 
 rm /usr/share/applications/cinnamon-settings-extensions.desktop
 
+
 rm /usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py
 
-rm /usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py
 
 rm /usr/share/cinnamon/cinnamon-settings/modules/cs_extensions.py
 
