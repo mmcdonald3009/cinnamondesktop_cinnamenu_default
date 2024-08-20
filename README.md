@@ -170,7 +170,7 @@ What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user 
 2. Script checks for a filename( ~/.config/firstlogincomplete_DONOTDelete ) which will be missing and being missing triggers some actions...
 3. Trigger action: Enable Default Applets - Set Cinnamenu@json applet As The Default Main Menu
 4. Filename ~/.config/firstlogincomplete_DONOTDelete will now get created, so going forward trigger function not applied again
-5.These 3 commands do the work of enabling Cinnamenu:
+5. These here 3 commands do the work of enabling Cinnamenu to default:
 * gsettings reset org.cinnamon panels-enabled
 * gsettings reset-recursively org.cinnamon
 * cinnamon --replace &
