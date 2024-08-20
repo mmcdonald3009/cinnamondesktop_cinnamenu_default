@@ -11,7 +11,7 @@ WHAT THIS DOES
 5. There is a section below addressing how to implement custom applets system-wide:<br> "What If I Want Different Applets In (/usr/share/cinnamon/applets/)
 To Those In /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override ?"
 6. The ability to Move the single panel is retained.
-7. Nothing is dangerous when everything is considered in it's proper context.
+7. Nothing is dangerous when everything is considered and managed in proper context.
 
 
 I delete the Add & Remove panel and applet/desklet/extension functions because I wanted something I could deploy mainstream requiring minimal user support which means removing anything unnecessary that could break it.
