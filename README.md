@@ -10,6 +10,7 @@ WHAT THIS DOES
 4. Some panel functions like Add/Remove Panels & Add/Remove Applets, Desklets and Extensions should get deleted for stability - procedures are below. I can't make you, but only with that done will you get "user unbreakability" for this.
 5. The ability to Move the single panel is retained.
 6. Nothing is dangerous when everything is considered in it's proper context.
+7. I've been playing with Linux since 2006 so there's a good chance I know what I am talking about.
 
 I delete the Add & Remove panel and applet/desklet/extension functions because I wanted something I could deploy mainstream requiring minimal user support which means removing anything unnecessary that could break it.
 
