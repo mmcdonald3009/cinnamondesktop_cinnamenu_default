@@ -57,7 +57,7 @@ https://spirallinux.github.io/#download
 
 1. Copy provided /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override into your system folder /usr/share/glib-2.0/schemas/
 2. As su/sudo run this in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/
-3. Copy provided /etc/xdg/autostart/z_login.desktop into your system folder /etc/xdg/autostart/. This runs at userlogin and will execute a script->(/usr/share/customscripts/z_login.sh)
+3. Copy provided /etc/xdg/autostart/z_login.desktop into your system folder /etc/xdg/autostart/. This runs at userlogin to execute the script->(/usr/share/customscripts/z_login.sh)
 4. Make a system folder: /usr/share/customscripts and copy in the provided /usr/share/customscripts/z_login.sh
 5. Make sure group: ( others have read & execute permissions)
 6. Have a look around inside z_login.sh and note the functions ...
