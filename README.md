@@ -192,8 +192,7 @@ if [ "$wksp" -gt 4 ];then<br>
 dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "4".
 
 Cinnamenu appears in panel centre. If you want it in another position, change applet position settings in 11_cinnamon.gschema.override:
-'panel1:center:0:Cinnamenu@json',
-And remember as su/sudo to do this in terminal:#glib-compile-schemas /usr/share/glib-2.0/schemas/
+'panel1:center:0:Cinnamenu@json'- and remember as su/sudo to do this again in terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 If you have done all the 'sed' and 'rm' to remove certain Panel functions, you shouldn't have any issues.
 
