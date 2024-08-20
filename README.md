@@ -40,7 +40,7 @@ https://spirallinux.github.io/#download
 
 
 1. Download Cinnamenu - was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322
-2. Copy the Cinnamenu@json files into /usr/share/cinnamon/applets/Cinnamenu@json
+2. Copy all the Cinnamenu@json folders & files into /usr/share/cinnamon/applets/Cinnamenu@json
 3. Install:# apt install xautomation
 4. Install:# apt install libgtk-3-bin
 
