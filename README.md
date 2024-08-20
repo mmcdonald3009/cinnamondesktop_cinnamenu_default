@@ -25,7 +25,6 @@ Should work on most distros as there really isn't much to it. Relies on the gnom
 
 I am using SpiralLinux Debian 12.6 Cinnamon, which formats FS to BTRFS and has snapper rollback in the GRUB menu !
 
-Do an:# apt update && upgrade to make sure you have current repos!
 
 Also tested on LMDE Mint.
 
@@ -42,8 +41,9 @@ https://spirallinux.github.io/#download
 
 1. Download Cinnamenu - was here at time of writing: https://cinnamon-spices.linuxmint.com/applets/view/322
 2. Copy all the Cinnamenu@json folders & files into /usr/share/cinnamon/applets/Cinnamenu@json
-3. Install:# apt install xautomation
-4. Install:# apt install libgtk-3-bin
+3. Do:# apt update && upgrade to make sure you have current repos to get the following files...
+4. Install:# apt install xautomation
+5. Install:# apt install libgtk-3-bin
 
 * xautomation allows for keypress emulation from a script.
 
