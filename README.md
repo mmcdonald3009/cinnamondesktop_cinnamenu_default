@@ -7,9 +7,10 @@ WHAT THIS DOES
 1. Very simple to implement solution for making Cinnamenu the default menu, on a single cinnamon desktop panel.
 2. When a user toggles Show Hidden Files in Nemo, Nemo will immediately close and restart. Not a perfect solution but should keep kids from accidentally deleting hidden files.
 3. You can set a limit to the number of workspaces a user may create.
-4. Some panel functions-> Add/Remove Panels & Add/Remove Applets, Desklets and Extensions should be deleted for stability - procedures down below. I can't make you, but only with that done will you get the desired "user unbreakability".
-5. The ability to Move the single panel is retained.
-6. Nothing is dangerous when everything is considered in it's proper context.
+4. Some panel functions-> User Add/Remove Panels & Add/Remove Applets, Desklets and Extensions should be deleted for stability - procedures down below. I can't make you, but only with that done will you get the desired "user unbreakability".
+5. There is a section below addressing the requirement for implementing system-wide custom applets - "What If I Want Different Applets...?"
+6. The ability to Move the single panel is retained.
+7. Nothing is dangerous when everything is considered in it's proper context.
 
 
 I delete the Add & Remove panel and applet/desklet/extension functions because I wanted something I could deploy mainstream requiring minimal user support which means removing anything unnecessary that could break it.
