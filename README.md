@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------
-Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
+Cinnamenu Default Menu On A Single Moveable Cinnamon Desktop Panel
 ------------------------------------------------------------------------
 WHAT THIS DOES
 
