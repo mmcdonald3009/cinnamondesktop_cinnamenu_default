@@ -4,15 +4,11 @@ Cinnamenu As Default Menu On A Single Moveable Cinnamon Desktop Panel
 WHAT THIS DOES
 <br>
 1. Sets Cinnamenu as the default menu for new users, on a single cinnamon desktop panel.
-<br>
 2. When a user toggles Show Hidden Files in Nemo, Nemo will immediately close and restart. Not a perfect solution but should keep kids from accidentally deleting hidden files.
-<br>
 3. You can set a limit to the number of workspaces a user may create.
-<br>
 4. Some panel functions like Add and Remove Panels & Add/Remove Applets should get deleted for stability - procedures are below. We do, however keep the ability to Move the single panel.
-<br>
 5. Nothing is dangerous when everything is considered in it's proper context.
-<br>
+
 
 <br>
 I delete the Add & Remove panel and applet/desklet/extension functions because I wanted something I could deploy mainstream requiring minimal user support by removing anything unnecessary that could break it.<br>
