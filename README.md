@@ -43,9 +43,9 @@ https://spirallinux.github.io/#download
 2. Copy the Cinnamenu@json files into /usr/share/cinnamon/applets/Cinnamenu@json
 3. INSTALL PACKAGE:# apt install xautomation
 4. INSTALL PACKAGE:# apt install libgtk-3-bin
-<br>
+
 * xautomation allows for keypress emulation from a script.
-<br>
+
 * libgtk-3-bin provides gtk-launch for launching .desktop files from a terminal.
 <br> 
 <br>
