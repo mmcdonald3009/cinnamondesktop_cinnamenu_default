@@ -75,6 +75,7 @@ https://spirallinux.github.io/#download
 Take a backup of /usr/share/cinnamon/js/panel.js, main.js, applet.js, everything, etc in case you want to restore them.<br>
 EVEN WITH A BROKEN PANEL YOU CAN RIGHT-CLICK->RUN IN TERMINAL:# nemo, COPY/PASTE/RENAME BACKUPS ( ...edit as root ).
 
+
 Copy/Paste these lines (not the ones beginning with ***, the ones below starting with 'sed' - and then the lines beginning with 'rm' ) all as su/sudo in a terminal:#
 
 
