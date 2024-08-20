@@ -111,13 +111,13 @@ sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "prefe
 
 *** This deletes "(Panel Right-Click) Troubleshooting" ***
 
-sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+sed -i 's|menu.addMenuItem(menu.troubleshootItem);||g' /usr/share/cinnamon/js/ui/panel.js
 
 
 
 *** This deletes "(Panel Right-Click) Remove {Applet By Name]" ***
 
-sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js <br><br>  
+sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);||g" /usr/share/cinnamon/js/ui/applet.js
 
 
 *** This deletes "Add new panel (From Panel Settings)" ***
@@ -127,14 +127,21 @@ sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settin
 
 And do these removes...
 
-rm /usr/share/applications/cinnamon-settings-applets.desktop <br>
-rm /usr/share/applications/cinnamon-settings-desklets.desktop <br>
-rm /usr/share/applications/cinnamon-settings-extensions.desktop <br>
-rm /usr/share/applications/cinnamon-settings-workspaces.desktop <br>
-rm /usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py <br>
-rm /usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py <br>
-rm /usr/share/cinnamon/cinnamon-settings/modules/cs_extensions.py <br>
-rm /usr/share/cinnamon/cinnamon-settings/modules/cs_workspaces.py <br>
+rm /usr/share/applications/cinnamon-settings-applets.desktop
+
+rm /usr/share/applications/cinnamon-settings-desklets.desktop
+
+rm /usr/share/applications/cinnamon-settings-extensions.desktop
+
+rm /usr/share/applications/cinnamon-settings-workspaces.desktop
+
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py
+
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py
+
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_extensions.py
+
+rm /usr/share/cinnamon/cinnamon-settings/modules/cs_workspaces.py
 
 
 
@@ -143,7 +150,8 @@ What To Do If Using Different Panel Applets (/usr/share/cinnamon/applets/)<br>To
 -------------------------------------------------------------------------------------------------------------------------
 
 
-Change them to match in /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override.<br>
+Change them to match in /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override.
+
 Then again as su/sudo run in a terminal:# glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 
@@ -169,7 +177,7 @@ What Happens At Next Login Of The Very First Ever Created User ?<br> ( The user 
 What Happens At Login Of Subsequently Created Users?
 -----------------------------------------------------
 
-Same as what happens at next login of the very first ever created user.<br>
+Same as what happens at next login of the very first ever created user.
 
 -----------------------------------------------------
 Adjusting / Fixing
