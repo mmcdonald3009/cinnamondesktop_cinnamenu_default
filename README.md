@@ -11,16 +11,16 @@ WHAT THIS DOES
 
 <br>
 I delete the Add & Remove panel and applet/desklet functions because I wanted something I could deploy mainstream requiring minimal user support by removing anything unnecessary that could break it.<br>
-If you want a viable alternative to Mac or Windoze, you actually only require one stable moveable panel.
-The default applets/desklets set released as part of Cinnamon stable are enough for a productive computing experience, without addming more.<br>
+If you want a viable alternative to Mac or Windoze, you actually only require one stable moveable panel.<br><br>
+The default applets/desklets set released as part of Cinnamon stable are enough for a productive computing experience, without adding more.<br>
 Note, also I make Cinnamenu an applet in the OS system /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders. 
 
 <br>
 At time of writing I am using Debian 12.6. Do an apt update && upgrade to make sure you are current.<br>Also tested on LMDE Mint.<br>
 Should work on most distros as there really isn't much to it. Relies mostly on the gnome function that lets you call a per user login script from a .desktop file in /etc/xdg/autostart
-and the gschema override function.<br>
+and the gschema override function.<br><br>
 I am using SpiralLinux Debian Cinnamon, which formats FS to BTRFS and has snapper rollback in the GRUB menu !<br>
-Many Many thanks to the OpenSUSE GeckoLinux dev for coming up with SpiralLinux.<br>
+<br>Many Many thanks to the OpenSUSE GeckoLinux dev for coming up with SpiralLinux.<br>
 https://spirallinux.github.io/#download
 <br>
 <br>
