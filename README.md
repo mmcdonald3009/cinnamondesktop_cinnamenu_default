@@ -26,7 +26,7 @@ At time of writing I am using Debian 12.6. Do an apt update && upgrade to make s
 
 I am using SpiralLinux Debian Cinnamon, which formats FS to BTRFS and has snapper rollback in the GRUB menu !
 
-Many many thanks to the OpenSUSE GeckoLinux dev for coming up with the amazing SpiralLinux.
+Many many thanks to the GeckoLinux dev for coming up with the amazing SpiralLinux.
 
 https://spirallinux.github.io/#download
 
