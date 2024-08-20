@@ -18,7 +18,7 @@ If you want a viable alternative to Mac or Windoze, you actually only require on
 
 The default applets/desklets/extensions set installed with Cinnamon stable are enough for a productive computing experience, without adding more or deleting any - other than complementing them with the elegant Cinnamenu.
 
-Note, I make Cinnamenu an applet in the OS system /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders - where it might otherwise get deleted. 
+Note, I make Cinnamenu an applet in the OS system /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders - where it might otherwise get "accidentally while I was chowing down on a big mac" deleted. 
 
 Should work on most distros as there really isn't much to it. Relies on the gnome functions that lets you call a per user login script from a .desktop file in /etc/xdg/autostart, the gschema override function, and dbus-monitor to detect app calls that change state of things, and respond with (dconf write, etc ) from script if required.
 
