@@ -146,7 +146,7 @@ rm /usr/share/cinnamon/cinnamon-settings/modules/cs_extensions.py
 
 
 -------------------------------------------------------------------------------------------------------------------------
-What To Do If Using Different Panel Applets (/usr/share/cinnamon/applets/)<br>To Those In /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override ?
+What If I Want Different Panel Applets (/usr/share/cinnamon/applets/)<br>To Those In /usr/share/glib-2.0/schemas/11_cinnamon.gschema.override ?
 -------------------------------------------------------------------------------------------------------------------------
 
 
