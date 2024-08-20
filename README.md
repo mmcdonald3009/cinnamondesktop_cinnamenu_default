@@ -63,7 +63,7 @@ https://spirallinux.github.io/#download
 
 
 ----------------------------------------------------------------------------------------------------
-( How To: 3 of 3 ) Delete "Add Panel", "Remove Panel" and "Remove Applet" Functions Entirely...
+( How To: 3 of 3 ) Delete "Add Panel", "Remove Panel" and "Remove Applets, etc" Functions Entirely...
 YOU REALLY GOTTA DO THESE FOR THE UNBREAKABILITY/STABILITY ...<br>
 ----------------------------------------------------------------------------------------------------
 
