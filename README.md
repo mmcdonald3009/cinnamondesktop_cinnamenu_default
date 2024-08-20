@@ -91,7 +91,7 @@ sed -i 's|this.addMenuItem(applet_settings_item);||g' /usr/share/cinnamon/js/ui/
 
 
 *** This deletes "(Panel Right-Click) Panel Edit Mode" ***
-sed -i 's|menu.addMenuItem(panelEditMode);||g' /usr/share/cinnamon/js/ui/panel.js <br><br>
+sed -i 's|menu.addMenuItem(panelEditMode);||g' /usr/share/cinnamon/js/ui/panel.js
 
 
 *** This deletes "(Panel Right-Click) System Settings" ***
