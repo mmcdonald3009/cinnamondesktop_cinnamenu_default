@@ -191,7 +191,7 @@ Set the value in z_login.sh by changing both the numbers under this line (4 is d
 if [ "$wksp" -gt 4 ];then<br>
 dconf write /org/cinnamon/desktop/wm/preferences/num-workspaces "4".
 
-Cinnamenu appears in panel centre. If you want it in another position, change in 11_cinnamon.gschema.override:
+Cinnamenu appears in panel centre. If you want it in another position, change applet position settings in 11_cinnamon.gschema.override:
 'panel1:center:0:Cinnamenu@json',
 And remember as su/sudo to do this in terminal:#glib-compile-schemas /usr/share/glib-2.0/schemas/
 
