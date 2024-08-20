@@ -105,7 +105,7 @@ sed -i 's|menu.addMenuItem(panelEditMode);||g' /usr/share/cinnamon/js/ui/panel.j
 
 *** This deletes "(Panel Right-Click) System Settings" ***
 
-sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "preferences-desktop"));||g' /usr/share/cinnamon/js/ui/panel.js<br><br> 
+sed -i 's|this.addMenuItem(new SettingsLauncher(_("System Settings"), "", "preferences-desktop"));||g' /usr/share/cinnamon/js/ui/panel.js
 
 
 
@@ -123,6 +123,7 @@ sed -i "s|this._applet_context_menu.addMenuItem(this.context_menu_item_remove);|
 *** This deletes "Add new panel (From Panel Settings)" ***
 
 sed -i 's|self.sidePage.add_widget(page)||g' /usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py
+
 
 
 And do these removes...
