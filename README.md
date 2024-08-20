@@ -22,9 +22,12 @@ Note, I make Cinnamenu an applet in the OS system /usr/share/cinnamon/applets fo
 
 Should work on most distros as there really isn't much to it. Relies on the gnome functions that lets you call a per user login script from a .desktop file in /etc/xdg/autostart, the gschema override function, and dbus-monitor to detect system app calls that change state of things, and issue a command response (dconf write, etc ) from a script if required.
 
-At time of writing I am using Debian 12.6. Do an apt update && upgrade to make sure you are current !<br>Also tested on LMDE Mint.
 
-I am using SpiralLinux Debian Cinnamon, which formats FS to BTRFS and has snapper rollback in the GRUB menu !
+I am using SpiralLinux Debian 12.6 Cinnamon, which formats FS to BTRFS and has snapper rollback in the GRUB menu !
+Do an apt update && upgrade to make sure you have current repos!
+
+Also tested on LMDE Mint.
+
 
 Many many thanks to the GeckoLinux dev for coming up with the amazing SpiralLinux.
 
