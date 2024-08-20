@@ -47,7 +47,7 @@ https://spirallinux.github.io/#download
 
 * xautomation allows for keypress emulation from a script.
 
-* libgtk-3-bin provides gtk-launch for launching .desktop files from a terminal.
+* libgtk-3-bin provides gtk-launch for launching .desktop files from a script.
 
 
 --------------------------------------------------------------------------------------------
