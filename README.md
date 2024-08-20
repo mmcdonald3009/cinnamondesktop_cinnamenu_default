@@ -211,7 +211,11 @@ What Happens To The Cinnamon Desktop During An Apt Upgrade To The Library/Versio
 -----------------------------------------------------------------------------------
 
 
-Cinnamenu@json will get deleted and have to be downloaded and copied again into /usr/share/cinnamon/applets/
+Cinnamenu@json could get deleted and have to be downloaded and copied again into /usr/share/cinnamon/applets/
+
+Don't be funny and chattr +i the folder, it might cause your entire update/upgrade to fail.
+
+Trust me, I tried it...
 
 
 -----------------------------------------------------------------------------------
