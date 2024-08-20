@@ -16,7 +16,7 @@ I delete the Add & Remove panel and applet/desklet/extension functions because I
 If you want a viable alternative to Mac or Windoze, you actually only require one stable moveable panel.<br><br>
 The default applets/desklets/extensions set released as part of Cinnamon stable are enough for a productive computing experience, without adding more or deleting any.
 <br><br>
-Note, I make Cinnamenu an applet in the OS system /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders. 
+Note, I make Cinnamenu an applet in the OS system /usr/share/cinnamon/applets folder as opposed to an applet in the users home hidden folders - where it might otherwise get deleted. 
 <br>
 <br>
 At time of writing I am using Debian 12.6. Do an apt update && upgrade to make sure you are current.<br>Also tested on LMDE Mint.
