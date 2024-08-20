@@ -11,7 +11,6 @@ WHAT THIS DOES
 6. Nothing is dangerous when everything is considered in it's proper context.
 
 
-<br>
 I delete the Add & Remove panel and applet/desklet/extension functions because I wanted something I could deploy mainstream requiring minimal user support by removing anything unnecessary that could break it.<br>
 If you want a viable alternative to Mac or Windoze, you actually only require one stable moveable panel.<br><br>
 The default applets/desklets/extensions set released as part of Cinnamon stable are enough for a productive computing experience, without adding more or deleting any.
