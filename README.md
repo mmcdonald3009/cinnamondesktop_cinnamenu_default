@@ -75,11 +75,11 @@ Copy/Paste these lines (not the ones beginning with ***, the ones below starting
 sed -i 's|menu.addMenuItem(menuItem);||g' /usr/share/cinnamon/js/ui/panel.js
 
 
-*** This deletes "(Panel Right-Click) Add Panel" ***<br>
+*** This deletes "(Panel Right-Click) Add Panel" ***
 sed -i 's|menu.addMenuItem(menu.addPanelItem);||g' /usr/share/cinnamon/js/ui/panel.js
 
 
-*** This deletes "(Panel Right-Click) Applets" ***<br>
+*** This deletes "(Panel Right-Click) Applets" ***
 sed -i 's|this.addMenuItem(applet_settings_item);||g' /usr/share/cinnamon/js/ui/panel.js
 
 
