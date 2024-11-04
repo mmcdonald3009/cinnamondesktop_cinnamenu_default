@@ -61,8 +61,6 @@ sleep 1
 nemo --quit
 dconf write /org/nemo/preferences/show-hidden-files false
 gtk-launch nemo.desktop
-killall dbus-monitor
-function_preventnemohiddenfiles_limitworkspaces 
 done &
 
 stdbuf -oL dbus-monitor --session interface='ca.desrt.dconf.Writer',member='Notify' |
